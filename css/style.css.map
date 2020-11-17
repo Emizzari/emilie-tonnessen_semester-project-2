@@ -12,6 +12,7 @@
         "../sass/components/products/_product-layout.scss",
         "../sass/components/products/_product-card.scss",
         "../sass/components/products/_product-reviews.scss",
+        "../sass/components/_benefits.scss",
         "../sass/components/_footer.scss",
         "../sass/components/_buttons.scss",
         "../sass/components/_links.scss",
