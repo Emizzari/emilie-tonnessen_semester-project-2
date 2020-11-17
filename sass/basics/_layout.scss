@@ -1,4 +1,13 @@
-/* Sticky Footer: ------------------------------- */
+/* STICKY FOOTER: ------------------------------- */
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     flex-direction: column;

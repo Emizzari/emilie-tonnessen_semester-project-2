@@ -44,7 +44,48 @@
         <i class="far fa-angle-right"></i>     
 
 */
-/* Sticky Footer: ------------------------------- */
+/* 
+
+    RULES:
+        h1 - Headline, homepage only
+        h2 - Best selling, Reviews, Dont miss out
+        h3 - Content area on homepage, calendar, newsletter etc
+        h4 - Cart and product page headline
+        h5 - Product Name/Title, footer title
+        h6 - Review titles, shipping-delivery-payment titles
+
+*/
+/* 
+
+    FONT-FAMILIES:
+        Montserrat Regular:
+            font-family: montserrat, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+        Ernestine Pro Regular:
+            font-family: ff-ernestine-pro, serif;
+            font-weight: 400;
+            font-style: normal;
+   
+
+        Gaultier Regular:
+            font-family: gaultier, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+*/
+/* STICKY FOOTER: ------------------------------- */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +100,21 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+}
+
+/* ---------------------------------------------- */
+/* RESETTING MARGIN & PADDING: ------------------ */
+nav, footer, header, main,
+div, section, article,
+h1, h2, h3, h4, h5, h6,
+p, i, a,
+input, textarea, section, option, label,
+ul, ol, li, form {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* ---------------------------------------------- */
