@@ -17,3 +17,20 @@ body{
     flex: 1 0 auto;
 }
 /* ---------------------------------------------- */
+
+
+
+
+/* RESETTING MARGIN & PADDING: ------------------ */
+nav, footer, header, main,
+div, section, article,
+h1, h2, h3, h4, h5, h6,
+p, i, a,
+input,textarea, section, option, label,
+ul, ol, li, form {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+/* ---------------------------------------------- */
