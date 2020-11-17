@@ -11,6 +11,7 @@
 @import "./components/nav/nav-layout";
 @import "./components/nav/nav-icons";
 @import "./components/nav/nav-search";
+@import "./components/nav/nav-brand";
 
 @import "./components/products/product-layout";
 @import "./components/products/product-card";
@@ -24,3 +25,23 @@
 @import "./components/hero";
 @import "./components/ads-section";
 @import "./components/reviews";
+
+ // Small devices (landscape phones, 576px and up)
+            @media (min-width: 576px) {
+
+            }
+
+            // Medium devices (tablets, 768px and up)
+            @media (min-width: 768px) {
+
+            }
+
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) {
+
+            }
+
+            // Extra large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+                
+            }

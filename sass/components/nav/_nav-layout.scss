@@ -1,0 +1,43 @@
+.nav{
+    padding: 20px 0;
+
+    &__top{
+        height: 100px;
+    }
+
+    &__search{
+        display: none;
+    }
+
+    &__menu{
+        &__list{
+            list-style: none;
+
+            // Small devices (landscape phones, 576px and up)
+            @media (min-width: 576px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            // Medium devices (tablets, 768px and up)
+            @media (min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            // Large devices (desktops, 992px and up)
+            @media (min-width: 992px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            // Extra large devices (large desktops, 1200px and up)
+            @media (min-width: 1200px) {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+}
