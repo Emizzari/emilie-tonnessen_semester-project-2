@@ -322,4 +322,56 @@ img, iframe {
 .benefits__icon {
   text-align: right;
 }
+
+.footer {
+  background: lightgray;
+}
+
+@media screen and (min-width: 2000px) {
+  .hero {
+    max-width: 2000px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+}
+
+.hero__content {
+  max-width: 600px;
+  position: absolute;
+  color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__content {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hero__content {
+    margin: 50px 20px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hero__content {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    -webkit-transform: translate(-20%, -50%);
+            transform: translate(-20%, -50%);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.hero__banner {
+  background-position: 60% 0% !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  height: 600px;
+}
 /*# sourceMappingURL=style.css.map */
