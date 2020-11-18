@@ -1,0 +1,63 @@
+.reviews{
+    position: relative;
+    margin: 100px 0;
+    width: 100%;
+
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 200px;
+        padding: 0 30px;
+        background: white;
+        z-index: 555;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__line{
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 20px;
+        width: 100%;
+        z-index: -55;
+    }
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.review-card{
+    max-width: 260px;
+    background: rgb(142, 210, 255);
+    padding: 10px;
+    margin: 30px 0;
+
+    &__stars{
+        color: rgb(0, 0, 0);
+    }
+
+    &__time{
+        text-align: right;
+        font-style: italic;
+    }
+
+    &__content{
+        margin-top: 20px;
+    }
+
+    &__title{
+        font-weight: 700;
+    }
+
+    &__desc{
+        margin: 0;
+    }
+
+    &__user{
+        margin-top: 20px;
+        font-style: italic;
+    }
+}
