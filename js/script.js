@@ -13,3 +13,32 @@ $(document).ready(function(){
 	});
 });
 /* ---------------------------------------------- */
+/* HERO BANNER: --------------------------------- */
+
+
+async function fetchAPI() {
+    try {
+		/* Products API: */
+        const productResponse = await fetch(productsURL);
+        const ProductJson = await productResponse.json();
+		const product = ProductJson;
+
+		/* Banner API: */
+		const bannerResponse = await fetch(bannerURL);
+        const bannerJson = await bannerResponse.json();
+		const banner = bannerJson;
+		
+		createBanner(banner);
+
+
+		console.log(product);
+		console.log(banner.hero_banner);
+
+       /*  createHTML(product);
+        searchProducts(product); */
+
+    } catch (error) {
+        console.log(error);
+        /* displayMessage("error", error, ".product-container");    */
+    }
+}
