@@ -1,18 +1,10 @@
-/* Mobile menu: --------------------------------- */
-$(document).ready(function(){
-	$('.nav__menu-icon').click(function(){
-		$(this).toggleClass('open');
+import mobileMenu from "./components/mobile-menu.js";
+import { createBanner } from "./dom/createBanner.js";
+import { productsURL, bannerURL } from "./settings/api.js";
 
-		if($(this).hasClass('open')) {
-			$('.nav__menu').addClass('open-menu');
-			$('body').addClass('fixed');
-		} else {
-			$('.nav__menu').removeClass('open-menu');
-			$('body').removeClass('fixed');
-		}
-	});
-});
-/* ---------------------------------------------- */
+
+
+
 /* HERO BANNER: --------------------------------- */
 
 
@@ -42,3 +34,15 @@ async function fetchAPI() {
         /* displayMessage("error", error, ".product-container");    */
     }
 }
+
+fetchAPI();
+
+
+
+/* Error Message: */
+/* function displayMessage(messageType, message, targetElement) {
+    const element = document.querySelector(targetElement);
+
+    element.innerHTML = `<div class="message ${messageType}">${message}</div>`;
+} */
+/* ---------------------------------------------- */
