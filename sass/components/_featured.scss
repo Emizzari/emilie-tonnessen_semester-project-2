@@ -1,0 +1,31 @@
+.featured{
+    width: 100%;
+    position: relative;
+    margin: 100px 0;
+
+
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+        max-width: 450px;
+        padding: 0 30px;
+        background: white;
+        z-index: 555;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__line{
+            height: 1px;
+            background: black;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            z-index: -55;
+        }
+    
+    &__products{
+        display: flex;
+        justify-content: center;
+    }
+}
