@@ -1,0 +1,17 @@
+.benefits{
+    background: lightgrey;
+    padding: 20px 0;
+    z-index: 666;
+
+    &__title{
+        margin: 0;
+    }
+
+    &__desc{
+        margin: 0;
+    }
+
+    &__icon{
+        text-align: right;
+    }
+}
