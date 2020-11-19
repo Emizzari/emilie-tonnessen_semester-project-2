@@ -1,0 +1,69 @@
+/*  
+    RULES:
+        h1 - Headline, homepage only
+        h2 - Best selling, Reviews, Dont miss out
+        h3 - Content area on homepage, calendar, newsletter etc
+        h4 - Cart and product page headline
+        h5 - Product Name/Title, footer title
+        h6 - Review titles, shipping-delivery-payment titles 
+*/
+
+/* TYPOGRAPHY: ---------------------------------- */
+h1{
+    font-family: ff-ernestine-pro, serif;
+    font-weight: 700;
+    font-size: clamp(40px, 5vw, 65px);
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: gaultier, sans-serif;
+    font-weight: 500;
+    font-size: clamp(30px, 5vw, 40px);
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: ff-ernestine-pro, serif;
+    font-weight: 600;
+    font-size: clamp(25px, 4vw, 30px);
+    text-transform: uppercase;
+}
+
+h4{
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-size: clamp(20px, 4vw, 30px);
+    text-transform: uppercase;
+}
+
+h5{
+    font-family: gaultier, sans-serif;
+    font-weight: 800;
+    font-size: clamp(17px, 2vw, 20px);
+    text-transform: uppercase;
+}
+
+h6{
+    font-family: montserrat, sans-serif;
+    font-weight: 800;
+    font-size: clamp(12px, 2vw, 12px);
+    text-transform: uppercase;
+}
+
+body{
+    font-family: montserrat, sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 2vw, 17px);
+}
+/* ---------------------------------------------- */
+
+.benefits{
+    &__title{
+        font-size: clamp(10px, 2vw, 13px);
+    }
+
+    &__desc{
+        font-size: clamp(8px, 2vw, 13px);
+    }
+}
