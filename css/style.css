@@ -159,6 +159,7 @@ body {
   font-family: montserrat, sans-serif;
   font-weight: 400;
   font-size: clamp(14px, 2vw, 17px);
+  color: black;
 }
 
 /* ---------------------------------------------- */
@@ -173,6 +174,7 @@ body {
 /* Components: */
 .nav__top {
   margin: 0;
+  line-height: 100px;
 }
 
 .nav__brand {
@@ -184,18 +186,6 @@ body {
   width: auto;
   height: 80px;
   padding: 10px;
-}
-
-@media (max-width: 991px) {
-  .nav__search--lg {
-    display: none;
-  }
-}
-
-@media (min-width: 992px) {
-  .nav__search--sm {
-    display: none;
-  }
 }
 
 .nav__icons {
@@ -293,6 +283,36 @@ body {
 }
 
 /* ---------------------------------------------- */
+.nav__logo:hover {
+  cursor: pointer;
+}
+
+.nav__link {
+  color: black;
+  text-transform: uppercase;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+  font-size: cramp(14px, 1vw, 14px);
+}
+
+.nav__link:hover {
+  color: #e02b4f;
+  text-decoration: none;
+}
+
+.nav__icons {
+  font-size: 25px;
+}
+
+.nav__icons i:last-child {
+  margin-left: 10px;
+}
+
+.nav__icons i:hover {
+  cursor: pointer;
+  color: #e02b4f;
+}
+
 .nav__menu-icon {
   z-index: 999;
   max-width: 50px;
@@ -355,6 +375,39 @@ body {
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+.search {
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .search--lg {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .search--sm {
+    display: none;
+  }
+}
+
+.search__input {
+  width: 70%;
+  height: 30px;
+}
+
+.search__btn {
+  position: relative;
+  color: black;
+  background: #e02b4f;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .product {
@@ -514,7 +567,7 @@ body {
 }
 
 .benefits {
-  background: #e1e1e1;
+  background: #d4d4d4;
   padding: 20px 0;
   z-index: 666;
   -webkit-box-pack: center;
@@ -556,7 +609,106 @@ body {
 }
 
 .footer {
-  background: lightgray;
+  background: #e02b4f;
+  padding-top: clamp(20px, 6vw, 100px);
+}
+
+.footer__container {
+  margin: 20px 0px;
+}
+
+.footer__title {
+  padding-bottom: 7px;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__link {
+  color: black;
+  text-decoration: underline;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+  margin-bottom: 7px;
+}
+
+.footer__link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.copyright__text {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: clamp(20px, 6vw, 100px);
+  font-size: 13px;
+  color: black;
+}
+
+.btn {
+  margin-top: 20px;
+  text-transform: uppercase;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+  border-radius: 0;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2), -5px -5px 20px rgba(255, 255, 255, 0.1);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2), -5px -5px 20px rgba(255, 255, 255, 0.1);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn--primary {
+  background: #e02b4f;
+  color: white;
+  font-weight: 700;
+}
+
+.btn--primary:hover {
+  background: #7a1226;
+  color: white;
+}
+
+.btn--secondary {
+  background: #851727;
+  color: white;
+  font-weight: 700;
+}
+
+.btn--secondary:hover {
+  background: #c6223a;
+  color: white;
+}
+
+.btn--christmas {
+  background: #bd0000;
+  color: white;
+}
+
+.btn--christmas:hover {
+  background: #700d00;
+  color: white;
+}
+
+.btn--lg {
+  padding: 20px 60px;
+  font-weight: 700;
+}
+
+.btn--md {
+  padding: 20px 40px;
+  font-weight: 700;
+}
+
+.btn--sm {
+  padding: 10px 20px;
+  font-weight: 600;
+}
+
+.hero {
+  position: relative;
 }
 
 @media screen and (min-width: 2000px) {
@@ -591,9 +743,9 @@ body {
   .hero__content {
     position: absolute;
     top: 50%;
-    left: 20%;
-    -webkit-transform: translate(-20%, -50%);
-            transform: translate(-20%, -50%);
+    left: 30%;
+    -webkit-transform: translate(-30%, -50%);
+            transform: translate(-30%, -50%);
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -608,8 +760,6 @@ body {
 }
 
 .ads {
-  background: #e6e6e6;
-  padding: 30px 0px;
   margin: 100px 0px;
   position: relative;
   -webkit-box-sizing: border-box;
@@ -617,23 +767,72 @@ body {
 }
 
 .ads__main-event {
-  background: pink;
-  height: 430px;
+  background: url("../../graphics/ad/main4.jpg");
+  background-position: 0% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  margin-right: 20px;
+}
+
+.ads__main-event__content {
+  padding: 250px 10px;
+  max-width: 380px;
+  color: #bd0000;
+  text-align: center;
 }
 
 .ads__news {
-  background: lightblue;
-  height: 200px;
+  background: url("../../graphics/ad/test3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 290px;
+  margin-bottom: 20px;
+}
+
+.ads__news__content {
+  color: #e02b4f;
+  padding-top: 130px;
 }
 
 .ads__ideas {
-  background: lightgreen;
-  height: 200px;
+  background: url("../../graphics/ad/test6.jpg");
+  background-position: 0% 70%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 290px;
+  margin-right: 20px;
+}
+
+.ads__ideas__content {
+  text-align: center;
+  padding-top: 30px;
+  color: #bd0000;
 }
 
 .ads__newsletter {
-  background: lightsalmon;
-  height: 200px;
+  background: url("../../graphics/ad/test4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 290px;
+}
+
+.ads__newsletter__content {
+  color: #851727;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.ads__newsletter__content input {
+  border-radius: 0;
+  margin-top: 10px;
+  border: 0;
+  height: 30px;
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+  padding: 2px 5px;
 }
 
 .reviews {
@@ -673,7 +872,7 @@ body {
 }
 
 .review-card {
-  background: #8ed2ff;
+  background: #ea6e86;
   padding: 10px;
   margin: 30px 0;
 }
@@ -703,6 +902,7 @@ body {
 .review-card__time {
   text-align: right;
   font-style: italic;
+  font-size: clamp(10px, 2vw, 12px);
 }
 
 .review-card__content {
@@ -714,12 +914,13 @@ body {
 }
 
 .review-card__desc {
-  margin: 0;
+  font-size: clamp(12px, 2vw, 14px);
 }
 
 .review-card__user {
   margin-top: 20px;
   font-style: italic;
+  font-size: clamp(10px, 2vw, 12px);
 }
 
 .featured {
