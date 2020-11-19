@@ -1,7 +1,27 @@
 .benefits{
-    background: lightgrey;
+    background: colors(grey, light);
     padding: 20px 0;
     z-index: 666;
+    justify-content: center;
+    position: relative;
+    display: block;
+    
+
+    &__container{
+        padding: clamp(5px, 1vw, 15px);
+
+       
+
+        & .row{
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__content{
+        padding: clamp(5px, 1vw, 10px);
+    }
 
     &__title{
         margin: 0;
@@ -12,6 +32,11 @@
     }
 
     &__icon{
+        text-align: right;
+        padding: 0;
+        padding-right: clamp(5px, 1vw, 10px);
+        font-size: clamp(18px, 4vw, 35px);
+        max-width: clamp(45px, 2vw, 60px);
         text-align: right;
     }
 }

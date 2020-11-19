@@ -1,4 +1,9 @@
+/* Fonts: */
+@import url("https://use.typekit.net/ghx0czi.css");
 /* Basics: */
+/* COLOR PALETTE: ------------------------------- */
+/* ---------------------------------------------- */
+@import url("https://use.typekit.net/ghx0czi.css");
 /* 
     COLOR PALETTE:
         Primary:
@@ -55,26 +60,6 @@
         h6 - Review titles, shipping-delivery-payment titles
 
 */
-/* 
-
-    FONT-FAMILIES:
-        Montserrat Regular:
-            font-family: montserrat, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-
-        Ernestine Pro Regular:
-            font-family: ff-ernestine-pro, serif;
-            font-weight: 400;
-            font-style: normal;
-   
-
-        Gaultier Regular:
-            font-family: gaultier, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-
-*/
 /* STICKY FOOTER: ------------------------------- */
 html, body {
   height: 100%;
@@ -118,6 +103,73 @@ img, iframe {
 }
 
 /* ---------------------------------------------- */
+/*  
+    RULES:
+        h1 - Headline, homepage only
+        h2 - Best selling, Reviews, Dont miss out
+        h3 - Content area on homepage, calendar, newsletter etc
+        h4 - Cart and product page headline
+        h5 - Product Name/Title, footer title
+        h6 - Review titles, shipping-delivery-payment titles 
+*/
+/* TYPOGRAPHY: ---------------------------------- */
+h1 {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 700;
+  font-size: clamp(40px, 5vw, 65px);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: gaultier, sans-serif;
+  font-weight: 500;
+  font-size: clamp(30px, 5vw, 40px);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: ff-ernestine-pro, serif;
+  font-weight: 600;
+  font-size: clamp(25px, 4vw, 30px);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: montserrat, sans-serif;
+  font-weight: 500;
+  font-size: clamp(20px, 4vw, 30px);
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: gaultier, sans-serif;
+  font-weight: 800;
+  font-size: clamp(17px, 2vw, 20px);
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: montserrat, sans-serif;
+  font-weight: 800;
+  font-size: clamp(12px, 2vw, 12px);
+  text-transform: uppercase;
+}
+
+body {
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 2vw, 17px);
+}
+
+/* ---------------------------------------------- */
+.benefits__title {
+  font-size: clamp(10px, 2vw, 13px);
+}
+
+.benefits__desc {
+  font-size: clamp(8px, 2vw, 13px);
+}
+
 /* Components: */
 .nav__top {
   margin: 0;
@@ -462,9 +514,28 @@ img, iframe {
 }
 
 .benefits {
-  background: lightgrey;
+  background: #e1e1e1;
   padding: 20px 0;
   z-index: 666;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  display: block;
+}
+
+.benefits__container {
+  padding: clamp(5px, 1vw, 15px);
+}
+
+@media screen and (max-width: 400px) {
+  .benefits__container .row {
+    width: 100%;
+  }
+}
+
+.benefits__content {
+  padding: clamp(5px, 1vw, 10px);
 }
 
 .benefits__title {
@@ -476,6 +547,11 @@ img, iframe {
 }
 
 .benefits__icon {
+  text-align: right;
+  padding: 0;
+  padding-right: clamp(5px, 1vw, 10px);
+  font-size: clamp(18px, 4vw, 35px);
+  max-width: clamp(45px, 2vw, 60px);
   text-align: right;
 }
 
