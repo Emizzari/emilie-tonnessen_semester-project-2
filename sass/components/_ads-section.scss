@@ -1,30 +1,77 @@
 .ads{
-    background: #e6e6e6;
-    padding: 30px 0px;
+
     margin: 100px 0px;
     position: relative;
     box-sizing: border-box;
 
-    &__main-event{
-        background: pink;
-        height: 430px;
+   
 
+    &__main-event{
+        background: url("../../graphics/ad/main4.jpg");
+        background-position: 0% 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 600px;
+        margin-right: 20px;
+
+        &__content{
+            padding: 250px 10px;
+            max-width: 380px;
+            color: rgb(189, 0, 0);
+            text-align: center;
+        }
     }
 
     &__news{
-        background: lightblue;
-        height: 200px;
+        background: url("../../graphics/ad/test3.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 290px;
+        margin-bottom: 20px;
 
+        &__content{
+            color: colors(primary);
+            padding-top: 130px;
+        }
     }
 
     &__ideas{
-        background: lightgreen;
-        height: 200px;
+        background: url("../../graphics/ad/test6.jpg");
+        background-position: 0% 70%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 290px;
+        margin-right: 20px;
+
+        &__content{
+            text-align: center;
+            padding-top: 30px;
+            color: rgb(189, 0, 0);
+        }
 
     }
 
     &__newsletter{
-        background: lightsalmon;
-        height: 200px;
+        background: url("../../graphics/ad/test4.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 290px;
+
+        &__content{
+            color: colors(secondary);
+            text-align: center;
+            padding-top: 30px;
+
+            & input{
+                border-radius: 0;
+                margin-top: 10px;
+                border: 0;
+                height: 30px;
+                box-shadow: 5px 5px 20px rgba(0, 0, 0, .15);
+                padding: 2px 5px;
+            }
+        }
     }
 }

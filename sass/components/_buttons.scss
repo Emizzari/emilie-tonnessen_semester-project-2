@@ -1,0 +1,66 @@
+.btn{
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: .15s ease-in-out;
+    border-radius: 0;
+    box-shadow: 
+        5px 5px 20px rgba(0, 0, 0, 0.2),
+        -5px -5px 20px rgba(255, 255, 255, .1)
+        ;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    &--primary{
+        background: colors(primary);
+        color: white;
+        font-weight: 700;
+
+        &:hover{
+            background: colors(primary, dark);
+            color: white;
+        }
+    }
+
+    &--secondary{
+        background: colors(secondary);
+        color: white;
+        font-weight: 700;
+
+        &:hover{
+            background: colors(secondary, light);
+            color: white;
+        }
+    }
+
+    &--christmas{
+        background: rgb(189, 0, 0);
+        color: white;
+
+        &:hover{
+            background: rgb(112, 13, 0);
+            color: white;
+        }
+    }
+
+
+
+
+
+
+    &--lg{
+        padding: 20px 60px;
+        font-weight: 700;
+    }
+
+    &--md{
+        padding: 20px 40px;
+        font-weight: 700;
+    }
+
+    &--sm{
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+}

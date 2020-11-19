@@ -45,11 +45,13 @@
                     </div>
 
                     <!-- Large Searchbar: -->
-                    <div class="nav__search nav__search--lg col">
+                    <div class="search search--lg col">
                         <input type="text" class="search__input">
-                        <a href="#" class="btn btn--search">
-                            <i class="fal fa-search"></i>
-                        </a>
+                        
+                            <a href="#" class="search__btn">
+                                <i class="fal fa-search"></i>
+                            </a>
+                        
                     </div>
 
                     <!-- Icons: -->
@@ -61,45 +63,40 @@
                     
                 </div>
                 <!-- Small Searchbar: -->
-                <div class="nav__search nav__search--sm col-sm-12">
+                <div class="search search--sm col-sm-12">
                     <input type="text" class="search__input">
-                    <a href="#" class="btn btn--search">
-                        <i class="fal fa-search"></i>
-                    </a>
+                    <div>
+                        <a href="#" class="search__btn">
+                            <i class="fal fa-search"></i>
+                        </a>
+                    </div>
+                    
                 </div>
                 <!-- Menu: -->
                 <div class="nav__menu col-lg-12">
                     <ul class="nav__menu__list">
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link nav__link--active">News</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Makeup</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Hair</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Skin care</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Men</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Perfume</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Accessories</a>
                         </li>
-                        <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
-                        </li>
-                        <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
-                        </li>
-                        <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -186,21 +183,49 @@
             <!-- ADS-BANNER: -->
             <section class="ads row">
                 <div class="ads__main-event col-sm-12 col-lg">
-                     <h3>makeup advent calendar 2020</h3>
+                    <div class="ads__main-event__content">
+                        <h3>makeup advent calendar 2020</h3>
+                        <a href="#" class="btn btn--christmas btn--lg">order now</a>
+                    </div>
+                     
                 </div>
                 <div class="col-sm-12 col-lg">
                     <div class="row">
+
+
+
                         <div class="ads__news col-sm-12">
-                            <h3>new in store</h3>
+                            <div class="ads__news__content">
+                                <h3>new in store</h3>
+                                <a href="#" class="btn btn--primary btn--md">shop now</a>
+                            </div>     
                         </div>
+
+
+
                     </div>
                     <div class="row">
-                        <div class="ads__ideas col-sm-12 col-md-6">
-                            <h3>gift ideas</h3>
+
+
+                        <div class="ads__ideas col-sm-12 col-md">
+                            <div class="ads__ideas__content">
+                                <h3>gift ideas</h3>
+                                <a href="#" class="btn btn--christmas btn--sm">Explore</a>
+                            </div>
                         </div>
-                        <div class="ads__newsletter col-sm-12 col-md-6">
-                            <h3>newsletter</h3>
+
+
+
+                        <div class="ads__newsletter col-sm-12 col-md">
+                            <div class="ads__newsletter__content">
+                                <h3>newsletter</h3>
+                                <input type="text" placeholder="Enter Email">
+                                <a href="#" class="btn btn--secondary btn--sm">sign up</a>
+                            </div>
                         </div>
+
+
+
                     </div>
                 </div>
             </section>
@@ -430,7 +455,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 footer__container">
                     <h5 class="footer__title">
                         Customer Service
                     </h5>
@@ -445,7 +470,7 @@
                 </div>
 
 
-                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 footer__container">
                     <h5 class="footer__title">
                         About
                     </h5>
@@ -463,7 +488,7 @@
                 </div>
 
 
-                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 footer__container">
                     <h5 class="footer__title">
                         Social Media
                     </h5>
@@ -475,7 +500,7 @@
                 </div>
 
 
-                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-3 footer__container">
                     <h5 class="footer__title">
                         Safety
                     </h5>
@@ -489,7 +514,7 @@
             <div class="row">
                 <div class="col-12">
                     <p class="copyright__text">
-                        © 2020 VARUS MAKEUP STORE. ALL RIGHTS RESERVED
+                        © 2020 Varus Cosmetics. All rights reserved.
                     </p>
                 </div>
             </div>
