@@ -32,7 +32,7 @@
 
 .review-card{
     
-    background: rgb(142, 210, 255);
+    background:colors(primary, light);
     padding: 10px;
     margin: 30px 0;
     
@@ -56,6 +56,7 @@
     &__time{
         text-align: right;
         font-style: italic;
+        font-size: clamp(10px, 2vw, 12px);
     }
 
     &__content{
@@ -67,11 +68,12 @@
     }
 
     &__desc{
-        margin: 0;
+        font-size: clamp(12px, 2vw, 14px);
     }
 
     &__user{
         margin-top: 20px;
         font-style: italic;
+        font-size: clamp(10px, 2vw, 12px);
     }
 }
