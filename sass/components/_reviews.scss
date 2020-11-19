@@ -26,14 +26,28 @@
     &__container{
         display: flex;
         justify-content: space-between;
+        margin: 0;
     }
 }
 
 .review-card{
-    max-width: 260px;
+    
     background: rgb(142, 210, 255);
     padding: 10px;
     margin: 30px 0;
+    
+
+    @media screen and (max-width: 567px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 568px){
+        max-width: 49% ;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 24%;
+    }
 
     &__stars{
         color: rgb(0, 0, 0);

@@ -593,13 +593,31 @@ img, iframe {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
 }
 
 .review-card {
-  max-width: 260px;
   background: #8ed2ff;
   padding: 10px;
   margin: 30px 0;
+}
+
+@media screen and (max-width: 567px) {
+  .review-card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 568px) {
+  .review-card {
+    max-width: 49%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .review-card {
+    max-width: 24%;
+  }
 }
 
 .review-card__stars {
