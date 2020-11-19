@@ -1,0 +1,34 @@
+.search{
+    position: relative;
+    
+
+    &--lg{
+            @media (max-width: 991px) { // xs - md
+                display: none;
+            }
+        }
+
+    &--sm{
+        @media (min-width: 992px) { // lg -> ∞
+                display: none;
+        }
+    }  
+
+    &__input{
+        width: 70%;
+        height: 30px;
+    }
+
+    &__btn{
+        position: relative;
+        color: black;
+        background: colors(primary);
+        height: 30px;
+        width: 30px;
+        display: inline-block;
+        align-self: center;
+    }
+
+    
+
+}
