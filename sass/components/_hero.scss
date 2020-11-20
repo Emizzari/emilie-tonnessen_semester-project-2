@@ -1,12 +1,11 @@
 .hero{
     position: relative;
+
     @media screen and (min-width: 2000px) {
         max-width: 2000px;
         margin-right: auto;
         margin-left: auto;
-        position: relative;
     }
-
 
     &__content{
         max-width: 600px;
@@ -14,15 +13,33 @@
         color: white;
 
         @media screen and (max-width: 767px){
-            margin: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: clamp(10px, 2vw, 20px);
+            width: 100%;
         }
 
-        @media screen and (max-width: 991px) {
-            margin: 50px 20px;
-            max-width: 400px;
+        @media screen and (min-width: 768px) and (max-width: 1220px) {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translate(-5%, -50%);
+            max-width: clamp(400px, 50vw, 550px);
         }
 
-        @media screen and (min-width: 992px) {
+        @media screen and (min-width: 1221px) and (max-width: 1500px) {
+
+            max-width: 550px;
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(-20%, -50%);
+            align-self: center;
+        }
+
+        @media screen and (min-width: 1501px) {
             position: absolute;
             top: 50%;
             left: 30%;
@@ -36,5 +53,14 @@
         background-repeat: no-repeat;
         background-size: cover !important;
         height: 600px;
+
+        &--dark-overlay{
+            width: 100%;
+            height: 100%;
+
+            @media screen and (max-width: 767px) {
+                background: rgba(0, 0, 0, .25);
+            }
+        }
     }
 }

@@ -761,7 +761,6 @@ body {
     max-width: 2000px;
     margin-right: auto;
     margin-left: auto;
-    position: relative;
   }
 }
 
@@ -773,18 +772,42 @@ body {
 
 @media screen and (max-width: 767px) {
   .hero__content {
-    margin: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: clamp(10px, 2vw, 20px);
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1220px) {
   .hero__content {
-    margin: 50px 20px;
-    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+    max-width: clamp(400px, 50vw, 550px);
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1221px) and (max-width: 1500px) {
+  .hero__content {
+    max-width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    -webkit-transform: translate(-20%, -50%);
+            transform: translate(-20%, -50%);
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 1501px) {
   .hero__content {
     position: absolute;
     top: 50%;
@@ -802,6 +825,17 @@ body {
   background-repeat: no-repeat;
   background-size: cover !important;
   height: 600px;
+}
+
+.hero__banner--dark-overlay {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .hero__banner--dark-overlay {
+    background: rgba(0, 0, 0, 0.25);
+  }
 }
 
 .ads {
