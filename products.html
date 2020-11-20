@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Page Icon: -->
-    <link rel="icon" href="./graphics/logo/logo-2.png" type="image/gif" sizes="16x16">
+    <link rel="icon" href="./graphics/logo/icon-primary.svg" type="image/gif" sizes="16x16">
 
     <!-- Page Title: -->
     <title>Varus Cosmetics | Products</title>
@@ -28,76 +28,70 @@
         <!-- Navigation: -->
         <nav class="nav">
             <div class="container">
+        
                 <!-- Top of the Navigation: -->
                 <div class="nav__top row">
+        
                     <!-- Hamburger Icon: -->
-                    <div class="nav__menu-icon col" onclick="openMenu()">
+                    <div class="nav__menu-icon col">
                         <span></span>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-
+        
                     <!-- Logo: -->
                     <div class="nav__brand col">
-                        <img src="./graphics/logo/logo-1.png" alt="Varus Cosmetics Logo" class="nav__logo">
+                        <a href="./index.html"><img src="./graphics/logo/logo-horizontal.svg" alt="Varus Cosmetics Logo"
+                                class="nav__logo"></a>
+        
                     </div>
-
-                    <!-- Large Searchbar: -->
-                    <div class="nav__search nav__search--lg col">
-                        <input type="text" class="search__input">
-                        <a href="#" class="btn btn--search">
-                            <i class="fal fa-search"></i>
-                        </a>
+        
+                    <!-- Large Viewport Searchbar: -->
+                    <div class="search search--lg col">
+                        <input type="text" class="search__input"><button href="#" class="search__btn">
+                            <i class="far fa-search"></i>
+                        </button>
                     </div>
-
-                    <!-- Icons: -->
+        
+                    <!-- Shopping Icons: -->
                     <div class="nav__icons col">
                         <i class="fal fa-shopping-cart"></i>
                         <i class="fal fa-user"></i>
                     </div>
-
-
+        
                 </div>
-                <!-- Small Searchbar: -->
-                <div class="nav__search nav__search--sm col-sm-12">
-                    <input type="text" class="search__input">
-                    <a href="#" class="btn btn--search">
-                        <i class="fal fa-search"></i>
-                    </a>
+        
+                <!-- Small Viewport Searchbar: -->
+                <div class="search search--sm col">
+                    <input type="text" class="search__input"><button class="search__btn">
+                        <i class="far fa-search"></i>
+                    </button>
                 </div>
+        
                 <!-- Menu: -->
                 <div class="nav__menu col-lg-12">
                     <ul class="nav__menu__list">
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">News</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Makeup</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Hair</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Skin care</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Men</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Perfume</a>
                         </li>
                         <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
-                        </li>
-                        <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
-                        </li>
-                        <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
-                        </li>
-                        <li class="nav__menu__item">
-                            <a href="#" class="nav__link nav__link--active">News</a>
+                            <a href="./products.html" class="nav__link">Accessories</a>
                         </li>
                     </ul>
                 </div>
@@ -108,11 +102,10 @@
         <div class="benefits">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-4">
+                    <div class="col-6 col-sm benefits__container">
                         <div class="row">
                             <div class="col-3 benefits__icon">
-                                <i class="far fa-shipping-fast"></i>
+                                <i class="fal fa-shipping-fast"></i>
                             </div>
                             <div class="col-9 benefits__content">
                                 <h6 class="benefits__title">
@@ -124,12 +117,10 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col-4">
+                    <div class="col-6 col-sm benefits__container">
                         <div class="row">
                             <div class="col-3 benefits__icon">
-                                <i class="far fa-clock"></i>
+                                <i class="fal fa-clock"></i>
                             </div>
                             <div class="col-9 benefits__content">
                                 <h6 class="benefits__title">
@@ -141,8 +132,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-4">
+                    <div class="col-12 col-sm benefits__container">
                         <div class="row">
                             <div class="col-3 benefits__icon">
                                 <i class="fal fa-credit-card"></i>
@@ -157,29 +147,39 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
-        <!-- Hero: -->
-        <header class="header">
-
+        <!-- Header: -->
+        <header class="header container">
+            <h4 class="header__title">Products</h4>
+            <p class="header__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis adipisci sint consequuntur dolores? Dicta molestias, vitae ad fuga repudiandae quaerat incidunt magnam explicabo, fugit, temporibus vero tempore. Veritatis, illo autem.
+            </p>
         </header>
 
-
+        <!-- Main Content -->
         <main class="main container">
-            <section class="section row">
 
+            <!-- Filter and Sort - Hardcode for now, if time make a filter function? -->
+            <section class="filter row">
+                <button class="btn btn--primary btn--sm">sort</button>
+                <button class="btn btn--secondary btn--sm">filter</button>
             </section>
 
-            <section class="section row">
 
+            <!-- Products: -->
+            <section class="products row">
+                
             </section>
-
 
         </main>
     </div>
+
+
+
+
 
     <!-- Footer: -->
     <footer class="footer">
