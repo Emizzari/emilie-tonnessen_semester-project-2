@@ -1,10 +1,5 @@
 .ads{
-
-    margin: 100px 0px;
     position: relative;
-    box-sizing: border-box;
-
-   
 
     &__main-event{
         background: url("../../graphics/ad/main4.jpg");
@@ -12,7 +7,17 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 600px;
-        margin-right: 20px;
+
+
+        
+
+        @media screen and (max-width: px) {
+            
+        }
+
+        @media screen and (min-width: 992px) {
+            
+        }
 
         &__content{
             padding: 250px 10px;
@@ -28,7 +33,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 290px;
-        margin-bottom: 20px;
+
 
         &__content{
             color: colors(primary);
@@ -42,7 +47,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 290px;
-        margin-right: 20px;
 
         &__content{
             text-align: center;
@@ -74,4 +78,42 @@
             }
         }
     }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+    .ads__main-event,
+    .ads__news,
+    .ads__ideas,
+    .ads__newsletter{
+        margin-bottom: 20px;
+    }           
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .ads__main-event,
+    .ads__news{
+        margin-bottom: 20px;
+    }
+
+    .ads__ideas{
+        margin-right: 20px;
+    }             
+}
+
+
+@media screen and (min-width: 992px) {
+    .ads__main-event{
+        margin-right: 20px;
+    }
+
+    .ads__news{
+        margin-bottom: 20px;
+    }
+
+    .ads__ideas{
+        margin-right: 20px;
+    }           
 }
