@@ -1,34 +1,49 @@
 .search{
-    position: relative;
+    text-align: center;
     
-
     &--lg{
+        padding: 0px;
+        padding: 25px 0;
             @media (max-width: 991px) { // xs - md
                 display: none;
             }
         }
 
     &--sm{
+        padding: 25px 20px;
+        background: colors(grey, light);
+
         @media (min-width: 992px) { // lg -> ∞
                 display: none;
+        }
+
+        & .search__input{
+            width: 200px;
+            background: white;
         }
     }  
 
     &__input{
-        width: 70%;
+        border: 0;
+        background: colors(grey, light);
         height: 30px;
+        padding: 2px 5px;
+        
+        &:focus{
+            outline: 1px solid black;
+        }
     }
 
     &__btn{
-        position: relative;
-        color: black;
         background: colors(primary);
+        color: white;
         height: 30px;
         width: 30px;
-        display: inline-block;
-        align-self: center;
+        border: 0;
+        outline: 0;
+
+        &:hover{
+            background: colors( primary, light);
+        }
     }
-
-    
-
 }
