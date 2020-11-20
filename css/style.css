@@ -103,6 +103,10 @@ img, iframe {
 }
 
 /* ---------------------------------------------- */
+main section {
+  margin: 100px 0px;
+}
+
 /*  
     RULES:
         h1 - Headline, homepage only
@@ -455,14 +459,34 @@ body {
   background: #e75774;
 }
 
+.products {
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter {
+  margin: 0;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .product {
   text-align: center;
   max-width: 250px;
   margin: 30px 0;
+  padding: 0;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
 }
 
 .product__image {
   margin: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 .product__content {
@@ -470,7 +494,7 @@ body {
 }
 
 .product__title {
-  margin: 0;
+  font-size: clamp(15px, 50vw, 18px);
 }
 
 .product__desc {
@@ -479,11 +503,13 @@ body {
 
 .product__price {
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: 15px;
+  font-size: clamp(15px, 50vw, 18px);
 }
 
 .product__button {
-  margin: 0;
+  margin: 0 !important;
+  width: 100%;
 }
 
 /* https://loading.io/css/ */
@@ -613,7 +639,7 @@ body {
 
 .benefits {
   background: #d4d4d4;
-  padding: 20px 0;
+  padding: 5px 0;
   z-index: 666;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -712,7 +738,7 @@ body {
 }
 
 .btn--primary:hover {
-  background: #7a1226;
+  background: #e75774;
   color: white;
 }
 
@@ -839,10 +865,7 @@ body {
 }
 
 .ads {
-  margin: 100px 0px;
   position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .ads__main-event {
@@ -851,7 +874,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
-  margin-right: 20px;
 }
 
 .ads__main-event__content {
@@ -867,7 +889,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 290px;
-  margin-bottom: 20px;
 }
 
 .ads__news__content {
@@ -881,7 +902,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 290px;
-  margin-right: 20px;
 }
 
 .ads__ideas__content {
@@ -912,6 +932,37 @@ body {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
   padding: 2px 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .ads__main-event,
+  .ads__news,
+  .ads__ideas,
+  .ads__newsletter {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ads__main-event,
+  .ads__news {
+    margin-bottom: 20px;
+  }
+  .ads__ideas {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .ads__main-event {
+    margin-right: 20px;
+  }
+  .ads__news {
+    margin-bottom: 20px;
+  }
+  .ads__ideas {
+    margin-right: 20px;
+  }
 }
 
 .reviews {
@@ -1035,5 +1086,17 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.header {
+  margin-top: 50px;
+}
+
+.breadcrumb {
+  background: white;
+}
+
+.breadcrumb-item a {
+  color: #e02b4f;
 }
 /*# sourceMappingURL=style.css.map */
