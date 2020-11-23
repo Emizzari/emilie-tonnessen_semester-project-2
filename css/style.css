@@ -159,7 +159,7 @@ h6 {
   text-transform: uppercase;
 }
 
-body {
+body, button {
   font-family: montserrat, sans-serif;
   font-weight: 400;
   font-size: clamp(14px, 2vw, 17px);
@@ -214,6 +214,12 @@ body {
 .nav__icons {
   text-align: right;
   font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .nav__icons i:last-child {
@@ -1102,6 +1108,21 @@ body {
 
 .details__content {
   margin-left: 30px;
+  padding-top: clamp(0px, 3vw, 30px);
+}
+
+.details__title {
+  font-size: clamp(20px, 4vw, 30px);
+  margin-bottom: clamp(10px, 3vw, 20px);
+}
+
+.details__price {
+  font-weight: 700;
+  font-size: clamp(17px, 3vw, 22px);
+}
+
+.details a i {
+  padding-left: 10px;
 }
 
 .details__benefits {
@@ -1111,7 +1132,46 @@ body {
 }
 
 .details__benefits li {
-  margin: 8px 0;
+  margin: 5px 0;
+}
+
+.accordion .card {
+  border: 0;
+}
+
+.accordion .card-header {
+  background: white;
+  border: 0;
+}
+
+.accordion .card-body {
+  border: 0;
+  outline: 0;
+  padding: 0px 30px 20px 30px;
+}
+
+.accordion .card-body:focus {
+  border: 0;
+  outline: 0;
+}
+
+.accordion__title {
+  width: 100%;
+  text-align: left;
+  border: 0;
+  background: white;
+  font-size: clamp(14px, 3vw, 18px);
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+}
+
+.accordion__title:focus {
+  outline: 0;
+}
+
+.accordion__title:hover {
+  cursor: pointer;
 }
 
 .breadcrumb {
@@ -1120,5 +1180,29 @@ body {
 
 .breadcrumb-item a {
   color: #e02b4f;
+}
+
+.cart__icon {
+  position: relative;
+  color: black;
+}
+
+.cart__icon a {
+  color: black;
+}
+
+.cart__icon-quantity {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  border-radius: 100%;
+  background: #e02b4f;
+  font-size: 13px;
+  text-align: center;
+  padding: 2px;
+  font-weight: 600;
+  color: white;
+  width: 23px;
+  height: 23px;
 }
 /*# sourceMappingURL=style.css.map */

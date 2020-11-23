@@ -40,6 +40,8 @@
     &__icons{
         text-align: right;  
         font-size: 25px;
+        display: flex;
+        justify-content: flex-end;
     
         & i:last-child{
             margin-left: 10px;
