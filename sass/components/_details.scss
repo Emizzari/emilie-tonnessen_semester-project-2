@@ -1,0 +1,83 @@
+.details{
+    &__content-container{
+        margin: 50px 0;
+    }
+
+    &__images img{
+        width: 100%;
+    }
+
+    &__content{
+        margin-left: 30px;
+        padding-top: clamp(0px, 3vw, 30px);
+    }
+
+    &__title{
+        font-size: clamp(20px, 4vw, 30px);
+        margin-bottom: clamp(10px, 3vw, 20px);
+    }
+
+    &__price{
+        font-weight: 700;
+        font-size: clamp(17px, 3vw, 22px);
+    }
+
+    & a i{
+        padding-left: 10px;
+    }
+
+    &__benefits{
+        list-style: none;
+        margin-top: 20px;
+        font-size: clamp(12px, 1vw, 14px);
+
+        & li{
+            margin: 5px 0;
+        }
+    }
+}
+
+.accordion{
+
+    & .card{
+        border: 0;
+
+        &-header{
+            background: white;
+            border: 0;
+        }
+
+        &-body{
+            border: 0;
+            outline: 0;
+            padding: 0px 30px 20px 30px;
+
+            &:focus{
+                border: 0;
+                outline: 0;
+            }
+        }
+    }
+
+    &__title{
+        width: 100%;
+        text-align: left;
+        border: 0;
+        background: white;
+        font-size: clamp(14px, 3vw, 18px);
+        text-transform: uppercase;
+        font-weight: 600;
+        border-bottom: 1px solid black;
+
+
+        &:focus{
+            outline: 0;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+}
+

@@ -56,7 +56,13 @@
         
                     <!-- Shopping Icons: -->
                     <div class="nav__icons col">
-                        <i class="fal fa-shopping-cart"></i>
+                        <div class="cart__icon">
+                            <a href="./cart.html">
+                                <i class="fal fa-shopping-cart"></i>
+                            </a>
+                            <div class="cart__icon-quantity">0</div>
+                        </div>
+                        
                         <i class="fal fa-user"></i>
                     </div>
         
@@ -172,7 +178,7 @@
                 <div class="details__content-container col-12 row">
 
                     <!-- Image: -->
-                    <div class="details__images col-4">
+                    <div class="details__images col-sm col-lg-5">
                         <img src="#" alt="Product Title">
                     </div>
 
@@ -184,7 +190,7 @@
                         <p class="details__price">
                             199 Euro
                         </p>
-                        <a href="./cart.html" class="btn btn--primary btn--sm">buy</a>
+                        <a href="./cart.html" class="btn btn--primary btn--sm">add to cart <i class="fal fa-cart-plus"></i></a>
                         <ul class="details__benefits">
                             <li><i class="fal fa-check"></i> Free shipping</li>
                             <li><i class="fal fa-check"></i> Fast Delivery</li>
@@ -196,35 +202,36 @@
 
 
                 <div class="details__desc col-12">
+
+
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingOne">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    <button class="accordion__title" type="button" data-toggle="collapse"
                                         data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         Description
                                     </button>
                                 </h2>
                             </div>
-                            <div id="collapseOne" class="collapse show details__description" aria-labelledby="headingOne" data-parent="#accordionExample">
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
-                                    officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                                    moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
-                                    keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur
-                                    butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
-                                    haven't heard of them accusamus labore sustainable VHS.
+                            <div id="collapseOne" class="collapse show " aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body details__description">
+                                    <!-- Dynamic Text here -->
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                 </div>
+
+
                 <div class="details__reviews col-12">
                     <div class="accordion" id="accordionExample">
                         <div class="card">
                             <div class="card-header" id="headingTwo">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    <button class="accordion__title" type="button" data-toggle="collapse"
                                         data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                         Reviews
                                     </button>
