@@ -1,4 +1,4 @@
-import { baseURL } from "../settings/api.js";
+import {baseURL} from "../settings/api.js";
 
 // Looking for the id parameter
 const queryString = document.location.search;
@@ -14,8 +14,10 @@ if (params.has("id")) {
     console.log("error in if statement");
 }
 
-
+/* Function - changes the property matching the correct id */
 export function createDetails(detail) {
+    console.log(detail);
+
     // Document title
     document.title = `Varus Cosmetics | ${detail.title}`;
 
