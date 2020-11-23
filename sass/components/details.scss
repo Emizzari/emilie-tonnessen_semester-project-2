@@ -1,10 +1,24 @@
 .details{
 
     &__content-container{
-        background: red;
+        margin: 50px 0;
     }
 
     &__images img{
         width: 100%;
+    }
+
+    &__content{
+        margin-left: 30px;
+    }
+
+    &__benefits{
+        list-style: none;
+        margin-top: 20px;
+        font-size: clamp(12px, 1vw, 14px);
+
+        & li{
+            margin: 5px 0;
+        }
     }
 }

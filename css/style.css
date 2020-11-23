@@ -103,7 +103,7 @@ img, iframe {
 }
 
 /* ---------------------------------------------- */
-main section {
+.section {
   margin: 100px 0px;
 }
 
@@ -1092,8 +1092,26 @@ body {
   margin-top: 50px;
 }
 
+.details__content-container {
+  margin: 50px 0;
+}
+
 .details__images img {
   width: 100%;
+}
+
+.details__content {
+  margin-left: 30px;
+}
+
+.details__benefits {
+  list-style: none;
+  margin-top: 20px;
+  font-size: clamp(12px, 1vw, 14px);
+}
+
+.details__benefits li {
+  margin: 8px 0;
 }
 
 .breadcrumb {
