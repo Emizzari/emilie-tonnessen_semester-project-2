@@ -1092,6 +1092,10 @@ body {
   margin-top: 50px;
 }
 
+.details__images img {
+  width: 100%;
+}
+
 .breadcrumb {
   background: white;
 }
