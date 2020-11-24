@@ -1189,13 +1189,23 @@ body, button {
 
 .cart__products__table-titles__quantity {
   text-align: center;
-  max-width: 180px;
   padding: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .cart__products__table-titles__quantity {
+    max-width: 180px;
+  }
 }
 
 .cart__products__table-titles__price {
   text-align: right;
-  max-width: 130px;
+}
+
+@media screen and (min-width: 992px) {
+  .cart__products__table-titles__price {
+    max-width: 130px;
+  }
 }
 
 .cart__products__container {
@@ -1210,8 +1220,10 @@ body, button {
   width: 100%;
 }
 
-.cart__products__card__image {
-  max-width: 200px;
+@media screen and (min-width: 992px) {
+  .cart__products__card__image {
+    max-width: 200px;
+  }
 }
 
 .cart__products__card__content {
@@ -1219,15 +1231,31 @@ body, button {
 }
 
 .cart__products__card__quantity {
-  text-align: center;
-  max-width: 150px;
-  padding: 0;
+  font-size: 18px;
 }
 
-.cart__products__card__price {
-  text-align: right;
-  max-width: 130px;
-  padding: 0;
+@media screen and (min-width: 992px) {
+  .cart__products__card__quantity {
+    max-width: 150px;
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.cart__products__card__quantity i {
+  padding: 0 5px;
+}
+
+.cart__products__card__quantity i:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+  .cart__products__card__price {
+    max-width: 130px;
+    text-align: right;
+    padding: 0;
+  }
 }
 
 .cart__products__total {
