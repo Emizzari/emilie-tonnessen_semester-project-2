@@ -1,4 +1,5 @@
-import {baseURL} from "../settings/api.js";
+import { baseURL } from "../settings/api.js";
+import { getShoppingCart } from "../components/localStorage.js";
 
 // Looking for the id parameter
 const queryString = document.location.search;
@@ -47,5 +48,50 @@ export function createDetails(detail) {
     detailsBtn.dataset.description = detail.description;
     detailsBtn.dataset.price = detail.price;
     detailsBtn.dataset.image = detail.image.url;
-    detailsBtn.dataset.url = `./details?id=${detail.id}`;
+    detailsBtn.dataset.url = `./details.html?id=${detail.id}`;
+
+
+
+    // LocalStorage():
+    const addToCartBtn = document.querySelectorAll(".details__btn");
+
+    addToCartBtn.forEach((button) => {
+        button.addEventListener("click", handleAddToCartClick);
+    });
+
+    function handleAddToCartClick() {
+        const id = this.dataset.id;
+        const title = this.dataset.title;
+        const price = this.dataset.price;
+        const image = this.dataset.image;
+        const description = this.dataset.description;
+        const url = this.dataset.url;
+
+        const currentCart = getShoppingCart();
+
+        const productExists = currentCart.find(function (cart) {
+            return cart.id === id;
+        });
+
+        if (productExists === undefined) {
+            const product = {
+                id: id,
+                title: title,
+                price: price,
+                image: image,
+                description: description,
+                url: url
+            };
+
+            currentCart.push(product);
+            saveFavs(currentCart);
+        } else {
+            const newCarts = currentCart.filter((cart) => cart.id !== id);
+            saveFavs(newCarts);
+        }
+    }
+
+    function saveFavs(carts) {
+        localStorage.setItem("shoppingcart", JSON.stringify(carts));
+    }
 }
