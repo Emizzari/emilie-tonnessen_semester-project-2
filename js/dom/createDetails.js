@@ -49,6 +49,7 @@ export function createDetails(detail) {
     detailsBtn.dataset.price = detail.price;
     detailsBtn.dataset.image = detail.image.url;
     detailsBtn.dataset.url = `./details.html?id=${detail.id}`;
+    detailsBtn.href = `./details.html?id=${detail.id}`;
 
 
 
