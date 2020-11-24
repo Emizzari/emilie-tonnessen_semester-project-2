@@ -4,5 +4,8 @@ export default function countTotalItems(){
     var totalitems = JSON.parse(localStorage["shoppingcart"]).length; 
 
     cartIcon.innerHTML = totalitems;
-    pageTitle.innerHTML = `(${totalitems})`;
+
+    if(pageTitle) {
+        pageTitle.innerHTML = `(${totalitems})`;
+    }
 }
