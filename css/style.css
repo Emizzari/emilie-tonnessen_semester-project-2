@@ -645,7 +645,7 @@ body, button {
 
 .benefits {
   background: #d4d4d4;
-  padding: 5px 0;
+  padding: 10px 0;
   z-index: 666;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1180,6 +1180,85 @@ body, button {
 
 .breadcrumb-item a {
   color: #e02b4f;
+}
+
+.cart__products__table-titles {
+  border-bottom: 1px solid #949494;
+  padding: 50px 0 10px 0;
+}
+
+.cart__products__table-titles__quantity {
+  text-align: center;
+  max-width: 180px;
+  padding: 0;
+}
+
+.cart__products__table-titles__price {
+  text-align: right;
+  max-width: 130px;
+}
+
+.cart__products__container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cart__products__card {
+  padding: 20px 0px;
+  border-bottom: 1px solid #949494;
+  width: 100%;
+}
+
+.cart__products__card__image {
+  max-width: 200px;
+}
+
+.cart__products__card__content {
+  padding: 10px 0;
+}
+
+.cart__products__card__quantity {
+  text-align: center;
+  max-width: 150px;
+  padding: 0;
+}
+
+.cart__products__card__price {
+  text-align: right;
+  max-width: 130px;
+  padding: 0;
+}
+
+.cart__products__total {
+  border-bottom: 2px solid #141414;
+  padding: 20px 0;
+}
+
+.cart__products__total__text {
+  margin-left: 20px;
+  font-size: clamp(18px, 2vw, 30px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cart__products__total__price {
+  text-align: right;
+  margin-right: 20px;
+  font-size: clamp(18px, 2vw, 30px);
+  font-weight: 700;
+}
+
+.cart__featured-products {
+  margin: 50px 0;
+}
+
+.cart__featured-products__title {
+  text-align: center;
+}
+
+.cart__checkout-btn {
+  margin-bottom: 100px;
 }
 
 .cart__icon {

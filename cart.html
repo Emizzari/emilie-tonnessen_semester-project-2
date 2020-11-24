@@ -113,7 +113,7 @@
                     <div class="col-4">
                         <div class="row">
                             <div class="col-3 benefits__icon">
-                                <i class="far fa-shipping-fast"></i>
+                                <i class="fal fa-shipping-fast"></i>
                             </div>
                             <div class="col-9 benefits__content">
                                 <h6 class="benefits__title">
@@ -130,7 +130,7 @@
                     <div class="col-4">
                         <div class="row">
                             <div class="col-3 benefits__icon">
-                                <i class="far fa-clock"></i>
+                                <i class="fal fa-clock"></i>
                             </div>
                             <div class="col-9 benefits__content">
                                 <h6 class="benefits__title">
@@ -163,19 +163,89 @@
             </div>
         </div>
 
-        <!-- Hero: -->
-        <header class="header">
-
+        <!-- Header: -->
+        <header class="header container">
+            <h4 class="header__title">Shopping Cart (0)</h4>
         </header>
 
 
         <main class="main container">
-            <section class="section row">
+
+            <!-- Product List -->
+            <section class="cart__products row">
+
+                <!-- Table Text -->
+                <div class="cart__products__table-titles row col-12">
+                    <h6 class="cart__products__table-titles__products col">Products</h6>
+                    <div class="col"></div>
+                    <h6 class="cart__products__table-titles__quantity col">Quantity</h6>
+                    <h6 class="col cart__products__table-titles__price">Price</h6>
+                </div>
+
+                <!-- Dummy Card: -->
+                <div class="cart__products__container col-12 row">
+
+
+                    <div class="cart__products__card row col-12">
+                        <img src="./graphics/product.png" alt="Product Image" class="col cart__products__card__image">
+                        <div class="cart__products__card__content col">
+                            <h5 class="product__title">Product Title</h5>
+                            <p class="product__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, provident cupiditate
+                                quidem ad fugiat in eos laudantium odio deleniti ab asperiores exercitationem libero atque modi facilis
+                                doloribus suscipit inventore culpa.</p>
+                        </div>
+                        <div class="cart__products__card__quantity col">
+                            <i class="fal fa-plus-circle"></i>
+                            1
+                            <i class="fal fa-minus-circle"></i>
+                        </div>
+                        <p class="cart__products__card__price col">
+                            199 NOK
+                        </p>
+                    </div>
+
+                    <div class="cart__products__card row col-12">
+                        <img src="./graphics/product.png" alt="Product Image" class="col cart__products__card__image">
+                        <div class="cart__products__card__content col">
+                            <h5 class="product__title">Product Title</h5>
+                            <p class="product__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, provident cupiditate
+                                quidem ad fugiat in eos laudantium odio deleniti ab asperiores exercitationem libero atque modi facilis
+                                doloribus suscipit inventore culpa.</p>
+                        </div>
+                        <div class="cart__products__card__quantity col">
+                            <i class="fal fa-plus-circle"></i>
+                            1
+                            <i class="fal fa-minus-circle"></i>
+                        </div>
+                        <p class="cart__products__card__price col">
+                            199 NOK
+                        </p>
+                    </div>
+
+
+
+                </div>
+                
+
+                <!-- Total Price -->
+                <div class="cart__products__total col-12 row">
+                    <p class="cart__products__total__text col">Totalt price</p>
+                    <p class="cart__products__total__price col">499 NOK</p>
+                </div>
 
             </section>
 
-            <section class="section row">
+            <!-- Featured Products: -->
+            <section class="cart__featured-products row">
+                <h2 class="cart__featured-products__title col-12">Don't miss out!</h2>
+                <!-- Dynamic Data here -->
+            </section>
 
+            <!-- Checkout Button: -->
+            <section class="cart__checkout-btn row">
+                <a href="#" class="btn btn--primary btn--lg col-12">
+                    Go to checkout
+                </a>
             </section>
 
 

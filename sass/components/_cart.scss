@@ -1,4 +1,90 @@
-.cart {
+.cart{
+    &__products{
+        
+        
+
+        &__table-titles{
+            border-bottom: 1px solid colors(grey, dark);
+            padding: 50px 0 10px 0;
+
+            &__quantity{
+                text-align: center;
+                max-width: 180px;
+                padding: 0;
+            }
+
+            &__price{
+                text-align: right;
+                max-width: 130px;
+            }
+        }
+
+        &__container{
+            justify-content: center;
+        }
+
+        &__card{
+            padding: 20px 0px;
+            
+            border-bottom: 1px solid colors(grey, dark);
+            width: 100%;
+
+            &__image{
+                max-width: 200px;
+            }
+
+            &__content{
+               padding: 10px 0;
+            }
+
+            &__quantity{
+               text-align: center;
+               max-width: 150px;
+               padding: 0;
+            }   
+
+            &__price{
+                text-align: right;
+                max-width: 130px;
+                padding: 0;
+            }
+        }
+
+        &__total{
+            border-bottom: 2px solid colors(tertiary);
+            padding: 20px 0;
+            
+
+            &__text{
+                margin-left: 20px;
+                font-size: clamp(18px, 2vw, 30px);
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            &__price{
+                text-align: right;
+                margin-right: 20px;
+                font-size: clamp(18px, 2vw, 30px);
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__featured-products{
+        margin: 50px 0;
+        &__title{
+            text-align: center;
+        }
+    }
+
+    &__checkout-btn{
+        margin-bottom: 100px;
+    }
+
+
+
+// Cart Navigation
     &__icon{
         position: relative;
         color: black;
@@ -12,7 +98,6 @@
         position: absolute;
         top: -10px;
         right: -8px;
-
         border-radius: 100%;
         background: colors(primary);
         font-size: 13px;
