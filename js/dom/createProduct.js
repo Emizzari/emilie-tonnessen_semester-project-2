@@ -1,10 +1,13 @@
 import {baseURL} from "../settings/api.js";
 
+
 /* Products: */
 export function createProduct (products){
     const productsContainer = document.querySelector(".products");
 
     productsContainer.innerHTML = "";
+
+    
 
     products.forEach(function (product) {
         productsContainer.innerHTML += `

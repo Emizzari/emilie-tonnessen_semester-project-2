@@ -107,6 +107,14 @@ img, iframe {
   margin: 100px 0px;
 }
 
+.display-message {
+  padding: 30px;
+  margin: 30px;
+  font-size: 20px;
+  border: 2px solid #8f0b0b;
+  color: #8f0b0b;
+}
+
 /*  
     RULES:
         h1 - Headline, homepage only
