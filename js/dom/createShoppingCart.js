@@ -10,6 +10,7 @@ export function createShoppingCart (){
         cartContainer.innerHTML = `<div class="display-message">The shopping cart is empty</div>`;
     } 
 
+    /* Display products from the localStorage() */
     shoppingCart.forEach(function (product) {
         cartContainer.innerHTML += `
             <div class="cart__products__card col-12 row">
@@ -35,4 +36,18 @@ export function createShoppingCart (){
             </div>
         `;
     });
+
+
+    /* Total Price: */
+    const totalPriceContainer = document.querySelector(".cart__products__total__price")
+
+    let totalPrice = 0;
+
+    for(let i = 0; i < shoppingCart.length; i++) {
+        let price = parseFloat(shoppingCart[i].price);
+
+        totalPrice += price;
+    }
+
+    totalPriceContainer.innerHTML = totalPrice + " NOK"; 
 }
