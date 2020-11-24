@@ -39,4 +39,13 @@ export function createDetails(detail) {
     // Description
     const detailsDesc = document.querySelector(".details__description");
     detailsDesc.innerHTML = detail.description;
+
+    // Data Attributes
+    const detailsBtn = document.querySelector(".details__btn");
+    detailsBtn.dataset.id = detail.id;
+    detailsBtn.dataset.title = detail.title;
+    detailsBtn.dataset.description = detail.description;
+    detailsBtn.dataset.price = detail.price;
+    detailsBtn.dataset.image = detail.image.url;
+    detailsBtn.dataset.url = `./details?id=${detail.id}`;
 }
