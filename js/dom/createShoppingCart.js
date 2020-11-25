@@ -7,6 +7,8 @@ export function createShoppingCart (){
 
     const cartContainer = document.querySelector(".cart__products__container");
 
+    cartContainer.innerHTML = "";
+
     if (shoppingCart.length === 0) {
         displayMessage(
             "The cart is empty", 

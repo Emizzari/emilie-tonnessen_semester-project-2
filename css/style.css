@@ -1321,4 +1321,62 @@ body, button {
   width: 23px;
   height: 23px;
 }
+
+/* Admin: */
+.form-login {
+  position: relative;
+  background: #d4d4d4;
+  padding: 20px;
+}
+
+.form-login__container {
+  position: absolute;
+  width: 300px;
+  padding: 0;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
+}
+
+.form-login__brand {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.form-login__logo {
+  width: 100%;
+}
+
+.form-login__title {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.form-login__content {
+  width: 100%;
+  max-width: 300px;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.form-login__label {
+  padding: 0;
+  padding-top: 20px;
+  max-width: 300px;
+}
+
+.form-login__input {
+  width: 100%;
+  max-width: 300px;
+  border: 0;
+  outline: 0;
+  padding: 2px 5px;
+  height: 30px;
+}
+
+.form-login__input:focus {
+  outline: 1px solid black;
+}
 /*# sourceMappingURL=style.css.map */
