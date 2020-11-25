@@ -1,4 +1,3 @@
-import {baseURL} from "../settings/api.js";
 import { createProduct } from "./createProduct.js";
 
 export function createFeaturedProducts(products){

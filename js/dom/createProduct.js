@@ -1,5 +1,5 @@
 import {baseURL} from "../settings/api.js";
-
+import displayMessage from "../components/messages/displayMessage.js";
 
 /* Products: */
 export function createProduct (products){
@@ -7,7 +7,12 @@ export function createProduct (products){
 
     productsContainer.innerHTML = "";
 
-    
+    if (products.length === 0) {
+        displayMessage(
+            "No products found", 
+            ".products"
+        );
+    }
 
     products.forEach(function (product) {
         productsContainer.innerHTML += `

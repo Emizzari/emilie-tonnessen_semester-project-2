@@ -1,5 +1,6 @@
 import { baseURL } from "../settings/api.js";
 import { getShoppingCart } from "../components/localStorage.js";
+import displayMessage from "../components/messages/displayMessage.js";
 
 export function createShoppingCart (){
     const shoppingCart = getShoppingCart();
@@ -7,8 +8,11 @@ export function createShoppingCart (){
     const cartContainer = document.querySelector(".cart__products__container");
 
     if (shoppingCart.length === 0) {
-        cartContainer.innerHTML = `<div class="display-message">The shopping cart is empty</div>`;
-    } 
+        displayMessage(
+            "The cart is empty", 
+            ".cart__products__container"
+        );
+    }
 
     /* Display products from the localStorage() */
     shoppingCart.forEach(function (product) {
