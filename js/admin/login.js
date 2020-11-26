@@ -3,13 +3,14 @@ import {baseURL} from "../settings/api.js";
 import {saveToken, saveUser} from "../components/localStorage.js";
 
 /* Declaring Variables: */
-const form = document.querySelector("form");
+const form = document.querySelector(".form-login");
 const username = document.querySelector("#username");
 const password = document.querySelector("#password");
 const message = document.querySelector(".message-container");
 
 form.addEventListener("submit", submitForm);
 
+/* Submit Form: */
 function submitForm(event) {
     event.preventDefault();
 
@@ -22,9 +23,10 @@ function submitForm(event) {
         return displayMessage("Invalid Values", ".message-container");
     }
 
-        doLogin(usernameValue, passwordValue);
+    doLogin(usernameValue, passwordValue);
 }
 
+/* Login: */
 async function doLogin(username, password) {
     const url = baseURL + "/auth/local";
 
@@ -49,7 +51,7 @@ async function doLogin(username, password) {
             saveToken(json.jwt);
             saveUser(json.user);
 
-            location.href = "/admin/edit-product.html";
+            location.href = "/admin/edit-product.html?id=1";
         }
 
         if (json.error) {
