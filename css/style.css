@@ -768,6 +768,16 @@ body, button {
   color: white;
 }
 
+.btn--delete {
+  background: #bd0000;
+  color: white;
+}
+
+.btn--delete:hover {
+  background: #700d00;
+  color: white;
+}
+
 .btn--christmas {
   background: #bd0000;
   color: white;
@@ -791,6 +801,16 @@ body, button {
 .btn--sm {
   padding: 10px 20px;
   font-weight: 600;
+}
+
+.link {
+  color: #e02b4f;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #e02b4f;
 }
 
 .hero {
@@ -1378,5 +1398,106 @@ body, button {
 
 .form-login__input:focus {
   outline: 1px solid black;
+}
+
+.product-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #eeeeee;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product-menu__brand {
+  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px;
+}
+
+.product-menu__logo {
+  width: 100%;
+}
+
+.product-menu__list {
+  list-style: none;
+  padding: 20px 50px;
+}
+
+.product-menu__item {
+  padding: 10px 0px;
+}
+
+.product-menu__link {
+  color: #141414;
+  font-weight: 400;
+}
+
+.product-menu__link:hover {
+  color: #e02b4f;
+  text-decoration: none;
+}
+
+.product-menu__link--active {
+  color: #e02b4f;
+}
+
+.product-menu__button {
+  margin: auto 20px 20px 20px;
+}
+
+.admin-menu {
+  margin-left: 300px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  line-height: 60px;
+}
+
+.admin-menu__button {
+  margin: 15px 0 15px auto;
+}
+
+.edit__container {
+  margin-left: 300px;
+}
+
+.edit__title {
+  font-size: clamp(25px, 5vw, 35px);
+  margin-bottom: 20px;
+}
+
+.edit__form__label {
+  width: 100%;
+}
+
+.edit__form__input, .edit__form__textarea {
+  border-radius: 0;
+  outline: 0;
+  border: 0;
+  background: #eeeeee;
+  width: 400px;
+  padding: 5px;
+}
+
+.edit__form__input:focus, .edit__form__textarea:focus {
+  outline: 1px solid black;
+}
+
+.edit__form__textarea {
+  height: 150px;
 }
 /*# sourceMappingURL=style.css.map */
