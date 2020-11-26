@@ -2,7 +2,7 @@
 import displayMessage from "../components/messages/displayMessage.js";
 import createMenu from "./createMenu.js";
 import { getToken } from "../components/localStorage.js";
-import { baseUrl } from "../settings/api.js";
+import { baseURL } from "../settings/api.js";
 
 createMenu();
 
@@ -33,7 +33,7 @@ function submitForm(event) {
 }
 
 async function addProduct(name, price, description) {
-    const url = baseUrl + "products";
+    const url = baseURL + "products";
 
     const data = JSON.stringify({ name: name, price: price, description: description });
 
