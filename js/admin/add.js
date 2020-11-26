@@ -5,6 +5,11 @@ import { getToken } from "../components/localStorage.js";
 import { baseURL } from "../settings/api.js";
 
 createMenu();
+const token = getToken();
+
+if (!token) {
+    location.href = "/";
+}
 
 const form = document.querySelector("form");
 const name = document.querySelector("#name");
