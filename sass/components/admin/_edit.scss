@@ -1,0 +1,38 @@
+.edit{
+
+    &__container{
+        margin-left: 300px;
+        
+    }
+
+    &__title{
+        font-size: clamp(25px, 5vw, 35px);
+        margin-bottom: 20px;
+    }
+
+    &__form{
+        &__label{
+            width: 100%;
+        }
+        
+        &__input,
+        &__textarea{
+            border-radius: 0;
+            outline: 0;
+            border: 0;
+            background: colors( grey, light);
+            width: 400px;
+            padding: 5px;
+
+            &:focus{
+                outline: 1px solid black;
+            }
+        }
+
+        &__textarea{
+            height: 150px;
+        }
+    }
+
+    
+}
