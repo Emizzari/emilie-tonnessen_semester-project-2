@@ -17,11 +17,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-/* Redirects if to homepage if no products are chosen. Dont think its necesarry? */
-/* if (!id) {
-    document.location.href = "/";
-} */
-
 const productUrl = baseURL + "/products/" + id;
 
 const form = document.querySelector(".edit__form");
@@ -65,16 +60,11 @@ function submitForm(event) {
     const descriptionValue = description.value.trim();
     const idValue = idInput.value;
 
-    if (titleValue.length === 0 || priceValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0) {
-        return displayMessage("Please supply proper values", ".edit__form__feedback");
     }
 
-    updateProduct(titleValue, priceValue, descriptionValue, idValue);
 }
 
-async function updateProduct(title, price, description, id) {
     const url = baseURL + "/products/" + id;
-    const data = JSON.stringify({ title: title, price: price, description: description });
 
     const options = {
         method: "PUT",
@@ -91,12 +81,10 @@ async function updateProduct(title, price, description, id) {
         console.log(json);
 
         if (json.updated_at) {
-            displayMessage("Product updated", ".edit__form__feedback");
             fetchAPI(productMenu, productsURL);
         }
 
         if (json.error) {
-            displayMessage(json.message, ".edit__form__feedback");
         }
     } catch (error) {
         console.log(error);
