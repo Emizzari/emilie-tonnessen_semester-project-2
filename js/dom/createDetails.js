@@ -12,7 +12,7 @@ export let id;
 if (params.has("id")) {
     id = params.get("id");
 } else {
-    console.log("error in if statement");
+    console.log("error in 'id' if statement");
 }
 
 /* Function - changes the property matching the correct id */
