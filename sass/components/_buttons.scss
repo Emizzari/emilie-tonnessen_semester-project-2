@@ -34,6 +34,16 @@
         }
     }
 
+    &--delete{
+        background: rgb(189, 0, 0);
+        color: white;
+
+        &:hover{
+            background: rgb(112, 13, 0);
+            color: white;
+        }
+    }
+
     &--christmas{
         background: rgb(189, 0, 0);
         color: white;
