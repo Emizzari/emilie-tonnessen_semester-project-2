@@ -4,7 +4,6 @@ import createMenu from "./createMenu.js";
 import { getToken } from "../components/localStorage.js";
 import { baseURL } from "../settings/api.js";
 
-createMenu();
 const token = getToken();
 
 if (!token) {
