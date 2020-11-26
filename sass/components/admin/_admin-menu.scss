@@ -1,0 +1,12 @@
+.admin-menu{
+    margin-left: 300px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    line-height: 60px;
+
+
+    &__button{
+        margin: 15px 0 15px auto;
+    }
+}
