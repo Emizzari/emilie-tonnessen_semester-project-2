@@ -27,18 +27,127 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Edit Products</h1>
+    <!-- Product Menu: -->
+    <nav class="admin-menu">
+        <a href="../index.html" class="admin-menu__breadcrumb link">Back to website <i class="fal fa-angle-right"></i></a>
 
+        <button class="btn btn--primary btn--sm admin-menu__button">add product</button>
+    </nav>
+
+    <nav class="product-menu">
+        <div class="product-menu__brand">
+            <a href="../index.html">
+                <img src="../graphics/logo/icon-primary.svg" alt="Varus Cosmetics Icon" class="product-menu__logo">
+            </a>
+        </div>
+
+        <ul class="product-menu__list">
+            <!-- Products here: -->
+        </ul>
+
+        <button class="product-menu__button btn btn--secondary btn--sm">Sign out</button>
+    </nav>
+
+
+    <div class="container edit__container">
+        <!-- Title: -->
+        <h4 class="edit__title">Edit Product</h4>
+    
+        <!-- Loader: -->
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         
-    </div>
+        <!-- Form: -->
+        <form class="edit__form">
+            <div class="edit__form__feedback"></div>
+    
+            <!-- Title -->
+            <section class="edit__form__section">
+                <label for="title" class="edit__form__label">
+                    Title
+                </label>
+                <input id="title" class="edit__form__input" />
+            </section>
 
+
+            <section class="edit__form__section">
+                <label for="price" class="edit__form__label">
+                    Price
+                </label>
+                <input id="price" class="edit__form__input" />
+            </section>
+
+
+            <section class="edit__form__section">
+                <label for="description" class="edit__form__label">
+                    Description
+                </label>
+                <textarea id="description" class="edit__form__textarea"></textarea>
+            </section>
+    
+
+            <input id="id" type="hidden" />
+    
+
+            <section class="edit__form__section">
+                <button id="update" type="submit" class="edit__form__button btn btn--primary btn--sm">
+                    Update
+                </button>
+            </section>
+    
+
+    
+            <div class="delete-container"></div>
+        </form>
+
+
+
+         <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="accordion__title" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            Advanced Option
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show " aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        
+                        <button class="btn btn--delete btn--sm edit__delete-button">
+                            delete product
+                        </button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+
+
+    </div>
+    
 
 
 
 
     <!-- JavaScript Modules: -->
-    <script src="../js/admin/login.js" type="module"></script>
+    <script src="../js/admin/edit.js" type="module"></script>
 
     <!-- Bootstrap: -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
