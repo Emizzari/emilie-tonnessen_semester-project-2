@@ -116,6 +116,22 @@ img, iframe {
   text-align: center;
 }
 
+.feedback--success {
+  background: #add8ad;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+}
+
+.feedback--error {
+  background: #d63737;
+  color: white;
+  font-weight: 500;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+}
+
 /*  
     RULES:
         h1 - Headline, homepage only
@@ -1482,6 +1498,8 @@ body, button {
 
 .edit__form__label {
   width: 100%;
+  margin-top: 25px;
+  font-weight: 500;
 }
 
 .edit__form__input, .edit__form__textarea {
@@ -1489,7 +1507,7 @@ body, button {
   outline: 0;
   border: 0;
   background: #eeeeee;
-  width: 400px;
+  width: 600px;
   padding: 5px;
 }
 
