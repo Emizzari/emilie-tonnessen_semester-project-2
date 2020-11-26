@@ -5,6 +5,8 @@ import displayMessage from "../components/messages/displayMessage.js";
 export function createProduct (products){
     const productsContainer = document.querySelector(".products");
 
+    console.log(products);
+
     productsContainer.innerHTML = "";
 
     if (products.length === 0) {
@@ -18,7 +20,7 @@ export function createProduct (products){
         productsContainer.innerHTML += `
             <div class="product col-sm-12 col-md-6 col-lg-3">
                 
-                <img src="${baseURL}${product.image.url}" alt="${product.title}" class="product__image">
+                <img src="${product.image_url}" alt="${product.title}" class="product__image">
                 <div class="product__content">
                     <h5 class="product__title">${product.title}</h5>      
                    
