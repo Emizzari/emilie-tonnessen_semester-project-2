@@ -13,6 +13,8 @@
     &__form{
         &__label{
             width: 100%;
+            margin-top: 25px;
+            font-weight: 500;
         }
         
         &__input,
@@ -21,7 +23,7 @@
             outline: 0;
             border: 0;
             background: colors( grey, light);
-            width: 400px;
+            width: 600px;
             padding: 5px;
 
             &:focus{
