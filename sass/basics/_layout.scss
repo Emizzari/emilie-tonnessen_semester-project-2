@@ -48,3 +48,23 @@ img, iframe {
     color:  rgb(143, 11, 11);
     text-align: center;
 }
+
+.feedback{
+
+    &--success{
+        background: rgb(173, 216, 173);
+        width: 200px;
+        text-align: center;
+        padding: 15px;
+    }  
+
+    &--error{
+        background: rgb(214, 55, 55);
+        color: white;
+        font-weight: 500;
+        width: 200px;
+        text-align: center;
+        padding: 15px;
+    }  
+}
+
