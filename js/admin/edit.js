@@ -17,8 +17,10 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
+// URL
 const productUrl = baseURL + "/products/" + id;
 
+// Containers
 const form = document.querySelector(".edit__form");
 const title = document.querySelector("#title");
 const price = document.querySelector("#price");
