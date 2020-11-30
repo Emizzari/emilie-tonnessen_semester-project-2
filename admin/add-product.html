@@ -25,34 +25,113 @@
     <!-- Page Title: -->
     <title>Varus Cosmetics | Add PRoducts</title>
 </head>
-
-<body>
-        <div class="container">
-            <div class="menu-container"></div>
-        
-            <h4>Add Product</h4>
-        
-            <form>
-                <div class="message-container"></div>
-        
-                <div>
-                    <label for="name">Name</label>
-                    <input id="name" />
-                </div>
-                <div>
-                    <label for="price">Price</label>
-                    <input id="price" />
-                </div>
-                <div>
-                    <label for="description">Description</label>
-                    <textarea id="description"></textarea>
-                </div>
-                <button>Add</button>
-            </form>
+    <!-- Product Menu: -->
+    <nav class="admin-menu">
+        <a href="../index.html" class="admin-menu__breadcrumb link">Back to website <i class="fal fa-angle-right"></i></a>
+    
+        <a class="admin-menu__button" href="./add-product.html">
+            <button class="btn btn--primary btn--sm">
+                add product
+            </button>
+        </a>
+    </nav>
+    
+    <nav class="product-menu">
+        <div class="product-menu__brand">
+            <a href="../index.html">
+                <img src="../graphics/logo/icon-primary.svg" alt="Varus Cosmetics Icon" class="product-menu__logo">
+            </a>
         </div>
-
-
-
+    
+        <ul class="product-menu__list">
+            <!-- Products here: -->
+        </ul>
+    
+        <button class="product-menu__button btn btn--secondary btn--sm">Sign out</button>
+    </nav>
+    
+    
+    <div class="container edit__container">
+        <!-- Title: -->
+        <h4 class="edit__title">Add new Product</h4>
+    
+        <!-- Loader: -->
+        <!-- <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div> -->
+    
+        <!-- Form: -->
+        <form class="edit__form">
+            <div class="edit__form__feedback"></div>
+    
+            <!-- Image: -->
+            <section class="edit__form__section">
+                <label for="image" class="edit__form__label">
+                    Image URL
+                </label>
+                <input type="text" name="image" id="image" class="edit__form__input">
+            </section>
+    
+            <!-- Title -->
+            <section class="edit__form__section">
+                <label for="title" class="edit__form__label">
+                    Title
+                </label>
+                <input id="title" class="edit__form__input" />
+            </section>
+    
+            <!-- Price -->
+            <section class="edit__form__section">
+                <label for="price" class="edit__form__label">
+                    Price
+                </label>
+                <input id="price" class="edit__form__input" />
+            </section>
+    
+            <!-- Description -->
+            <section class="edit__form__section">
+                <label for="description" class="edit__form__label">
+                    Description
+                </label>
+                <textarea id="description" class="edit__form__textarea"></textarea>
+            </section>
+    
+            <!-- Featured: -->
+            <section class="edit__form__section edit__form__featured">
+                <label class="edit__form__label">
+                    Featured
+                </label>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <!-- False: -->
+                    <label class="btn btn-secondary featured__false active" for="featured__false">
+                        <input type="radio" name="featured" id="featured__false" class="featured" checked>false
+                    </label>
+                    <!-- True: -->
+                    <label class="btn btn-secondary featured__true" for="featured__true">
+                        <input type="radio" name="featured" id="featured__true" class="featured">true
+                    </label>
+                </div>
+            </section>
+    
+            <input id="id" type="hidden" />
+    
+            <section class="edit__form__section">
+                <button id="update" type="submit" class="edit__form__button btn btn--secondary btn--sm">
+                    add product
+                </button>
+            </section>
+        </form>
 
 
     <!-- JavaScript Modules: -->
