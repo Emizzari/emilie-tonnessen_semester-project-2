@@ -754,8 +754,8 @@ body, button {
   -webkit-transition: .15s ease-in-out;
   transition: .15s ease-in-out;
   border-radius: 0;
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2), -5px -5px 20px rgba(255, 255, 255, 0.1);
-          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2), -5px -5px 20px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15), -5px -5px 20px rgba(255, 255, 255, 0.1);
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15), -5px -5px 20px rgba(255, 255, 255, 0.1);
 }
 
 .btn:hover {
@@ -1517,5 +1517,36 @@ body, button {
 
 .edit__form__textarea {
   height: 150px;
+}
+
+.edit__form__featured {
+  margin-bottom: 30px;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #e02b4f;
+  border-color: #e02b4f;
+}
+
+#featured__true:checked ~ .featured__true {
+  color: #fff;
+  background-color: #e02b4f;
+  border-color: #e02b4f;
+}
+
+.btn-secondary {
+  color: #000;
+  background-color: #d4d4d4;
+  border-color: #d4d4d4;
+  margin-top: 5px;
+}
+
+.btn-secondary:hover {
+  color: #000;
+  background-color: #949494;
+  border-color: #949494;
 }
 /*# sourceMappingURL=style.css.map */
