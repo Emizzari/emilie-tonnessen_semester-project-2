@@ -1,45 +1,80 @@
-  
 import displayMessage from "../components/messages/displayMessage.js";
-import createMenu from "./createMenu.js";
-import { getToken } from "../components/localStorage.js";
-import { baseURL } from "../settings/api.js";
+import {baseURL, productsURL} from "../settings/api.js";
+import {getToken} from "../components/localStorage.js";
+import {fetchAPI} from "../fetchAPI.js";
+import {productMenu} from "./productMenu.js";
 
+// Redirecting to homepage if they are not logged in
 const token = getToken();
 
 if (!token) {
     location.href = "/";
 }
 
-const form = document.querySelector("form");
-const name = document.querySelector("#name");
+// Display Product Menu
+fetchAPI(productMenu, productsURL);
+
+// Container Variables
+const form = document.querySelector(".edit__form");
+const title = document.querySelector("#title");
 const price = document.querySelector("#price");
 const description = document.querySelector("#description");
-const message = document.querySelector(".message-container");
+const idInput = document.querySelector("#id");
+const message = document.querySelector(".edit__form__feedback");
+const loading = document.querySelector(".loader");
+const image = document.querySelector("#image");
+const featured = document.querySelectorAll(".featured");
+const featuredFalse = document.querySelector("#featured__false");
+const labelFalse = document.querySelector(".featured__false");
+const labelTrue = document.querySelector(".featured__true");
+const featuredTrue = document.querySelector("#featured__true");
 
+// Listen for button click
 form.addEventListener("submit", submitForm);
 
+// Submit Form Function
 function submitForm(event) {
     event.preventDefault();
 
     message.innerHTML = "";
 
-    const nameValue = name.value.trim();
+    const imageValue = image.value;
+    const titleValue = title.value.trim();
     const priceValue = parseFloat(price.value);
     const descriptionValue = description.value.trim();
 
-    console.log("priceValue", priceValue);
-
-    if (nameValue.length === 0 || priceValue.length === 0 || isNaN(priceValue) || descriptionValue.length === 0) {
-        return displayMessage("warning", "Please supply proper values", ".message-container");
+    let featuredValue;
+    
+    if(featuredTrue.checked){
+        featuredValue = true;
+    } else{
+        featuredValue = false;
     }
 
-    addProduct(nameValue, priceValue, descriptionValue);
+    if (
+        imageValue === 0 ||
+        titleValue.length === 0 || 
+        priceValue.length === 0 || 
+        isNaN(priceValue) || 
+        descriptionValue.length === 0 ||
+        featuredValue === null
+        ){
+        return displayMessage("feedback feedback--error", "Please supply proper values", ".edit__form__feedback");
+    }
+
+    addProduct(imageValue, titleValue, priceValue, descriptionValue, featuredValue);
 }
 
-async function addProduct(name, price, description) {
-    const url = baseURL + "products";
+async function addProduct(image, title, price, description, featured) {
+    const url = baseURL + "/products/";
 
-    const data = JSON.stringify({ name: name, price: price, description: description });
+    const data = JSON.stringify({ 
+        image_url: image,
+        title: title, 
+        price: price, 
+        description: description,
+        featured: featured 
+    });
 
     const token = getToken();
 
@@ -57,17 +92,15 @@ async function addProduct(name, price, description) {
         const json = await response.json();
 
         if (json.created_at) {
-            displayMessage("success", "Product created", ".message-container");
-            form.reset();
+            displayMessage("feedback feedback--success", "Product Added", ".edit__form__feedback");
+            fetchAPI(productMenu, productsURL);
         }
 
         if (json.error) {
-            displayMessage("error", json.message, ".message-container");
+            displayMessage("feedback feedback--error", json.message, ".edit__form__feedback");
         }
-
-        console.log(json);
     } catch (error) {
         console.log(error);
-        displayMessage("error", "An error occured", ".message-container");
+        displayMessage("feedback feedback--error", json.message, ".edit__form__feedback");
     }
 }
