@@ -23,7 +23,7 @@ const id = params.get("id");
 // URL
 const productUrl = baseURL + "/products/" + id;
 
-// Containers
+// Container Variables
 const form = document.querySelector(".edit__form");
 const title = document.querySelector("#title");
 const price = document.querySelector("#price");
@@ -111,6 +111,7 @@ function submitForm(event) {
 // Update Product
 async function updateProduct(image, title, price, description, featured, id) {
     const url = baseURL + "/products/" + id;
+    
     const data = JSON.stringify({ 
         image_url: image,
         title: title, 
