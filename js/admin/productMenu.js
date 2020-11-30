@@ -20,7 +20,7 @@ export function productMenu(item){
         
         productMenuContainer.innerHTML += `
             <li class="product-menu__item">
-                <a href="?id=${product.id}" class="product-menu__link ${activeLink}">
+                <a href="./edit-product.html?id=${product.id}" class="product-menu__link ${activeLink}">
                     <i class="fal fa-angle-right"></i> 
                     ${product.title}
                 </a>
