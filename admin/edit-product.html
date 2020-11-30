@@ -76,7 +76,7 @@
             <!-- Image: -->
             <section class="edit__form__section">
                 <label for="image" class="edit__form__label">
-                    Image
+                    Image URL
                 </label>
                 <input type="text" name="image" id="image" class="edit__form__input">
             </section>
@@ -106,26 +106,29 @@
             </section>
 
             <!-- Featured: -->
-            <section class="edit__form__section">
-                <label for="featured" class="edit__form__label">
+            <section class="edit__form__section edit__form__featured">
+                <label class="edit__form__label">
                     Featured
                 </label>
-                <input id="featured" class="edit__form__input" />
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <!-- False: -->
+                    <label class="btn btn-secondary featured__false" for="featured__false">
+                        <input type="radio" name="featured" id="featured__false" class="featured">false
+                    </label>
+                    <!-- True: -->
+                    <label class="btn btn-secondary featured__true" for="featured__true">
+                        <input type="radio" name="featured" id="featured__true" class="featured">true
+                    </label>
+                </div>
             </section>
-    
 
             <input id="id" type="hidden" />
-    
 
             <section class="edit__form__section">
-                <button id="update" type="submit" class="edit__form__button btn btn--primary btn--sm">
+                <button id="update" type="submit" class="edit__form__button btn btn--secondary btn--sm">
                     Update product
                 </button>
             </section>
-    
-
-    
-            
         </form>
 
 
