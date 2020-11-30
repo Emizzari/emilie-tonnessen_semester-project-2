@@ -34,7 +34,37 @@
         &__textarea{
             height: 150px;
         }
-    }
 
-    
+        &__featured{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active, 
+.show>.btn-secondary.dropdown-toggle{
+    color: #fff;
+    background-color: colors(primary);
+    border-color: colors(primary);
+}
+
+#featured__true:checked ~ .featured__true{
+    color: #fff;
+    background-color: colors(primary);
+    border-color: colors(primary);
+}
+
+.btn-secondary {
+    color: #000;
+    background-color: colors(grey);
+    border-color: colors(grey);
+    margin-top: 5px;
+
+    &:hover{
+        color: #000;
+        background-color: colors(grey, dark);
+        border-color: colors(grey, dark);
+    }
 }
