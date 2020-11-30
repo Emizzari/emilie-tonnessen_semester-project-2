@@ -5,14 +5,17 @@ import deleteButton from "./deleteButton.js";
 import {fetchAPI} from "../fetchAPI.js";
 import {productMenu} from "./productMenu.js";
 
+// Redirecting to homepage if they are not logged in
 const token = getToken();
 
 if (!token) {
     location.href = "/";
 }
 
+// Display Product Menu
 fetchAPI(productMenu, productsURL);
 
+// Looking for id in URL
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -29,8 +32,14 @@ const idInput = document.querySelector("#id");
 const message = document.querySelector(".edit__form__feedback");
 const loading = document.querySelector(".loader");
 const image = document.querySelector("#image");
-const featured = document.querySelector("#featured");
+const featured = document.querySelectorAll(".featured");
+const featuredFalse = document.querySelector("#featured__false");
+const labelFalse = document.querySelector(".featured__false");
+const labelTrue = document.querySelector(".featured__true");
+const featuredTrue = document.querySelector("#featured__true");
 
+
+// Fetch API
 (async function () {
     try {
         const response = await fetch(productUrl);
@@ -45,6 +54,12 @@ const featured = document.querySelector("#featured");
 
         deleteButton(details.id);
 
+        if(details.featured == true){
+            labelTrue.classList.add("active");
+        }else{
+            labelFalse.classList.add("active");
+        }
+
         console.log(details);
     } catch (error) {
         console.log(error);
@@ -54,8 +69,11 @@ const featured = document.querySelector("#featured");
     }
 })();
 
+
+// Listen for button
 form.addEventListener("submit", submitForm);
 
+// Submit Form Function
 function submitForm(event) {
     event.preventDefault();
 
@@ -65,7 +83,15 @@ function submitForm(event) {
     const titleValue = title.value.trim();
     const priceValue = parseFloat(price.value);
     const descriptionValue = description.value.trim();
-    const featuredValue = featured.value;
+
+    let featuredValue;
+    
+    if(featuredTrue.checked){
+        featuredValue = true;
+    } else{
+        featuredValue = false;
+    }
+
     const idValue = idInput.value;
 
     if (
@@ -74,7 +100,7 @@ function submitForm(event) {
         priceValue.length === 0 || 
         isNaN(priceValue) || 
         descriptionValue.length === 0 ||
-        featuredValue === 0
+        featuredValue === null
         ){
         return displayMessage("feedback feedback--error", "Please supply proper values", ".edit__form__feedback");
     }
@@ -82,6 +108,7 @@ function submitForm(event) {
     updateProduct(imageValue, titleValue, priceValue, descriptionValue, featuredValue, idValue);
 }
 
+// Update Product
 async function updateProduct(image, title, price, description, featured, id) {
     const url = baseURL + "/products/" + id;
     const data = JSON.stringify({ 
