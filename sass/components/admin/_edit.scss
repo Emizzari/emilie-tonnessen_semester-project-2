@@ -2,6 +2,7 @@
 
     &__container{
         margin-left: 300px;
+        max-width: 600px;
         
     }
 
@@ -37,6 +38,15 @@
 
         &__featured{
             margin-bottom: 30px;
+        }
+    }
+
+    &__advanced-option{
+        width: 600px;
+
+        & .card-header{
+            padding: 0;
+            margin-top: 30px;
         }
     }
 }

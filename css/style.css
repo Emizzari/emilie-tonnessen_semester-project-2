@@ -1489,6 +1489,7 @@ body, button {
 
 .edit__container {
   margin-left: 300px;
+  max-width: 600px;
 }
 
 .edit__title {
@@ -1521,6 +1522,15 @@ body, button {
 
 .edit__form__featured {
   margin-bottom: 30px;
+}
+
+.edit__advanced-option {
+  width: 600px;
+}
+
+.edit__advanced-option .card-header {
+  padding: 0;
+  margin-top: 30px;
 }
 
 .btn-secondary:not(:disabled):not(.disabled).active,
