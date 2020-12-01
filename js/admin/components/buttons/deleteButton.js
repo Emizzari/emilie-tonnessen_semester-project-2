@@ -1,5 +1,5 @@
-import {baseURL} from "../settings/api.js";
-import {getToken} from "../components/localStorage.js";
+import {baseURL} from "../../../components/settings/url.js";
+import {getToken} from "../../../components/storage/localStorage.js";
 
 export default function deleteButton(id) {
     const button = document.querySelector(".edit__delete-button");
