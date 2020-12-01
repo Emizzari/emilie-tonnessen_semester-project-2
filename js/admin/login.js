@@ -1,6 +1,6 @@
 import displayMessage from "../components/messages/displayMessage.js";
-import {baseURL} from "../settings/api.js";
-import {saveToken, saveUser} from "../components/localStorage.js";
+import {baseURL} from "../components/settings/url.js";
+import {saveToken, saveUser} from "../components/storage/localStorage.js";
 
 /* Declaring Variables: */
 const form = document.querySelector(".form-login");
