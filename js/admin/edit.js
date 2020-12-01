@@ -1,9 +1,10 @@
 import displayMessage from "../components/messages/displayMessage.js";
-import {baseURL, productsURL} from "../settings/api.js";
-import {getToken} from "../components/localStorage.js";
-import deleteButton from "./deleteButton.js";
-import {fetchAPI} from "../fetchAPI.js";
-import {productMenu} from "./productMenu.js";
+import {baseURL, productsURL} from "../components/settings/url.js";
+import {getToken} from "../components/storage/localStorage.js";
+import deleteButton from "./components/buttons/deleteButton.js";
+import {fetchAPI} from "../components/settings/fetchAPI.js";
+import {productMenu} from "./components/menu/productMenu.js";
+import logoutButton from "./components/buttons/logoutButton.js";
 
 // Redirecting to homepage if they are not logged in
 const token = getToken();
@@ -24,6 +25,8 @@ const id = params.get("id");
 if(!id){
     location.href = "?id=1";
 }
+
+
 
 // URL
 const productUrl = baseURL + "/products/" + id;
