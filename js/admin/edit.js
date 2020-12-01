@@ -10,7 +10,7 @@ import logoutButton from "./components/buttons/logoutButton.js";
 const token = getToken();
 
 if (!token) {
-    location.href = "/";
+    location.href = "/admin";
 }
 
 // Display Product Menu
