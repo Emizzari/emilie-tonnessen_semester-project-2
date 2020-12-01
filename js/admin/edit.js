@@ -15,6 +15,7 @@ if (!token) {
 
 // Display Product Menu
 fetchAPI(productMenu, productsURL);
+logoutButton();
 
 // Looking for id in URL
 const queryString = document.location.search;
