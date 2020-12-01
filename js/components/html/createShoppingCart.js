@@ -1,5 +1,5 @@
 import { baseURL } from "../settings/url.js";
-import { getShoppingCart } from "../components/localStorage.js";
+import { getShoppingCart } from "../storage/localStorage.js";
 import displayMessage from "../messages/displayMessage.js";
 
 export function createShoppingCart (){
@@ -18,9 +18,10 @@ export function createShoppingCart (){
 
     /* Display products from the localStorage() */
     shoppingCart.forEach(function (product) {
+        console.log(product);
         cartContainer.innerHTML += `
             <div class="cart__products__card col-12 row">
-                <img src="${baseURL}${product.image}" alt="${product.title}" class="col-sm-12 col-md-4 col-lg cart__products__card__image">
+                <img src="${product.image}" alt="${product.title}" class="col-sm-12 col-md-4 col-lg cart__products__card__image">
 
                 <div class="cart__products__card__content col-sm-12 col-lg ">
                     <h5 class="product__title col-sm-12">${product.title}</h5>

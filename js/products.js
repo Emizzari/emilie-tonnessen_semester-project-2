@@ -1,10 +1,10 @@
-import mobileMenu from "./components/mobile-menu.js";
-import { productsURL } from "./settings/api.js";
-import { createProduct } from "./dom/createProduct.js";
-import { fetchAPI } from "./fetchAPI.js";
-import countTotalItems from "./components/countTotalItems.js";
+import mobileMenu from "./components/menu/mobile-menu.js";
+import { productsURL } from "./components/settings/url.js";
+import { createProduct } from "./components/html/createProduct.js";
+import { fetchAPI } from "./components/settings/fetchAPI.js";
+import countStorage from "./components/storage/countStorage.js";
 import { searchProducts } from "./components/search/searchProducts.js";
 
 fetchAPI(createProduct, productsURL);
-countTotalItems();
+countStorage();
 fetchAPI(searchProducts, productsURL);

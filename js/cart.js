@@ -1,10 +1,10 @@
-import mobileMenu from "./components/mobile-menu.js";
-import countTotalItems from "./components/countTotalItems.js";
-import { createShoppingCart } from "./dom/createShoppingCart.js";
-import { createFeaturedProducts } from "./dom/createFeaturedProducts.js";
-import { productsURL } from "./settings/api.js";
-import { fetchAPI } from "./fetchAPI.js";
+import mobileMenu from "./components/menu/mobile-menu.js";
+import countStorage from "./components/storage/countStorage.js";
+import { createShoppingCart } from "./components/html/createShoppingCart.js";
+import { createFeaturedProducts } from "./components/html/createFeaturedProducts.js";
+import { productsURL } from "./components/settings/url.js";
+import { fetchAPI } from "./components/settings/fetchAPI.js";
 
 fetchAPI(createFeaturedProducts, productsURL);
 createShoppingCart();
-countTotalItems();
+countStorage();

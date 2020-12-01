@@ -1,8 +1,8 @@
-import mobileMenu from "./components/mobile-menu.js";
-import { detailsURL } from "./settings/api.js";
-import { createDetails } from "./dom/createDetails.js";
-import { fetchAPI } from "./fetchAPI.js";
-import countTotalItems from "./components/countTotalItems.js";
+import mobileMenu from "./components/menu/mobile-menu.js";
+import { detailsURL } from "./components/settings/url.js";
+import { createDetails } from "./components/html/createDetails.js";
+import { fetchAPI } from "./components/settings/fetchAPI.js";
+import countStorage from "./components/storage/countStorage.js";
 
 fetchAPI(createDetails, detailsURL);
-countTotalItems();
+countStorage();

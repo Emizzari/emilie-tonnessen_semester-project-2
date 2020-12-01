@@ -1,4 +1,4 @@
-import { createProduct } from "../../dom/createProduct.js";
+import { createProduct } from "../../components/html/createProduct.js";
 
 export function searchProducts(products) {
     const search = document.querySelector(".search");

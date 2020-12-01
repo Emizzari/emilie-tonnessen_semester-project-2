@@ -1,4 +1,4 @@
-export default function countTotalItems(){
+export default function countStorage(){
     const cartIcon = document.querySelector(".cart__icon-quantity");
     const pageTitle = document.querySelector(".cart__total-items");
 

@@ -17,6 +17,7 @@ if (params.has("id")) {
 
 /* Function - changes the property matching the correct id */
 export function createDetails(detail) {
+    console.log(detail);
     // Document title
     document.title = `Varus Cosmetics | ${detail.title}`;
 
@@ -26,7 +27,7 @@ export function createDetails(detail) {
 
     // Image
     const detailsImage = document.querySelector(".details__images img");
-    detailsImage.src = baseURL + detail.image.url;
+    detailsImage.src = detail.image_url;
     detailsImage.alt = detail.title; 
 
     // Product Title
@@ -47,11 +48,9 @@ export function createDetails(detail) {
     detailsBtn.dataset.title = detail.title;
     detailsBtn.dataset.description = detail.description;
     detailsBtn.dataset.price = detail.price;
-    detailsBtn.dataset.image = detail.image.url;
+    detailsBtn.dataset.image = detail.image_url;
     detailsBtn.dataset.url = `./details.html?id=${detail.id}`;
     detailsBtn.href = `./details.html?id=${detail.id}`;
-
-
 
     // LocalStorage():
     const addToCartBtn = document.querySelectorAll(".details__btn");

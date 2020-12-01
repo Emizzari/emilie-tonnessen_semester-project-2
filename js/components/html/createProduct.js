@@ -1,4 +1,3 @@
-import {baseURL} from "../settings/url.js";
 import displayMessage from "../messages/displayMessage.js";
 
 /* Products: */
@@ -34,4 +33,3 @@ export function createProduct (products){
         `;
     });
 }
-
