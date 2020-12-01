@@ -1,4 +1,4 @@
-import {id} from '../dom/createDetails.js';
+import {id} from '../html/createDetails.js';
 
 export const baseURL = 'http://localhost:1337';
 export const productsURL = baseURL + "/products/";
