@@ -1,9 +1,9 @@
-import mobileMenu from "./components/mobile-menu.js";
-import { bannerURL, productsURL } from "./settings/api.js";
-import { createBanner } from "./dom/createBanner.js";
-import { createFeaturedProducts } from "./dom/createFeaturedProducts.js";
-import { fetchAPI } from "./fetchAPI.js";
-import countTotalItems from "./components/countTotalItems.js";
+import mobileMenu from "./components/menu/mobile-menu.js";
+import { bannerURL, productsURL } from "./components/settings/url.js";
+import { createBanner } from "./components/html/createBanner.js";
+import { createFeaturedProducts } from "./components/html/createFeaturedProducts.js";
+import { fetchAPI } from "./components/settings/fetchAPI.js";
+import countTotalItems from "./components/storage/countStorage.js";
 
 fetchAPI(createBanner, bannerURL);
 fetchAPI(createFeaturedProducts, productsURL);
