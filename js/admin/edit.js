@@ -20,6 +20,11 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
+// Redirect to product with id = 1 when deleting products
+if(!id){
+    location.href = "?id=1";
+}
+
 // URL
 const productUrl = baseURL + "/products/" + id;
 
