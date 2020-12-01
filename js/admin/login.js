@@ -20,7 +20,7 @@ function submitForm(event) {
     const passwordValue = password.value.trim();
 
     if (usernameValue.length === 0 || passwordValue.length === 0) {
-        return displayMessage("Invalid Values", ".message-container");
+        return displayMessage("feedback feedback--error", "Please insert a password or a username", ".message-container");
     }
 
     doLogin(usernameValue, passwordValue);
@@ -56,9 +56,10 @@ async function doLogin(username, password) {
         }
 
         if (json.error) {
-            displayMessage("Invalid login details", ".message-container");
+            displayMessage("feedback feedback--error", "Invalid login details", ".message-container");
         }
     } catch (error) {
         console.log(error);
+        displayMessage("feedback feedback--error", "Invalid login details", ".message-container");
     }
 }
