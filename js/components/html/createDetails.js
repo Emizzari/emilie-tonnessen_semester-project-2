@@ -1,5 +1,5 @@
-import { baseURL } from "../settings/api.js";
-import { getShoppingCart } from "../components/localStorage.js";
+import { baseURL } from "../settings/url.js";
+import { getShoppingCart } from "../storage/localStorage.js";
 
 // Looking for the id parameter
 const queryString = document.location.search;

@@ -1,5 +1,5 @@
-import {baseURL} from "../settings/api.js";
-import displayMessage from "../components/messages/displayMessage.js";
+import {baseURL} from "../settings/url.js";
+import displayMessage from "../messages/displayMessage.js";
 
 /* Products: */
 export function createProduct (products){

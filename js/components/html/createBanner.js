@@ -1,4 +1,4 @@
-import {baseURL} from "../settings/api.js";
+import {baseURL} from "../settings/url.js";
 
 export function createBanner(item){
 	const bannerContainer = document.querySelector(".hero__banner");

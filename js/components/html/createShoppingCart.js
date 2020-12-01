@@ -1,6 +1,6 @@
-import { baseURL } from "../settings/api.js";
+import { baseURL } from "../settings/url.js";
 import { getShoppingCart } from "../components/localStorage.js";
-import displayMessage from "../components/messages/displayMessage.js";
+import displayMessage from "../messages/displayMessage.js";
 
 export function createShoppingCart (){
     const shoppingCart = getShoppingCart();
