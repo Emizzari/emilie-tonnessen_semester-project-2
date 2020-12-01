@@ -8,7 +8,7 @@ import {productMenu} from "./productMenu.js";
 const token = getToken();
 
 if (!token) {
-    location.href = "/";
+    location.href = "/admin";
 }
 
 // Display Product Menu
@@ -76,7 +76,7 @@ async function addProduct(image, title, price, description, featured) {
         featured: featured 
     });
 
-    const token = getToken();
+    //const token = getToken();
 
     const options = {
         method: "POST",
