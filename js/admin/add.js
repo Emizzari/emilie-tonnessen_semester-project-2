@@ -1,8 +1,8 @@
 import displayMessage from "../components/messages/displayMessage.js";
-import {baseURL, productsURL} from "../settings/api.js";
-import {getToken} from "../components/localStorage.js";
-import {fetchAPI} from "../fetchAPI.js";
-import {productMenu} from "./productMenu.js";
+import {baseURL, productsURL} from "../components/settings/url.js";
+import {getToken} from "../components/storage/localStorage.js";
+import {fetchAPI} from "../components/settings/fetchAPI.js";
+import {productMenu} from "./components/menu/productMenu.js";
 
 // Redirecting to homepage if they are not logged in
 const token = getToken();
