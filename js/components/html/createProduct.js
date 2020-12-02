@@ -10,6 +10,7 @@ export function createProduct (products){
 
     if (products.length === 0) {
         displayMessage(
+            "feedback feedback--error",
             "No products found", 
             ".products"
         );
