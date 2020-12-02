@@ -27,31 +27,49 @@
 </head>
 
 <body>
-    <!-- Product Menu: -->
+    <!-- Admin Menu: -->
     <nav class="admin-menu">
+        <!-- Mobile Menu Icon: -->
+        <div class="admin-menu__icon">
+            <div class="nav__menu-icon col">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+
+        <!-- Breadcrumb: -->
         <a href="../index.html" class="admin-menu__breadcrumb link">
             Back to website 
             <i class="fal fa-angle-right"></i>
         </a>
 
-        <a class="admin-menu__button" href="./add-product.html">
-            <button class="btn btn--primary btn--sm">
+        <!-- Add Product Button -->
+        <a class="admin-menu__add-product-button" href="./add-product.html">
+            <button class="btn btn--tertiary btn--sm">
                 add product
             </button>
         </a>
     </nav>
 
-    <nav class="product-menu">
+    <!-- Product Menu: -->
+    <nav class="product-menu ">
+
+        <!-- Logo -->
         <div class="product-menu__brand">
             <a href="../index.html">
                 <img src="../graphics/logo/icon-primary.svg" alt="Varus Cosmetics Icon" class="product-menu__logo">
             </a>
         </div>
 
+        <!-- Dynamic Menu: -->
         <ul class="product-menu__list">
             <!-- Products here: -->
         </ul>
 
+        <!-- Logout Button: -->
         <button class="product-menu__button btn btn--secondary btn--sm" id="logout">
             Sign out
         </button>
@@ -122,11 +140,11 @@
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                     <!-- False: -->
                     <label class="btn btn-secondary featured__false" for="featured__false">
-                        <input type="radio" name="featured" id="featured__false" class="featured">false
+                        <input type="radio" name="featured" id="featured__false" class="featured">no
                     </label>
                     <!-- True: -->
                     <label class="btn btn-secondary featured__true" for="featured__true">
-                        <input type="radio" name="featured" id="featured__true" class="featured">true
+                        <input type="radio" name="featured" id="featured__true" class="featured">yes
                     </label>
                 </div>
             </section>
@@ -156,7 +174,7 @@
                     <div class="card-body">
 
                         <!-- Delete Button: -->
-                        <button class="btn btn--delete btn--sm edit__delete-button">
+                        <button class="btn btn--warning btn--sm edit__delete-button">
                             delete product
                         </button>
 

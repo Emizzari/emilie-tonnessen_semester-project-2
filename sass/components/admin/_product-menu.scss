@@ -1,16 +1,40 @@
 .product-menu{
     position: fixed;
     top: 0;
-    left: 0;
+    //left: 0;
     background: colors(grey, light);
     height: 100%;
     display: flex;
     flex-direction: column;
+    z-index: 888;
+    transition: .3s linear;
+   
+    @media screen and (max-width: 991px) {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 250px;
+    }
 
+    &--open{
+        @media screen and (max-width: 991px) {
+            left: 0px;
+        }
+    } 
+        
     &__brand{
         width: 40%;
         align-self: center;
         margin: 20px;
+
+        @media screen and (max-width: 991px) {
+            width: 30%;
+            padding: 10px;
+            margin: 0;
+            margin-right: 10px;
+            line-height: 60px;
+            align-self: flex-end;
+        }
     }
 
     &__logo{
@@ -20,6 +44,10 @@
     &__list{
         list-style: none;
         padding: 20px 50px;
+
+        @media screen and (max-width: 576px) {
+            padding: 15px;
+        }
     }
 
     &__item{
@@ -43,5 +71,7 @@
     &__button{
         margin: auto 20px 20px 20px;
     }
+
+   
 }
 

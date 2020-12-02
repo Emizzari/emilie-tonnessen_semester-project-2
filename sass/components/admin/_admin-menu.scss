@@ -1,12 +1,47 @@
 .admin-menu{
-    margin-left: 300px;
     padding: 0 15px;
     display: flex;
     flex-direction: row;
     line-height: 60px;
 
+    @media screen and (max-width: 991px) {
+        width: 100%;
+        margin: 0;
+        background: colors(secondary, light);
+        padding: 0;
+    }
 
-    &__button{
+    @media screen and (min-width: 992px) {
+        width: 630px;
+        margin-left: 300px;
+        display: flex;
+    }
+
+
+    &__icon{
+        width: 45px;
+        margin: auto 10px auto 0px;
+
+        @media screen and (min-width: 992px) {
+            display: none;
+        }
+    }
+
+    &__breadcrumb{
+        text-align: left;
+        margin: auto 0;
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+    }
+
+
+    &__add-product-button{
         margin: 15px 0 15px auto;
+        padding: 0;
+
+        @media screen and (max-width: 991px) {
+            margin: 10px 10px 10px auto;
+        }
     }
 }

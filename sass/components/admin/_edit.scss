@@ -1,20 +1,31 @@
 .edit{
 
     &__container{
-        margin-left: 300px;
-        max-width: 600px;
-        
+        margin-left: clamp(0px, 1vw, 300px);
+        max-width: 630px;
+        margin-bottom: clamp(15px, 10vw, 50px);
+
+        @media screen and (max-width: 991px) {
+            margin: 0 auto;
+            margin-bottom: clamp(30px, 10vw, 50px);
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 992px) {
+            margin-left: 300px;
+        }
     }
 
     &__title{
         font-size: clamp(25px, 5vw, 35px);
-        margin-bottom: 20px;
+        margin-bottom: clamp(10px, 5vw, 20px);
+        margin-top: clamp(15px, 5vw, 20px);
     }
 
     &__form{
         &__label{
             width: 100%;
-            margin-top: 25px;
+            margin-top: clamp(15px, 5vw, 25px);
             font-weight: 500;
         }
         
@@ -24,7 +35,7 @@
             outline: 0;
             border: 0;
             background: colors( grey, light);
-            width: 600px;
+            width: 100%;
             padding: 5px;
 
             &:focus{
@@ -39,14 +50,22 @@
         &__featured{
             margin-bottom: 30px;
         }
+
+        &__delete-button{
+            margin: 0;
+        }
     }
 
     &__advanced-option{
-        width: 600px;
+        width: clamp(200px, 90vw, 600px);
 
         & .card-header{
             padding: 0;
             margin-top: 30px;
+        }
+
+        & .card-body{
+            padding: clamp(15px, 5vw, 20px);
         }
     }
 }

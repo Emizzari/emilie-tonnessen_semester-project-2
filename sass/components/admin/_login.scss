@@ -13,8 +13,9 @@
     }
 
     &__brand{
-        max-width: 80%;
+        width: clamp(180px, 30vw, 200px);
         margin: 0 auto;
+        margin-bottom: 40px;
     }
 
     &__logo{
@@ -35,10 +36,12 @@
     }
 
     &__label{
-        padding: 0;
-        padding-top: 20px;
+        padding: 0px 0px 0px 0px;
         max-width: 300px;
-       
+
+        &--padding{
+            padding-top: 20px;
+        }
     }
 
     &__input{

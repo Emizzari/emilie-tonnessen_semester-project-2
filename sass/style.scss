@@ -7,9 +7,7 @@
 @import "./basics/typography";
 
 /* Components: */
-@import "./components/nav/nav";
-@import "./components/nav/nav-menu-icon";
-@import "./components/nav/nav-search";
+
 
 
 @import "./components/products/product-layout";
@@ -37,10 +35,13 @@
 @import "./components/admin/admin-menu";
 @import "./components/admin/edit";
 
-
+// Navigation
+@import "./components/nav/nav";
+@import "./components/nav/nav-menu-icon";
+@import "./components/nav/nav-search";
 
  // Small devices (landscape phones, 576px and up)
-            @media (min-width: 576px) {
+            @media (max-width: 576px) {
 
             }
 

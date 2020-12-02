@@ -1,3 +1,4 @@
+import mobileMenu from "../components/menu/mobile-menu.js";
 import displayMessage from "../components/messages/displayMessage.js";
 import {baseURL, productsURL} from "../components/settings/url.js";
 import {getToken} from "../components/storage/localStorage.js";

@@ -25,51 +25,58 @@
     <!-- Page Title: -->
     <title>Varus Cosmetics | Add Product</title>
 </head>
-    <!-- Product Menu: -->
+    <!-- Admin Menu: -->
     <nav class="admin-menu">
-        <a href="../index.html" class="admin-menu__breadcrumb link">Back to website <i class="fal fa-angle-right"></i></a>
+        <!-- Mobile Menu Icon: -->
+        <div class="admin-menu__icon">
+            <div class="nav__menu-icon col">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     
-        <!-- <a class="admin-menu__button" href="./add-product.html">
-            <button class="btn btn--primary btn--sm">
+    
+        <!-- Breadcrumb: -->
+        <a href="../index.html" class="admin-menu__breadcrumb link">
+            Back to website
+            <i class="fal fa-angle-right"></i>
+        </a>
+    
+        <!-- Add Product Button -->
+        <a class="admin-menu__add-product-button" href="./add-product.html">
+            <button class="btn btn--tertiary btn--sm">
                 add product
             </button>
-        </a> -->
+        </a>
     </nav>
     
-    <nav class="product-menu">
+    <!-- Product Menu: -->
+    <nav class="product-menu ">
+    
+        <!-- Logo -->
         <div class="product-menu__brand">
             <a href="../index.html">
                 <img src="../graphics/logo/icon-primary.svg" alt="Varus Cosmetics Icon" class="product-menu__logo">
             </a>
         </div>
     
+        <!-- Dynamic Menu: -->
         <ul class="product-menu__list">
             <!-- Products here: -->
         </ul>
     
-        <button class="product-menu__button btn btn--secondary btn--sm">Sign out</button>
+        <!-- Logout Button: -->
+        <button class="product-menu__button btn btn--secondary btn--sm" id="logout">
+            Sign out
+        </button>
     </nav>
     
     
     <div class="container edit__container">
         <!-- Title: -->
         <h4 class="edit__title">Add new Product</h4>
-    
-        <!-- Loader: -->
-        <!-- <div class="loader">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div> -->
     
         <!-- Form: -->
         <form class="edit__form">
