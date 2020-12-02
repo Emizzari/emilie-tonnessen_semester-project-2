@@ -1,5 +1,5 @@
 .btn{
-    margin-top: 20px;
+    //margin-top: 20px;
     text-transform: uppercase;
     transition: .15s ease-in-out;
     border-radius: 0;
@@ -34,7 +34,18 @@
         }
     }
 
-    &--delete{
+    &--tertiary{
+        background: colors(tertiary);
+        color: white;
+        font-weight: 700;
+
+        &:hover{
+            background: colors(secondary);
+            color: white;
+        }
+    }
+
+    &--warning{
         background: rgb(189, 0, 0);
         color: white;
 
