@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,UAAU,EAAE,IAAI;CACnB",
-    "sources": [
-        "../sass/components/header.scss"
-    ],
-    "names": [],
-    "file": "header.css"
-}
