@@ -953,9 +953,6 @@ body, button {
   width: 100%;
   margin: 0;
   padding: 0;
-  /* &__container{
-            justify-content: center;
-        } */
 }
 
 .cart__products__table-titles {
@@ -982,9 +979,21 @@ body, button {
   border-bottom: 1px solid #949494;
 }
 
+@media screen and (max-width: 991px) {
+  .cart__products__card {
+    padding: 30px 0px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .cart__products__card__image {
     max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cart__products__card__image {
+    padding: 0;
   }
 }
 
@@ -993,7 +1002,7 @@ body, button {
 }
 
 .cart__products__card__title {
-  padding: 0;
+  padding: 0 0 7px 0;
 }
 
 .cart__products__card__desc {
@@ -1009,6 +1018,13 @@ body, button {
     max-width: 130px;
     text-align: right;
     padding: 10px 15px 0 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cart__products__card__price {
+    font-size: 17px;
+    padding: 10px 10px 0 10px;
   }
 }
 
@@ -1401,7 +1417,8 @@ body, button {
 
 @media screen and (max-width: 991px) {
   .nav__logo {
-    padding-left: 20px;
+    padding-left: clamp(10px, 2vw, 20px);
+    height: clamp(65px, 10vw, 80px);
   }
 }
 
@@ -1448,6 +1465,12 @@ body, button {
   .nav__menu {
     border-top: 1px solid black;
   }
+}
+
+.nav__menu-icon {
+  width: 40px;
+  padding: 0;
+  height: 100%;
 }
 
 @media (min-width: 992px) {
