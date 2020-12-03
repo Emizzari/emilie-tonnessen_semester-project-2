@@ -1,6 +1,10 @@
 .products{
     margin: 0 0 200px 0;
     justify-content: space-between;
+
+    @media screen and (max-width: 567px) {
+        justify-content: center;
+    }
 }
 
 .filter{
