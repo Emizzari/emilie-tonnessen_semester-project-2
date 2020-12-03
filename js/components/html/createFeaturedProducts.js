@@ -5,7 +5,7 @@ export function createFeaturedProducts(products){
 
     featuredProductsContainer.innerHTML = "";
 
-    /* Loop through true objects */
+    /* Loop through featured = true objects */
     const filteredProducts = products.filter(function (product) {
             if (product.featured === true) {
                 return true;

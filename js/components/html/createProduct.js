@@ -24,7 +24,7 @@ export function createProduct (products){
                 <div class="product__content">
                     <h5 class="product__title">${product.title}</h5>      
                    
-                    <p class="product__price">${product.price} €</p>
+                    <p class="product__price">${product.price} NOK</p>
                 </div>
                 <a href="./details.html?id=${product.id}" class="btn btn--primary btn--sm product__button">
                     details

@@ -48,6 +48,10 @@
         }
     }
 
+    &__button{
+        margin-top: clamp(15px, 5vw, 20px);
+    }
+
     &__banner{
         background-position: 60% 0% !important;
         background-repeat: no-repeat;
