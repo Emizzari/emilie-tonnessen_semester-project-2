@@ -651,7 +651,7 @@ body, button {
 }
 
 .ads__main-event {
-  background: url("../../graphics/ad/main4.jpg");
+  background: url("../graphics/ad/main-event.jpg");
   background-position: 0% 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -666,7 +666,7 @@ body, button {
 }
 
 .ads__news {
-  background: url("../../graphics/ad/test3.jpg");
+  background: url("../graphics/ad/news.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -679,7 +679,7 @@ body, button {
 }
 
 .ads__ideas {
-  background: url("../../graphics/ad/test6.jpg");
+  background: url("../graphics/ad/ideas.jpg");
   background-position: 0% 70%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -693,7 +693,7 @@ body, button {
 }
 
 .ads__newsletter {
-  background: url("../../graphics/ad/test4.jpg");
+  background: url("../graphics/ad/newsletter.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
