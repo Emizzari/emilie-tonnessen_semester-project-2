@@ -202,7 +202,7 @@ body, button {
 
 /* Components: */
 .products {
-  margin: 0;
+  margin: 0 0 200px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -949,20 +949,21 @@ body, button {
   color: #e02b4f;
 }
 
+.cart__products {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* &__container{
+            justify-content: center;
+        } */
+}
+
 .cart__products__table-titles {
   border-bottom: 1px solid #949494;
   padding: 50px 0 10px 0;
-}
-
-.cart__products__table-titles__quantity {
-  text-align: center;
-  padding: 0;
-}
-
-@media screen and (min-width: 992px) {
-  .cart__products__table-titles__quantity {
-    max-width: 180px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .cart__products__table-titles__price {
@@ -975,16 +976,10 @@ body, button {
   }
 }
 
-.cart__products__container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .cart__products__card {
-  padding: 20px 0px;
+  padding: 10px 0px;
+  margin: 0px;
   border-bottom: 1px solid #949494;
-  width: 100%;
 }
 
 @media screen and (min-width: 992px) {
@@ -994,40 +989,35 @@ body, button {
 }
 
 .cart__products__card__content {
-  padding: 10px 0;
+  padding: 10px;
 }
 
-.cart__products__card__quantity {
-  font-size: 18px;
+.cart__products__card__title {
+  padding: 0;
 }
 
-@media screen and (min-width: 992px) {
-  .cart__products__card__quantity {
-    max-width: 150px;
-    text-align: center;
-    padding: 0;
-  }
+.cart__products__card__desc {
+  padding: 0 0 15px 0;
 }
 
-.cart__products__card__quantity i {
-  padding: 0 5px;
-}
-
-.cart__products__card__quantity i:hover {
-  cursor: pointer;
+.cart__products__card__price {
+  font-weight: 700;
 }
 
 @media screen and (min-width: 992px) {
   .cart__products__card__price {
     max-width: 130px;
     text-align: right;
-    padding: 0;
+    padding: 10px 15px 0 0;
   }
 }
 
 .cart__products__total {
   border-bottom: 2px solid #141414;
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .cart__products__total__text {
