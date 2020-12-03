@@ -10,6 +10,10 @@
             padding: 50px 0 10px 0;
             display: flex;
 
+            @media screen and (max-width: 991px) {
+                    display: none
+                }
+
             &__price{
                 text-align: right;
 
@@ -30,11 +34,15 @@
 
 
             &__image{
-                @media screen and (min-width: 992px) {
-                    max-width: 200px;
+                @media screen and (max-width: 991px) {
+                    max-width: 250px;
+                    padding: 0;
                 }
 
-                @media screen and (max-width: 991px) {
+                @media screen and (min-width: 992px) {
+                    max-width: 200px;
+                    height: 200px;
+                    margin: 0 15px;
                     padding: 0;
                 }
             }
@@ -90,7 +98,7 @@
 
     
     &__checkout-btn{
-        margin-bottom: 100px;
+        margin: 20px 0;
     }
 
 
