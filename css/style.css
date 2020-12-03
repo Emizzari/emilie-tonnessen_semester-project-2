@@ -1625,6 +1625,7 @@ body, button {
 .search--lg {
   padding: 0px;
   padding: 25px 0;
+  max-width: 255px;
 }
 
 @media (max-width: 991px) {
@@ -1636,6 +1637,9 @@ body, button {
 .search--sm {
   padding: 25px 20px;
   background: #eeeeee;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 992px) {
@@ -1651,9 +1655,11 @@ body, button {
 
 .search__input {
   border: 0;
+  border-radius: 0;
   background: #eeeeee;
-  height: 30px;
+  height: 35px;
   padding: 2px 5px;
+  width: 220px;
 }
 
 .search__input:focus {
@@ -1661,12 +1667,14 @@ body, button {
 }
 
 .search__btn {
+  text-align: center;
   background: #e02b4f;
   color: white;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border: 0;
   outline: 0;
+  padding: 0;
 }
 
 .search__btn:hover {
