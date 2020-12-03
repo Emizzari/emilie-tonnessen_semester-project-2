@@ -1,11 +1,9 @@
 .cart{
-    
-
     &__products{
         width: 100%;
         margin: 0;
         padding: 0;
-        // overflow: auto;
+
 
         &__table-titles{
             border-bottom: 1px solid colors(grey, dark);
@@ -21,21 +19,23 @@
             }
         }
 
-        /* &__container{
-            justify-content: center;
-        } */
-
         &__card{
             padding: 10px 0px;
-            margin: 0px;
-            
+            margin: 0px; 
             border-bottom: 1px solid colors(grey, dark);
-            //width: 100%;
+
+            @media screen and (max-width: 991px) {
+                padding: 30px 0px;
+            }
+
 
             &__image{
-
                 @media screen and (min-width: 992px) {
                     max-width: 200px;
+                }
+
+                @media screen and (max-width: 991px) {
+                    padding: 0;
                 }
             }
 
@@ -44,7 +44,7 @@
             }
 
             &__title{
-                padding: 0;
+                padding: 0 0 7px 0;
             }
 
             &__desc{
@@ -58,6 +58,11 @@
                     max-width: 130px;
                     text-align: right;
                     padding: 10px 15px 0 0;
+                }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 17px;
+                    padding: 10px 10px 0 10px;
                 }
             }
         }
