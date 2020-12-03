@@ -24,18 +24,13 @@ export function createShoppingCart (){
                 <img src="${product.image}" alt="${product.title}" class="col-sm-12 col-md-4 col-lg cart__products__card__image">
 
                 <div class="cart__products__card__content col-sm-12 col-lg ">
-                    <h5 class="product__title col-sm-12">${product.title}</h5>
-                    <p class="product__desc col-sm-12">
+                    <h5 class="cart__products__card__title col-sm-12">${product.title}</h5>
+                    <p class="cart__products__card__desc col-sm-12">
                         ${product.description}
                     </p>
-                    <a href="${product.url}" class="product__link link">
-                        View Product <i class="fal fa-chevron-right"></i>
+                    <a href="${product.url}" class="cart__products__card__link link">
+                        View Product <i class="fal fa-angle-right"></i>
                     </a>
-                </div>
-                <div class="col-sm cart__products__card__quantity ">
-                    <i class="fal fa-minus-circle"></i>
-                    1
-                    <i class="fal fa-plus-circle"></i>
                 </div>
                 <p class="cart__products__card__price col-sm">
                     ${product.price} NOK
