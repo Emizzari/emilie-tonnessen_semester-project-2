@@ -168,28 +168,26 @@
             <h4 class="header__title">Shopping Cart <span class="cart__total-items">(0)</span></h4>
         </header>
 
-
-        <main class="main container">
+        <!-- tHis div has child element going outside -->
+        <main class="cart container clearfix"> 
 
             <!-- Product List -->
-            <section class="cart__products row">
+            <section class="cart__products  clearfix ">
 
-                <!-- Table Text -->
-                <div class="cart__products__table-titles row col-12">
+                <!-- Table Titles -->
+                <div class="cart__products__table-titles col-12">
                     <h6 class="cart__products__table-titles__products col">Products</h6>
-                    <div class="col"></div>
-                    <h6 class="cart__products__table-titles__quantity col">Quantity</h6>
                     <h6 class="col cart__products__table-titles__price">Price</h6>
                 </div>
 
                 <!-- Products: -->
-                <div class="cart__products__container col-12 row"></div>
+                <div class="cart__products__container col-12 "></div>
                 
 
                 <!-- Total Price -->
-                <div class="cart__products__total col-12 row">
+                <div class="cart__products__total col-12 ">
                     <p class="cart__products__total__text col">Totalt price</p>
-                    <p class="cart__products__total__price col">499 NOK</p>
+                    <p class="cart__products__total__price col">0 NOK</p>
                 </div>
 
             </section>
@@ -227,7 +225,7 @@
             </section>
 
             <!-- Checkout Button: -->
-            <section class="cart__checkout-btn row">
+            <section class="cart__checkout-btn">
                 <a href="#" class="btn btn--tertiary btn--lg col-12">
                     Go to checkout
                 </a>
