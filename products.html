@@ -48,11 +48,10 @@
                     </div>
         
                     <!-- Large Viewport Searchbar: -->
-                    <div class="search search--lg col">
-                        <input type="text" class="search__input"><button href="#" class="search__btn">
-                            <i class="far fa-search"></i>
-                        </button>
-                    </div>
+                    <form class="form-inline search search--lg col">
+                        <input class="form-control search__input" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn--primary search__btn" type="submit"><i class="far fa-search"></i></button>
+                    </form>
         
                     <!-- Shopping Icons: -->
                     <div class="nav__icons col">
@@ -62,18 +61,17 @@
                             </a>
                             <div class="cart__icon-quantity">0</div>
                         </div>
-                    
+        
                         <i class="fal fa-user"></i>
                     </div>
         
                 </div>
         
                 <!-- Small Viewport Searchbar: -->
-                <div class="search search--sm col">
-                    <input type="text" class="search__input"><button class="search__btn">
-                        <i class="far fa-search"></i>
-                    </button>
-                </div>
+                <form class="form-inline search search--sm col">
+                    <input class="form-control search__input" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn--primary search__btn" type="submit"><i class="far fa-search"></i></button>
+                </form>
         
                 <!-- Menu: -->
                 <div class="nav__menu col-lg-12">
