@@ -8,8 +8,6 @@ import { form } from "./components/form/containerVariables.js";
 import { submitForm } from "./components/form/submitForm.js";
 
 // Redirecting to homepage if they are not logged in
-const token = getToken();
-
 if (!token) {
     location.href = "/admin";
 }
