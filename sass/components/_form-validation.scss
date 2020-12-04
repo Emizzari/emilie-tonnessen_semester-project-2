@@ -1,0 +1,12 @@
+.error{
+    color: rgb(223, 0, 0);
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+#image-error,
+#title-error,
+#price-error,
+#description-error{
+    display: none;
+}
