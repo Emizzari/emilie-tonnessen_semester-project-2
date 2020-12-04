@@ -6,6 +6,7 @@ import deleteButton from "./components/buttons/deleteButton.js";
 import {fetchAPI} from "../components/settings/fetchAPI.js";
 import {productMenu} from "./components/menu/productMenu.js";
 import logoutButton from "./components/buttons/logoutButton.js";
+import {updateProduct} from "./components/form/updateProduct.js";
 
 // Redirecting to homepage if they are not logged in
 const token = getToken();
@@ -117,42 +118,3 @@ function submitForm(event) {
 
     updateProduct(imageValue, titleValue, priceValue, descriptionValue, featuredValue, idValue);
 }
-
-// Update Product
-async function updateProduct(image, title, price, description, featured, id) {
-    const url = baseURL + "/products/" + id;
-    
-    const data = JSON.stringify({ 
-        image_url: image,
-        title: title, 
-        price: price, 
-        description: description,
-        featured: featured 
-    });
-
-    const options = {
-        method: "PUT",
-        body: data,
-        headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-        },
-    };
-
-    try {
-        const response = await fetch(url, options);
-        const json = await response.json();
-        console.log(json);
-
-        if (json.updated_at) {
-            displayMessage("feedback feedback--success", "Product updated", ".edit__form__feedback");
-            fetchAPI(productMenu, productsURL);
-        }
-
-        if (json.error) {
-            displayMessage("feedback feedback--error", json.message, ".edit__form__feedback");
-        }
-    } catch (error) {
-        console.log(error);
-    }
-} 
