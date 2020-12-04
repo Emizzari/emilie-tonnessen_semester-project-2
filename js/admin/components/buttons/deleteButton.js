@@ -1,5 +1,5 @@
 import {baseURL} from "../../../components/settings/url.js";
-import {getToken} from "../../../components/storage/localStorage.js";
+import {token} from "../../../components/storage/localStorage.js";
 
 export default function deleteButton(id) {
     const button = document.querySelector(".edit__delete-button");
@@ -12,8 +12,6 @@ export default function deleteButton(id) {
 
         if (doDelete) {
             const url = baseURL + "/products/" + id;
-
-            const token = getToken();
 
             const options = {
                 method: "DELETE",

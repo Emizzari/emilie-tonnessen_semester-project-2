@@ -1,10 +1,8 @@
 import { baseURL, productsURL } from "../../../components/settings/url.js";
-import {getToken} from "../../../components/storage/localStorage.js";
+import {token} from "../../../components/storage/localStorage.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
 import {fetchAPI} from "../../../components/settings/fetchAPI.js";
 import {productMenu} from "../../components/menu/productMenu.js";
-
-const token = getToken(); 
 
 export async function updateProduct(image, title, price, description, featured, id) {
     const url = baseURL + "/products/" + id;

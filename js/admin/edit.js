@@ -1,6 +1,6 @@
 import mobileMenu from "../components/menu/mobile-menu.js";
 import { baseURL, productsURL } from "../components/settings/url.js";
-import { getToken } from "../components/storage/localStorage.js";
+import { token } from "../components/storage/localStorage.js";
 import deleteButton from "./components/buttons/deleteButton.js";
 import { fetchAPI } from "../components/settings/fetchAPI.js";
 import { productMenu } from "./components/menu/productMenu.js";
@@ -9,8 +9,6 @@ import { submitForm} from "./components/form/submitForm.js";
 import { form, title, price, description, idInput, loading, image, featured, labelFalse, labelTrue } from "./components/form/containerVariables.js";
 
 // Redirecting to homepage if they are not logged in
-const token = getToken();
-
 if (!token) {
     location.href = "/admin";
 }
