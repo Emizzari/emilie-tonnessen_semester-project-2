@@ -1,14 +1,13 @@
 import { updateProduct } from "./updateProduct.js";
-
-const message = document.querySelector(".edit__form__feedback");
-const featuredTrue = document.querySelector("#featured__true");
-const idInput = document.querySelector("#id");
+import { feedback, featuredTrue, idInput } from "./containerVariables.js";
+import { validateForm } from "./formValidation.js";
+import displayMessage from "../../../components/messages/displayMessage.js";
 
 // Submit Form Function
 export function submitForm(event) {
     event.preventDefault();
 
-    message.innerHTML = "";
+    feedback.innerHTML = "";
 
     const imageValue = image.value;
     const titleValue = title.value.trim();
