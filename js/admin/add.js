@@ -16,21 +16,7 @@ if (!token) {
 
 // Display Product Menu
 fetchAPI(productMenu, productsURL);
-
-// Container Variables
-const form = document.querySelector(".edit__form");
-const title = document.querySelector("#title");
-const price = document.querySelector("#price");
-const description = document.querySelector("#description");
-const idInput = document.querySelector("#id");
-const message = document.querySelector(".edit__form__feedback");
-const loading = document.querySelector(".loader");
-const image = document.querySelector("#image");
-const featured = document.querySelectorAll(".featured");
-const featuredFalse = document.querySelector("#featured__false");
-const labelFalse = document.querySelector(".featured__false");
-const labelTrue = document.querySelector(".featured__true");
-const featuredTrue = document.querySelector("#featured__true");
+logoutButton();
 
 // Listen for button click
 form.addEventListener("submit", submitForm);
