@@ -28,5 +28,9 @@ export function submitForm(event) {
         return displayMessage("feedback feedback--error", "Please enter proper values", ".edit__form__feedback");
     }
 
-    updateProduct(imageValue, titleValue, priceValue, descriptionValue, featuredValue, idValue);
+    if(document.URL.includes("add-product")){
+        addProduct(imageValue, titleValue, priceValue, descriptionValue, featuredValue);
+    } else{
+        updateProduct(imageValue, titleValue, priceValue, descriptionValue, featuredValue, idValue);
+    }
 }
