@@ -1,4 +1,3 @@
-import { baseURL } from "../settings/url.js";
 import { getShoppingCart } from "../storage/localStorage.js";
 import displayMessage from "../messages/displayMessage.js";
 
