@@ -23,6 +23,8 @@ export function getToken(){
     return getFromStorage(tokenKey);
 }
 
+export const token = getToken();
+
 // Save User
 export function saveUser(user){
     saveToStorage(userKey, user);
