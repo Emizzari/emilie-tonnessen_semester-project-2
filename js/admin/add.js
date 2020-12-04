@@ -4,6 +4,7 @@ import {baseURL, productsURL} from "../components/settings/url.js";
 import {getToken} from "../components/storage/localStorage.js";
 import {fetchAPI} from "../components/settings/fetchAPI.js";
 import {productMenu} from "./components/menu/productMenu.js";
+import { feedback } from "./components/form/containerVariables.js";
 
 // Redirecting to homepage if they are not logged in
 const token = getToken();
@@ -37,7 +38,7 @@ form.addEventListener("submit", submitForm);
 function submitForm(event) {
     event.preventDefault();
 
-    message.innerHTML = "";
+    feedback.innerHTML = "";
 
     const imageValue = image.value;
     const titleValue = title.value.trim();
