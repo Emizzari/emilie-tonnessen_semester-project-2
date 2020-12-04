@@ -24,15 +24,8 @@ export function submitForm(event) {
 
     const idValue = idInput.value;
 
-    if (
-        imageValue === 0 ||
-        titleValue.length === 0 || 
-        priceValue.length === 0 || 
-        isNaN(priceValue) || 
-        descriptionValue.length === 0 ||
-        featuredValue === null
-        ){
-        return displayMessage("feedback feedback--error", "Please supply proper values", ".edit__form__feedback");
+    if (validateForm() === false){
+        return displayMessage("feedback feedback--error", "Please enter proper values", ".edit__form__feedback");
     }
 
     updateProduct(imageValue, titleValue, priceValue, descriptionValue, featuredValue, idValue);

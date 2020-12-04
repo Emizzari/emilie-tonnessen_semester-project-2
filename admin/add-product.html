@@ -88,6 +88,11 @@
                     Image URL
                 </label>
                 <input type="text" name="image" id="image" class="edit__form__input">
+                <div class="error" id="image-error">
+                    <i class="fa fa-exclamation-circle"></i>
+                    Please enter a valid URL: Example
+                    <span class="bold"> https://www.tonnessen.com</span>
+                </div>
             </section>
     
             <!-- Title -->
@@ -96,6 +101,10 @@
                     Title
                 </label>
                 <input id="title" class="edit__form__input" />
+                <div class="error" id="title-error">
+                    <i class="fa fa-exclamation-circle"></i>
+                    Please enter an appropiate title
+                </div>
             </section>
     
             <!-- Price -->
@@ -104,6 +113,10 @@
                     Price
                 </label>
                 <input id="price" class="edit__form__input" />
+                <div class="error" id="price-error">
+                    <i class="fa fa-exclamation-circle"></i>
+                    Please enter a number: Example 199 or 199.99
+                </div>
             </section>
     
             <!-- Description -->
@@ -112,6 +125,10 @@
                     Description
                 </label>
                 <textarea id="description" class="edit__form__textarea"></textarea>
+                <div class="error" id="description-error">
+                    <i class="fa fa-exclamation-circle"></i>
+                    Please enter a description with more than 5 letters
+                </div>
             </section>
     
             <!-- Featured: -->
