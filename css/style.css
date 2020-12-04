@@ -103,6 +103,10 @@ img, iframe {
 }
 
 /* ---------------------------------------------- */
+.bold {
+  font-weight: 700;
+}
+
 .section {
   margin: 100px 0px;
 }
@@ -1094,6 +1098,19 @@ body, button {
   color: white;
   width: 23px;
   height: 23px;
+}
+
+.error {
+  color: #df0000;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+#image-error,
+#title-error,
+#price-error,
+#description-error {
+  display: none;
 }
 
 /* Admin: */
