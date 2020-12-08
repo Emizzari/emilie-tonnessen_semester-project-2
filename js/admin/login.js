@@ -52,7 +52,7 @@ async function doLogin(username, password) {
             saveToken(json.jwt);
             saveUser(json.user);
 
-            location.href = "/admin/edit-product.html?id=1";
+            location.href = "./edit-product.html";
         }
 
         if (json.error) {
