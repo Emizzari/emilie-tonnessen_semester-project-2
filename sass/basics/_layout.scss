@@ -41,6 +41,10 @@ img, iframe {
 
 .section{
     margin: 100px 0px;
+
+    @media screen and (max-width: 567px) {
+        margin: 50px 0px;
+    }
 }
 
 .display-message{
