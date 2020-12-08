@@ -42,9 +42,10 @@
         font-size: 25px;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
     
         & i:last-child{
-            margin-left: 10px;
+            margin-left: 15px;
         }
 
         & i:hover{
