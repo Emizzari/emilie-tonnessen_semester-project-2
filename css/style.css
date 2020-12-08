@@ -126,22 +126,6 @@ img, iframe {
   text-align: center;
 }
 
-.feedback--success {
-  background: #add8ad;
-  width: 200px;
-  text-align: center;
-  padding: 15px;
-}
-
-.feedback--error {
-  background: #d63737;
-  color: white;
-  font-weight: 500;
-  width: 200px;
-  text-align: center;
-  padding: 15px;
-}
-
 /*  
     RULES:
         h1 - Headline, homepage only
@@ -489,8 +473,8 @@ body, button {
   -webkit-transition: .15s ease-in-out;
   transition: .15s ease-in-out;
   border-radius: 0;
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15), -5px -5px 20px rgba(255, 255, 255, 0.1);
-          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15), -5px -5px 20px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px rgba(255, 255, 255, 0.1);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1), -5px -5px 20px rgba(255, 255, 255, 0.1);
 }
 
 .btn:hover {
@@ -563,6 +547,12 @@ body, button {
 .btn--sm {
   padding: 10px 20px;
   font-weight: 600;
+}
+
+.btn--xs {
+  padding: 8px 10px;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 .btn--cta {
@@ -951,6 +941,13 @@ body, button {
   }
 }
 
+@media screen and (max-width: 567px) {
+  .featured__title--cart {
+    max-width: 260px;
+    padding: 0;
+  }
+}
+
 .featured__line {
   height: 1px;
   background: black;
@@ -974,13 +971,37 @@ body, button {
   margin: 50px 0;
 }
 
+@media screen and (max-width: 567px) {
+  .details__content-container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .details__images {
+    padding: 0 0 15px 0;
+  }
+}
+
 .details__images img {
   width: 100%;
+}
+
+@media screen and (max-width: 567px) {
+  .details__images img {
+    padding: 0;
+  }
 }
 
 .details__content {
   margin-left: 30px;
   padding-top: clamp(0px, 3vw, 30px);
+}
+
+@media screen and (max-width: 567px) {
+  .details__content {
+    margin: 0;
+  }
 }
 
 .details__title {
@@ -993,7 +1014,11 @@ body, button {
   font-size: clamp(17px, 3vw, 22px);
 }
 
-.details a i {
+.details__btn {
+  margin-top: 15px;
+}
+
+.details__btn i {
   padding-left: 10px;
 }
 
@@ -1060,6 +1085,12 @@ body, button {
   padding: 0;
 }
 
+@media screen and (max-width: 567px) {
+  .cart__products__container {
+    padding: 0;
+  }
+}
+
 .cart__products__table-titles {
   border-bottom: 1px solid #949494;
   padding: 50px 0 10px 0;
@@ -1085,18 +1116,26 @@ body, button {
 }
 
 .cart__products__card {
-  padding: 10px 0px;
+  padding: 15px 0px;
   margin: 0px;
   border-bottom: 1px solid #949494;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 991px) and (min-width: 568px) {
   .cart__products__card {
     padding: 30px 0px;
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 567px) {
+  .cart__products__card__image {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
   .cart__products__card__image {
     max-width: 250px;
     padding: 0;
@@ -1116,16 +1155,40 @@ body, button {
   padding: 10px;
 }
 
+@media screen and (max-width: 567px) {
+  .cart__products__card__content {
+    padding: 0 0 10px 10px;
+  }
+}
+
 .cart__products__card__title {
   padding: 0 0 7px 0;
+}
+
+@media screen and (max-width: 567px) {
+  .cart__products__card__title {
+    font-size: 14px;
+  }
 }
 
 .cart__products__card__desc {
   padding: 0 0 15px 0;
 }
 
+@media screen and (max-width: 567px) {
+  .cart__products__card__desc {
+    font-size: 12px;
+  }
+}
+
 .cart__products__card__price {
   font-weight: 700;
+}
+
+@media screen and (max-width: 567px) {
+  .cart__products__card__price {
+    margin-left: 100px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1153,9 +1216,12 @@ body, button {
 
 .cart__products__total__text {
   margin-left: 20px;
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(14px, 2vw, 30px);
   font-weight: 700;
   text-transform: uppercase;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .cart__products__total__price {
@@ -1204,6 +1270,45 @@ body, button {
 #price-error,
 #description-error {
   display: none;
+}
+
+.feedback--success {
+  background: #add8ad;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+}
+
+.feedback--error {
+  background: #d63737;
+  color: white;
+  font-weight: 500;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 567px) {
+  .feedback--error {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+.feedback--warning {
+  background: #cc7818;
+  color: white;
+  font-weight: 500;
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+}
+
+@media screen and (max-width: 567px) {
+  .feedback--warning {
+    width: 100%;
+    margin: 20px 0;
+  }
 }
 
 /* Admin: */
@@ -1268,6 +1373,10 @@ body, button {
   outline: 1px solid black;
 }
 
+.form-login__btn {
+  margin-top: 20px;
+}
+
 .product-menu {
   position: fixed;
   top: 0;
@@ -1310,13 +1419,7 @@ body, button {
 
 @media screen and (max-width: 991px) {
   .product-menu__brand {
-    width: 30%;
-    padding: 10px;
-    margin: 0;
-    margin-right: 10px;
-    line-height: 60px;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    display: none;
   }
 }
 
@@ -1332,6 +1435,7 @@ body, button {
 @media screen and (max-width: 576px) {
   .product-menu__list {
     padding: 15px;
+    margin-top: 60px;
   }
 }
 
@@ -1373,7 +1477,7 @@ body, button {
   .admin-menu {
     width: 100%;
     margin: 0;
-    background: #b01f34;
+    background: #e02b4f;
     padding: 0;
   }
 }
@@ -1399,13 +1503,25 @@ body, button {
   }
 }
 
-.admin-menu__breadcrumb {
+.admin-menu__breadcrumb--lg {
   text-align: left;
   margin: auto 0;
+  display: block;
 }
 
 @media screen and (max-width: 991px) {
-  .admin-menu__breadcrumb {
+  .admin-menu__breadcrumb--lg {
+    display: none;
+  }
+}
+
+.admin-menu__breadcrumb--sm {
+  display: block;
+  padding-top: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .admin-menu__breadcrumb--sm {
     display: none;
   }
 }
@@ -1424,13 +1540,12 @@ body, button {
 .edit__container {
   margin-left: clamp(0px, 1vw, 300px);
   max-width: 630px;
-  margin-bottom: clamp(15px, 10vw, 50px);
+  margin-bottom: 50px;
 }
 
 @media screen and (max-width: 991px) {
   .edit__container {
     margin: 0 auto;
-    margin-bottom: clamp(30px, 10vw, 50px);
     max-width: 100%;
   }
 }
@@ -1478,8 +1593,13 @@ body, button {
   margin: 0;
 }
 
+.edit__form__button--add {
+  margin-bottom: 50px;
+}
+
 .edit__advanced-option {
   width: clamp(200px, 90vw, 600px);
+  margin-bottom: 80px;
 }
 
 .edit__advanced-option .card-header {
