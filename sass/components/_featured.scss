@@ -3,6 +3,10 @@
     position: relative;
     margin: 100px 0;
 
+    @media screen and (max-width: 567px){
+        margin: 50px 0;
+    }
+
 
     &__title{
         text-align: center;
@@ -13,6 +17,12 @@
         z-index: 555;
         margin-right: auto;
         margin-left: auto;
+
+        @media screen and (max-width: 567px){
+            max-width: 210px;
+            padding: 0;
+        }
+
     }
 
     &__line{
@@ -22,5 +32,9 @@
             top: 20px;
             width: 100%;
             z-index: -55;
+
+            @media screen and (max-width: 567px){
+                top: 12px;
+            }
         }
 }
