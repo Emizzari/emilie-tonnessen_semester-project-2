@@ -111,6 +111,12 @@ img, iframe {
   margin: 100px 0px;
 }
 
+@media screen and (max-width: 567px) {
+  .section {
+    margin: 50px 0px;
+  }
+}
+
 .display-message {
   padding: 30px;
   margin: 30px;
@@ -217,6 +223,7 @@ body, button {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0 0 50px 0;
   }
 }
 
@@ -433,6 +440,12 @@ body, button {
   text-align: right;
 }
 
+@media screen and (max-width: 360px) {
+  .benefits__container--extra-padding {
+    padding-left: 11px;
+  }
+}
+
 .footer {
   background: #e02b4f;
   padding-top: clamp(20px, 6vw, 100px);
@@ -558,6 +571,11 @@ body, button {
   font-size: clamp(18px, 5vw, 20px);
 }
 
+.btn--input {
+  padding: 3px 6px;
+  font-size: 14px;
+}
+
 .link {
   color: #e02b4f;
   text-decoration: none;
@@ -664,17 +682,34 @@ body, button {
 
 .ads__main-event {
   background: url("../graphics/ad/main-event.jpg");
-  background-position: 0% 100%;
+  background-position: 0% 0%;
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
 }
 
+@media screen and (max-width: 567px) {
+  .ads__main-event {
+    height: 300px;
+    background-position: 100% 0%;
+  }
+}
+
 .ads__main-event__content {
   padding: 250px 10px;
   max-width: 380px;
-  color: #bd0000;
+  color: #d30d0d;
   text-align: center;
+}
+
+@media screen and (max-width: 567px) {
+  .ads__main-event__content {
+    padding: 80px 10px;
+  }
+}
+
+.ads__main-event__content a {
+  margin-top: 15px;
 }
 
 .ads__news {
@@ -685,9 +720,25 @@ body, button {
   height: 290px;
 }
 
+@media screen and (max-width: 567px) {
+  .ads__news {
+    height: 300px;
+  }
+}
+
 .ads__news__content {
   color: #e02b4f;
   padding-top: 130px;
+}
+
+@media screen and (max-width: 567px) {
+  .ads__news__content {
+    padding-top: 160px;
+  }
+}
+
+.ads__news__content a {
+  margin-top: 15px;
 }
 
 .ads__ideas {
@@ -698,10 +749,26 @@ body, button {
   height: 290px;
 }
 
+@media screen and (max-width: 567px) {
+  .ads__ideas {
+    height: 300px;
+  }
+}
+
 .ads__ideas__content {
   text-align: center;
   padding-top: 30px;
   color: #bd0000;
+}
+
+@media screen and (max-width: 567px) {
+  .ads__ideas__content {
+    padding-top: 100px;
+  }
+}
+
+.ads__ideas__content a {
+  margin-top: 15px;
 }
 
 .ads__newsletter {
@@ -712,20 +779,27 @@ body, button {
   height: 290px;
 }
 
+@media screen and (max-width: 567px) {
+  .ads__newsletter {
+    height: 300px;
+    padding: 10px;
+  }
+}
+
 .ads__newsletter__content {
   color: #851727;
   text-align: center;
   padding-top: 30px;
 }
 
-.ads__newsletter__content input {
-  border-radius: 0;
-  margin-top: 10px;
-  border: 0;
-  height: 30px;
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
-          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
-  padding: 2px 5px;
+@media screen and (max-width: 567px) {
+  .ads__newsletter__content {
+    padding-top: 60px;
+  }
+}
+
+.ads__newsletter__content a {
+  margin-top: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -853,6 +927,12 @@ body, button {
   margin: 100px 0;
 }
 
+@media screen and (max-width: 567px) {
+  .featured {
+    margin: 50px 0;
+  }
+}
+
 .featured__title {
   text-align: center;
   text-transform: uppercase;
@@ -864,6 +944,13 @@ body, button {
   margin-left: auto;
 }
 
+@media screen and (max-width: 567px) {
+  .featured__title {
+    max-width: 210px;
+    padding: 0;
+  }
+}
+
 .featured__line {
   height: 1px;
   background: black;
@@ -871,6 +958,12 @@ body, button {
   top: 20px;
   width: 100%;
   z-index: -55;
+}
+
+@media screen and (max-width: 567px) {
+  .featured__line {
+    top: 12px;
+  }
 }
 
 .header {
