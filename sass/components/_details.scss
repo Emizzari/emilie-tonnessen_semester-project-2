@@ -1,15 +1,34 @@
 .details{
     &__content-container{
         margin: 50px 0;
+
+        @media screen and (max-width: 567px) {
+            margin: 0;
+        }
     }
 
-    &__images img{
-        width: 100%;
+    &__images {
+
+        @media screen and (max-width: 567px) {
+            padding: 0 0 15px 0;
+        }
+    
+        & img{
+            width: 100%;
+
+            @media screen and (max-width: 567px) {
+                padding: 0;
+            }
+        }
     }
 
     &__content{
         margin-left: 30px;
         padding-top: clamp(0px, 3vw, 30px);
+
+        @media screen and (max-width: 567px) {
+            margin: 0;
+        }
     }
 
     &__title{
@@ -22,8 +41,12 @@
         font-size: clamp(17px, 3vw, 22px);
     }
 
-    & a i{
-        padding-left: 10px;
+    &__btn {
+        margin-top: 15px;
+    
+        & i{
+            padding-left: 10px;
+        }
     }
 
     &__benefits{
