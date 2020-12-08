@@ -1,7 +1,6 @@
 .product-menu{
     position: fixed;
     top: 0;
-    //left: 0;
     background: colors(grey, light);
     height: 100%;
     display: flex;
@@ -28,12 +27,7 @@
         margin: 20px;
 
         @media screen and (max-width: 991px) {
-            width: 30%;
-            padding: 10px;
-            margin: 0;
-            margin-right: 10px;
-            line-height: 60px;
-            align-self: flex-end;
+            display:none;
         }
     }
 
@@ -45,8 +39,10 @@
         list-style: none;
         padding: 20px 50px;
 
+
         @media screen and (max-width: 576px) {
             padding: 15px;
+            margin-top: 60px;
         }
     }
 
