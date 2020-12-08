@@ -85,4 +85,9 @@
         font-weight: 700;
         font-size: clamp(18px, 5vw, 20px);
     }
+
+    &--input{
+        padding: 3px 6px;
+        font-size: 14px;
+    }
 }
