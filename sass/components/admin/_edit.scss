@@ -3,11 +3,10 @@
     &__container{
         margin-left: clamp(0px, 1vw, 300px);
         max-width: 630px;
-        margin-bottom: clamp(15px, 10vw, 50px);
+        margin-bottom: 50px;
 
         @media screen and (max-width: 991px) {
             margin: 0 auto;
-            margin-bottom: clamp(30px, 10vw, 50px);
             max-width: 100%;
         }
 
@@ -54,10 +53,15 @@
         &__delete-button{
             margin: 0;
         }
+
+        &__button--add{
+            margin-bottom: 50px;
+        }
     }
 
     &__advanced-option{
         width: clamp(200px, 90vw, 600px);
+        margin-bottom: 80px;
 
         & .card-header{
             padding: 0;
