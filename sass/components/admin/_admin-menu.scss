@@ -28,10 +28,23 @@
     }
 
     &__breadcrumb{
-        text-align: left;
-        margin: auto 0;
-        @media screen and (max-width: 991px) {
-            display: none;
+        &--lg{
+            text-align: left;
+            margin: auto 0;
+            display: block;
+
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+
+        &--sm{
+            display: block;
+            padding-top: 15px;
+
+            @media screen and (min-width: 992px) {
+                display: none;
+            }
         }
     }
 
