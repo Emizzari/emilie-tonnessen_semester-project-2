@@ -4,6 +4,12 @@
         margin: 0;
         padding: 0;
 
+        &__container{
+            @media screen and (max-width: 567px) {
+                padding: 0;
+            }
+        }
+
 
         &__table-titles{
             border-bottom: 1px solid colors(grey, dark);
@@ -24,17 +30,25 @@
         }
 
         &__card{
-            padding: 10px 0px;
+            padding: 15px 0px;
             margin: 0px; 
             border-bottom: 1px solid colors(grey, dark);
 
-            @media screen and (max-width: 991px) {
+
+
+            @media screen and (max-width: 991px) and (min-width: 568px) {
                 padding: 30px 0px;
             }
 
 
             &__image{
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: 567px) {
+                    max-width: 100px;
+                    max-height: 100px;
+                    padding: 0;
+                }
+
+                @media screen and (min-width: 568px) and (max-width: 991px) {
                     max-width: 250px;
                     padding: 0;
                 }
@@ -49,18 +63,34 @@
 
             &__content{
                padding: 10px;
+
+               @media screen and (max-width: 567px) {
+                    padding: 0 0 10px 10px;
+                }
             }
 
             &__title{
                 padding: 0 0 7px 0;
+
+                @media screen and (max-width: 567px) {
+                    font-size: 14px;
+                }
             }
 
             &__desc{
                 padding: 0 0 15px 0;
+
+                @media screen and (max-width: 567px) {
+                    font-size: 12px;
+                }
             }
 
             &__price{
                 font-weight: 700;
+
+                @media screen and (max-width: 567px) {
+                    margin-left: 100px;
+                }
 
                 @media screen and (min-width: 992px) {
                     max-width: 130px;
@@ -82,9 +112,10 @@
 
             &__text{
                 margin-left: 20px;
-                font-size: clamp(18px, 2vw, 30px);
+                font-size: clamp(14px, 2vw, 30px);
                 font-weight: 700;
                 text-transform: uppercase;
+                align-self: center;
             }
 
             &__price{
