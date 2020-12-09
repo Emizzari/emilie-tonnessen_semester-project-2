@@ -5,6 +5,10 @@
     padding: 10px;
     transition: .25s ease-in-out;
 
+    @media screen and (min-width: 568px) and (max-width: 991px) {
+        padding: 10px 20px;
+    }
+
     &__image{
         margin: 0;
         width: 100%;
