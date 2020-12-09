@@ -25,6 +25,7 @@
 @import "./components/cart";
 @import "./components/form-validation";
 @import "./components/feedback";
+@import "./components/search";
 
 /* Admin: */
 @import "./components/admin/login";
@@ -35,7 +36,7 @@
 // Navigation
 @import "./components/nav/nav";
 @import "./components/nav/nav-menu-icon";
-@import "./components/nav/nav-search";
+
 
  // Small devices (landscape phones, 576px and up)
             @media (max-width: 576px) {
