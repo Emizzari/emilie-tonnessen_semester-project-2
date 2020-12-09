@@ -31,11 +31,9 @@
 }
 
 .review-card{
-    
     background:colors(primary, light);
     padding: 10px;
     margin: 30px 0;
-    
 
     @media screen and (max-width: 567px) {
         width: 100%;
@@ -74,6 +72,6 @@
     &__user{
         margin-top: 20px;
         font-style: italic;
-        font-size: clamp(10px, 2vw, 12px);
+        font-size: clamp(10px, 2vw, 12px);  
     }
 }
