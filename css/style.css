@@ -203,6 +203,15 @@ body, button {
   }
 }
 
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 50px 0;
+  }
+}
+
 .filter {
   margin: 0;
   text-align: right;
@@ -218,6 +227,12 @@ body, button {
   padding: 10px;
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .product {
+    padding: 10px 20px;
+  }
 }
 
 .product__image {
@@ -953,15 +968,29 @@ body, button {
 }
 
 @media screen and (max-width: 567px) {
-  .featured__title {
-    max-width: 210px;
+  .featured__title--cart {
+    max-width: 260px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .featured__title--cart {
+    max-width: 360px;
     padding: 0;
   }
 }
 
 @media screen and (max-width: 567px) {
-  .featured__title--cart {
-    max-width: 260px;
+  .featured__title--best-selling {
+    max-width: 210px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .featured__title--best-selling {
+    max-width: 300px;
     padding: 0;
   }
 }
@@ -995,9 +1024,21 @@ body, button {
   }
 }
 
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .details__content-container {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 567px) {
   .details__images {
     padding: 0 0 15px 0;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .details__images {
+    padding: 0 0 20px 0;
   }
 }
 
@@ -1019,6 +1060,12 @@ body, button {
 @media screen and (max-width: 567px) {
   .details__content {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .details__content {
+    margin-left: 10px;
   }
 }
 
@@ -1048,6 +1095,13 @@ body, button {
 
 .details__benefits li {
   margin: 5px 0;
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .details__desc {
+    margin-bottom: 20px;
+    padding: 0;
+  }
 }
 
 .accordion .card {
