@@ -2082,7 +2082,7 @@ body, button {
   width: 35px;
   border: 0;
   outline: 0;
-  padding: 0;
+  padding-left: 10px;
 }
 
 .search__btn:hover {
