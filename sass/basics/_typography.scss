@@ -58,13 +58,3 @@ body, button{
     color: black;
 }
 /* ---------------------------------------------- */
-
-.benefits{
-    &__title{
-        font-size: clamp(10px, 2vw, 13px);
-    }
-
-    &__desc{
-        font-size: clamp(8px, 2vw, 13px);
-    }
-}

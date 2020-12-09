@@ -24,10 +24,12 @@
 
     &__title{
         margin: 0;
+        font-size: clamp(10px, 1.5vw, 13px);
     }
 
     &__desc{
         margin: 0;
+        font-size: clamp(8px, 2vw, 13px);
     }
 
     &__icon{
