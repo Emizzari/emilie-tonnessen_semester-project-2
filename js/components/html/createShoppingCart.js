@@ -32,7 +32,7 @@ export function createShoppingCart (){
                         View Product <i class="fal fa-angle-right"></i>
                     </a>
                 </div>
-                <p class="cart__products__card__price col-sm-12 col-md">
+                <p class="cart__products__card__price col-sm-12 col-md-12 col-lg">
                     ${product.price} NOK
                 </p>
             </div>
