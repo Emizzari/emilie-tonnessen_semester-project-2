@@ -5,12 +5,20 @@
         @media screen and (max-width: 567px) {
             margin: 0;
         }
+
+        @media screen and (min-width: 568px) and (max-width: 991px) {
+            margin: 0;
+        }
     }
 
     &__images {
 
         @media screen and (max-width: 567px) {
             padding: 0 0 15px 0;
+        }
+
+        @media screen and (min-width: 568px) and (max-width: 991px) {
+            padding: 0 0 20px 0;
         }
     
         & img{
@@ -28,6 +36,10 @@
 
         @media screen and (max-width: 567px) {
             margin: 0;
+        }
+
+        @media screen and (min-width: 568px) and (max-width: 991px) {
+            margin-left: 10px;
         }
     }
 
@@ -56,6 +68,13 @@
 
         & li{
             margin: 5px 0;
+        }
+    }
+
+    &__desc{
+        @media screen and (min-width: 568px) and (max-width: 991px) {
+            margin-bottom: 20px;
+            padding: 0;
         }
     }
 }
