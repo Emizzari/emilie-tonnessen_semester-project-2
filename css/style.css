@@ -188,7 +188,6 @@ body, button {
 /* ---------------------------------------------- */
 /* Components: */
 .products {
-  margin: 0 0 200px 0;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -204,6 +203,15 @@ body, button {
 }
 
 @media screen and (min-width: 568px) and (max-width: 991px) {
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 992) {
   .products {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
