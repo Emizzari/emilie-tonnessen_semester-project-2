@@ -186,14 +186,6 @@ body, button {
 }
 
 /* ---------------------------------------------- */
-.benefits__title {
-  font-size: clamp(10px, 2vw, 13px);
-}
-
-.benefits__desc {
-  font-size: clamp(8px, 2vw, 13px);
-}
-
 /* Components: */
 .products {
   margin: 0 0 200px 0;
@@ -409,10 +401,12 @@ body, button {
 
 .benefits__title {
   margin: 0;
+  font-size: clamp(10px, 1.5vw, 13px);
 }
 
 .benefits__desc {
   margin: 0;
+  font-size: clamp(8px, 2vw, 13px);
 }
 
 .benefits__icon {
@@ -698,6 +692,12 @@ body, button {
   }
 }
 
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .ads__main-event__content {
+    padding: 190px 30px;
+  }
+}
+
 .ads__main-event__content a {
   margin-top: 15px;
 }
@@ -724,6 +724,12 @@ body, button {
 @media screen and (max-width: 567px) {
   .ads__news__content {
     padding-top: 160px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .ads__news__content {
+    padding: 150px 0 0 40px;
   }
 }
 
@@ -757,6 +763,12 @@ body, button {
   }
 }
 
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .ads__ideas__content {
+    padding-top: 60px;
+  }
+}
+
 .ads__ideas__content a {
   margin-top: 15px;
 }
@@ -783,6 +795,12 @@ body, button {
 }
 
 @media screen and (max-width: 567px) {
+  .ads__newsletter__content {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
   .ads__newsletter__content {
     padding-top: 60px;
   }
