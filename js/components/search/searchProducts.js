@@ -14,4 +14,4 @@ export function searchProducts(products) {
 
         createProduct(filteredProducts);
     };
-} 
+}
