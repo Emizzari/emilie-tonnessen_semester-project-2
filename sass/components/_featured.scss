@@ -18,14 +18,28 @@
         margin-right: auto;
         margin-left: auto;
 
-        @media screen and (max-width: 567px){
-            max-width: 210px;
-            padding: 0;
-        }
+        
 
         &--cart{
             @media screen and (max-width: 567px){
                 max-width: 260px;
+                padding: 0;
+            }
+
+            @media screen and (min-width: 568px) and (max-width: 991px){
+                max-width: 360px;
+                padding: 0;
+            }
+        }
+
+        &--best-selling{
+            @media screen and (max-width: 567px){
+                max-width: 210px;
+                padding: 0;
+            }
+
+            @media screen and (min-width: 568px) and (max-width: 991px){
+                max-width: 300px;
                 padding: 0;
             }
         }
