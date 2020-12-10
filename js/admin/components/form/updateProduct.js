@@ -30,12 +30,21 @@ export async function updateProduct(image, title, price, description, featured, 
         console.log(json);
 
         if (json.updated_at) {
-            displayMessage("feedback feedback--success", "Product updated", ".edit__form__feedback");
+            displayMessage(
+                "feedback feedback--success", 
+                "Product updated", 
+                ".feedback"
+            );
+
             fetchAPI(productMenu, productsURL);
         }
 
         if (json.error) {
-            displayMessage("feedback feedback--error", json.message, ".edit__form__feedback");
+            displayMessage(
+                "feedback feedback--error", 
+                json.message, 
+                ".feedback"
+            );
         }
     } catch (error) {
         console.log(error);

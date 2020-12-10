@@ -29,12 +29,21 @@ export async function addProduct(image, title, price, description, featured) {
         const json = await response.json();
 
         if (json.created_at) {
-            displayMessage("feedback feedback--success", "Product Added", ".edit__form__feedback");
+            displayMessage(
+                "feedback feedback--success", 
+                "Product Added", 
+                ".feedback"
+            );
+            
             fetchAPI(productMenu, productsURL);
         }
 
         if (json.error) {
-            displayMessage("feedback feedback--error", json.message, ".edit__form__feedback");
+            displayMessage(
+                "feedback feedback--error", 
+                json.message, 
+                ".feedback"
+            );
         }
     } catch (error) {
         console.log(error);

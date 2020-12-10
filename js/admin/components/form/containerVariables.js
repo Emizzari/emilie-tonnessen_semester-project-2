@@ -13,4 +13,4 @@ export const price = document.querySelector("#price");
 export const priceError = document.querySelector("#price-error");
 export const description = document.querySelector("#description");
 export const descriptionError = document.querySelector("#description-error");
-export const feedback = document.querySelector(".edit__form__feedback");
+export const feedback = document.querySelector(".feedback");

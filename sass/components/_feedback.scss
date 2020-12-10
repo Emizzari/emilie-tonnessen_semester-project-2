@@ -1,7 +1,8 @@
 .feedback{
+    width: 100%;
+
     &--success{
         background: rgb(173, 216, 173);
-        width: 200px;
         text-align: center;
         padding: 15px;
     }  
@@ -10,27 +11,17 @@
         background: rgb(214, 55, 55);
         color: white;
         font-weight: 500;
-        width: 200px;
+        margin: 0px 0 20px 0;
         text-align: center;
         padding: 15px;
-
-        @media screen and (max-width: 567px) {
-            width: 100%;
-            margin: 20px 0;
-        }
     } 
     
     &--warning{
         background: rgb(204, 120, 24);
         color: white;
         font-weight: 500;
-        width: 200px;
+        margin: 20px 0 20px 0;
         text-align: center;
         padding: 15px;
-
-        @media screen and (max-width: 567px) {
-            width: 100%;
-            margin: 20px 0;
-        }
     } 
 }

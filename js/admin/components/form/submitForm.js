@@ -1,4 +1,5 @@
 import { updateProduct } from "./updateProduct.js";
+import { addProduct } from "./addProduct.js";
 import { feedback, featuredTrue, idInput } from "./containerVariables.js";
 import { validateForm } from "./formValidation.js";
 import displayMessage from "../../../components/messages/displayMessage.js";
@@ -25,7 +26,11 @@ export function submitForm(event) {
     const idValue = idInput.value;
 
     if (validateForm() === false){
-        return displayMessage("feedback feedback--error", "Please enter proper values", ".edit__form__feedback");
+        return displayMessage(
+            "feedback feedback--error", 
+            "Please enter proper values", 
+            ".feedback"
+        );
     }
 
     if(document.URL.includes("add-product")){
