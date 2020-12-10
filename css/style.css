@@ -186,7 +186,7 @@ body, button {
 }
 
 /* ---------------------------------------------- */
-/* Components: */
+/* Product: */
 .products {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1384,9 +1384,12 @@ body, button {
   display: none;
 }
 
+.feedback {
+  width: 100%;
+}
+
 .feedback--success {
   background: #add8ad;
-  width: 200px;
   text-align: center;
   padding: 15px;
 }
@@ -1395,32 +1398,18 @@ body, button {
   background: #d63737;
   color: white;
   font-weight: 500;
-  width: 200px;
+  margin: 0px 0 20px 0;
   text-align: center;
   padding: 15px;
-}
-
-@media screen and (max-width: 567px) {
-  .feedback--error {
-    width: 100%;
-    margin: 20px 0;
-  }
 }
 
 .feedback--warning {
   background: #cc7818;
   color: white;
   font-weight: 500;
-  width: 200px;
+  margin: 20px 0 20px 0;
   text-align: center;
   padding: 15px;
-}
-
-@media screen and (max-width: 567px) {
-  .feedback--warning {
-    width: 100%;
-    margin: 20px 0;
-  }
 }
 
 .search {
