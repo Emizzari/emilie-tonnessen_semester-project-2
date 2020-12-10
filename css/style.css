@@ -1,66 +1,8 @@
-/* Fonts: */
-@import url("https://use.typekit.net/ghx0czi.css");
 /* Basics: */
 /* COLOR PALETTE: ------------------------------- */
 /* ---------------------------------------------- */
-@import url("https://use.typekit.net/ghx0czi.css");
-/* 
-    COLOR PALETTE:
-        Primary:
-            HEX: #E02B4F;
-            RGB: rgba(224, 43, 79, 1);
-
-        Secondary:
-            HEX: #851727;
-            RGB: rgba(133, 23, 39, 1)
-
-        Tertiary:
-            HEX: #141414
-            RGB: rgba(20, 20, 20, 1)
-
-
-
-    FONT-FAMILIES:
-        Montserrat Regular:
-            font-family: montserrat, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-
-        Ernestine Pro Regular:
-            font-family: ff-ernestine-pro, serif;
-            font-weight: 400;
-            font-style: normal;
-   
-
-        Gaultier Regular:
-            font-family: gaultier, sans-serif;
-            font-weight: 400;
-            font-style: normal;
-
-    ICONS:
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fal fa-shopping-cart"></i>
-        <i class="fal fa-user"></i>
-        <i class="fal fa-user"></i>
-        <i class="fad fa-exclamation-triangle"></i>
-        <i class="fal fa-times"></i>
-        <i class="far fa-angle-right"></i>     
-
-*/
-/* 
-
-    RULES:
-        h1 - Headline, homepage only
-        h2 - Best selling, Reviews, Dont miss out
-        h3 - Content area on homepage, calendar, newsletter etc
-        h4 - Cart and product page headline
-        h5 - Product Name/Title, footer title
-        h6 - Review titles, shipping-delivery-payment titles
-
-*/
 /* STICKY FOOTER: ------------------------------- */
+@import url("https://use.typekit.net/ghx0czi.css");
 html, body {
   height: 100%;
   width: 100%;
@@ -115,15 +57,6 @@ img, iframe {
   .section {
     margin: 50px 0px;
   }
-}
-
-.display-message {
-  padding: 30px;
-  margin: 30px;
-  font-size: 20px;
-  border: 2px solid #8f0b0b;
-  color: #8f0b0b;
-  text-align: center;
 }
 
 /*  
@@ -186,92 +119,6 @@ body, button {
 }
 
 /* ---------------------------------------------- */
-/* Product: */
-.products {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media screen and (max-width: 567px) {
-  .products {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 0 50px 0;
-  }
-}
-
-@media screen and (min-width: 568px) and (max-width: 991px) {
-  .products {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 0 50px 0;
-  }
-}
-
-@media screen and (min-width: 992) {
-  .products {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 0 50px 0;
-  }
-}
-
-.filter {
-  margin: 0;
-  text-align: right;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.product {
-  text-align: center;
-  max-width: 250px;
-  margin: 30px 0;
-  padding: 10px;
-  -webkit-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
-}
-
-@media screen and (min-width: 568px) and (max-width: 991px) {
-  .product {
-    padding: 10px 20px;
-  }
-}
-
-.product__image {
-  margin: 0;
-  width: 100%;
-  overflow: hidden;
-}
-
-.product__content {
-  padding: 10px;
-}
-
-.product__title {
-  font-size: clamp(15px, 50vw, 18px);
-}
-
-.product__desc {
-  margin: 0;
-}
-
-.product__price {
-  font-weight: 700;
-  margin-top: 15px;
-  font-size: clamp(15px, 50vw, 18px);
-}
-
-.product__button {
-  margin: 0 !important;
-  width: 100%;
-}
-
 /* https://loading.io/css/ */
 .loader {
   display: inline-block;
@@ -1802,6 +1649,92 @@ body, button {
   border-color: #949494;
 }
 
+/* Product: */
+.products {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 567px) {
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 992) {
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 0 50px 0;
+  }
+}
+
+.filter {
+  margin: 0;
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.product {
+  text-align: center;
+  max-width: 250px;
+  margin: 30px 0;
+  padding: 10px;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+@media screen and (min-width: 568px) and (max-width: 991px) {
+  .product {
+    padding: 10px 20px;
+  }
+}
+
+.product__image {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.product__content {
+  padding: 10px;
+}
+
+.product__title {
+  font-size: clamp(15px, 50vw, 18px);
+}
+
+.product__desc {
+  margin: 0;
+}
+
+.product__price {
+  font-weight: 700;
+  margin-top: 15px;
+  font-size: clamp(15px, 50vw, 18px);
+}
+
+.product__button {
+  margin: 0 !important;
+  width: 100%;
+}
+
 @media screen and (max-width: 991px) {
   .nav .container {
     padding: 0;
@@ -2077,4 +2010,6 @@ body, button {
   width: 0%;
   left: 50%;
 }
+
+/* Fonts: */
 /*# sourceMappingURL=style.css.map */
