@@ -1,14 +1,7 @@
-/* Fonts: */
-@import url("https://use.typekit.net/ghx0czi.css");
-
 /* Basics: */
 @import "./basics/maps";
 @import "./basics/layout";
 @import "./basics/typography";
-
-/* Product: */
-@import "./components/products/product-layout";
-@import "./components/products/product-card";
 
 // Components:
 @import "./components/loader";
@@ -34,31 +27,13 @@
 @import "./components/admin/admin-menu";
 @import "./components/admin/edit";
 
+/* Product: */
+@import "./components/products/product-layout";
+@import "./components/products/product-card";
+
 // Navigation
 @import "./components/nav/nav";
 @import "./components/nav/nav-menu-icon";
 
-
- // Small devices (landscape phones, 576px and up)
-            @media (max-width: 576px) {
-
-            }
-
-            // Medium devices (tablets, 768px and up)
-            @media (min-width: 768px) {
-
-            }
-
-            // Large devices (desktops, 992px and up)
-            @media (min-width: 992px) {
-
-            }
-
-            // Extra large devices (large desktops, 1200px and up)
-            @media (min-width: 1200px) {
-                
-            }
-
-
-// Icons:
-// <i class="fal fa-angle-right"></i>
+/* Fonts: */
+@import url("https://use.typekit.net/ghx0czi.css");
