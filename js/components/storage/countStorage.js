@@ -5,10 +5,6 @@ export default function countStorage(){
     if(localStorage["shoppingcart"]){
         const totalitems = JSON.parse(localStorage["shoppingcart"]).length; 
         cartIcon.innerHTML = totalitems;
-    }
-    
-    if(pageTitle) {
-        const totalitems = JSON.parse(localStorage["shoppingcart"]).length; 
         pageTitle.innerHTML = `(${totalitems})`;
     }
 }
