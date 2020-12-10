@@ -9,7 +9,7 @@ export default function logoutButton() {
 
             if (doLogout) {
                 clearAdmin();
-                location.href = "/admin";
+                location.href = "../admin";
             }
         };
     }
