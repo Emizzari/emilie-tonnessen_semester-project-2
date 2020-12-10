@@ -18,7 +18,6 @@ export function createShoppingCart (){
 
     /* Display products from the localStorage() */
     shoppingCart.forEach(function (product) {
-        console.log(product);
         cartContainer.innerHTML += `
             <div class="cart__products__card col-12 row">
                 <img src="${product.image}" alt="${product.title}" class="col cart__products__card__image">

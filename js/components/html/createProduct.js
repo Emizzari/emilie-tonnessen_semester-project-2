@@ -4,8 +4,6 @@ import displayMessage from "../messages/displayMessage.js";
 export function createProduct (products){
     const productsContainer = document.querySelector(".products");
 
-    //console.log(products);
-
     productsContainer.innerHTML = "";
 
     if (products.length === 0) {

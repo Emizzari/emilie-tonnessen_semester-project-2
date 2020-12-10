@@ -16,7 +16,6 @@ if (params.has("id")) {
 
 /* Function - changes the property matching the correct id */
 export function createDetails(detail) {
-    console.log(detail);
     // Document title
     document.title = `Varus Cosmetics | ${detail.title}`;
 

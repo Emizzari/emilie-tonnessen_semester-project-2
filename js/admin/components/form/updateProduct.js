@@ -27,7 +27,6 @@ export async function updateProduct(image, title, price, description, featured, 
     try {
         const response = await fetch(url, options);
         const json = await response.json();
-        console.log(json);
 
         if (json.updated_at) {
             displayMessage(

@@ -9,5 +9,4 @@ import { search, redirectUser } from "./components/search/searchUtils.js";
 fetchAPI(createBanner, bannerURL);
 fetchAPI(createFeaturedProducts, productsURL);
 countTotalItems();
-
 search.addEventListener("click", redirectUser);

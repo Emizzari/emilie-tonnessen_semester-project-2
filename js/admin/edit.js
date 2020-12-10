@@ -50,8 +50,6 @@ const editURL = baseURL + "/products/" + id;
         }else{
             labelFalse.classList.add("active");
         }
-
-        console.log(details);
     } catch (error) {
         console.log(error);
     } finally {
