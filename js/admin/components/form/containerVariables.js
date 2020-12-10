@@ -1,6 +1,7 @@
 export const featuredTrue = document.querySelector("#featured__true");
 export const idInput = document.querySelector("#id");
 export const form = document.querySelector(".edit__form");
+export const formLogin = document.querySelector(".form-login");
 export const loading = document.querySelector(".loader");
 export const featured = document.querySelectorAll(".featured");
 export const labelFalse = document.querySelector(".featured__false");
@@ -14,3 +15,5 @@ export const priceError = document.querySelector("#price-error");
 export const description = document.querySelector("#description");
 export const descriptionError = document.querySelector("#description-error");
 export const feedback = document.querySelector(".feedback");
+export const username = document.querySelector("#username");
+export const password = document.querySelector("#password");
