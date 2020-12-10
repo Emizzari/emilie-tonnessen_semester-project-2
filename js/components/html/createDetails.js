@@ -1,11 +1,12 @@
 import { getShoppingCart } from "../storage/localStorage.js";
+import {productsURL} from "../settings/url.js";
 
 // Looking for the id parameter
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 
 // Setting the "id" variable
-export let id;
+let id;
 
 // Looking for "id" in the url
 if (params.has("id")) {
@@ -13,6 +14,8 @@ if (params.has("id")) {
 } else {
     console.log("error in 'id' if statement");
 }
+
+export const detailsURL = `${productsURL}${id}`;
 
 /* Function - changes the property matching the correct id */
 export function createDetails(detail) {
