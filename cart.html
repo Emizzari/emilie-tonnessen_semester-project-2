@@ -156,54 +156,64 @@
 
         <!-- Header: -->
         <header class="header container">
-            <h4 class="header__title">Shopping Cart <span class="cart__total-items">(0)</span></h4>
+            <h4 class="header__title">
+                Shopping Cart 
+                <span class="cart__total-items">(0)</span>
+            </h4>
         </header>
 
-        <main class="cart container clearfix"> 
-
-            <!-- Product List -->
-            <section class="cart__products  clearfix ">
-
-                <!-- Table Titles -->
-                <div class="cart__products__table-titles col-12">
-                    <h6 class="cart__products__table-titles__products col">Products</h6>
-                    <h6 class="col cart__products__table-titles__price">Price</h6>
-                </div>
+        <main class="cart container">
+            <div class="row">
+            
 
                 <!-- Products: -->
-                <div class="cart__products__container col-12 ">
-                </div>
-                
-
-                <!-- Total Price -->
-                <div class="cart__products__total col-12 ">
-                    <p class="cart__products__total__text col">Totalt price</p>
-                    <p class="cart__products__total__price col">0 NOK</p>
-                </div>
-
-                <!-- Checkout Button: -->
-                <section class="cart__checkout-btn">
-                    <a href="#" class="btn btn--tertiary btn--lg col-12">
-                        Go to checkout
-                    </a>
+                <section class="cart__section col-lg-8">
+                    <div class="cart__products__container col"></div>
                 </section>
 
-            </section>
+                <!-- Information: -->
+                <section class="cart__section cart__section--info col">
 
-            <!-- Featured Products: -->
+                    <!-- Total Price -->
+                    <div class="cart__products__total col-12 row">
+                        <p class="cart__products__total__text col-12">Totalt price</p>
+                        <p class="cart__products__total__price col-12">0 NOK</p>
+                    </div>
+
+                    <!-- Checkout Button: -->
+                    <button class="btn btn--primary btn--sm col-12">
+                        Go to checkout
+                    </button>
+
+                    <!-- Benefits Lits: -->
+                    <div class="col-12">
+                        <ul class="details__benefits">
+                            <li><i class="fal fa-check"></i> Free shipping</li>
+                            <li><i class="fal fa-check"></i> Fast Delivery</li>
+                            <li><i class="fal fa-check"></i> Free payment deferral</li>
+                        </ul>
+                    </div>
+                    
+                </section>
+
+            </div>
+
+        </main>
+
+        <!-- Featured Products: -->
+        <div class="container">
+
             <section class="section featured">
-
-                <!-- Page Title: -->
+                
                 <h2 class="featured__title featured__title--cart">
                     don't miss out!
                 </h2>
+                    
                 <div class="featured__line"></div>
-
-
-                <!-- Dynamic Data here -->
+                
+                
                 <div class="featured__products products row">
-
-                    <!-- Loader: -->
+                
                     <div class="loader">
                         <div></div>
                         <div></div>
@@ -218,11 +228,11 @@
                         <div></div>
                         <div></div>
                     </div>
-
+                
                 </div>
+            
             </section>
-
-        </main>
+        </div>
     </div>
 
     <!-- Footer: -->
