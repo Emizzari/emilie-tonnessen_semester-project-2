@@ -10,7 +10,7 @@ import { form, title, price, description, idInput, loading, image, featured, lab
 
 // Redirecting to homepage if they are not logged in
 if (!token) {
-    location.href = "/admin";
+    location.href = "../admin";
 }
 
 // Display Product Menu and Logout button

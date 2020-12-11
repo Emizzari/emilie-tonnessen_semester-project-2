@@ -9,7 +9,7 @@ import { submitForm } from "./components/form/submitForm.js";
 
 // Redirecting to homepage if they are not logged in
 if (!token) {
-    location.href = "/admin";
+    location.href = "../admin";
 }
 
 // Display Product Menu
