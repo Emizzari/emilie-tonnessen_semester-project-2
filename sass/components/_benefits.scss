@@ -8,12 +8,15 @@
     
 
     &__container{
-        padding: clamp(5px, 1vw, 15px);
-        
+        padding: clamp(5px, 1vw, 15px);  
 
         & .row{
             @media screen and (max-width: 400px) {
                 width: 100%;
+            }
+
+            @media screen and (min-width: 568px){
+                justify-content: flex-end;
             }
         }
     }
