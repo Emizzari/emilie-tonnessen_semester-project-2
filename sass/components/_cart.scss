@@ -1,11 +1,11 @@
 .cart{
     //background: colors(grey,light);
-    margin-bottom: 50px;
+    margin: 50px auto;
 
     &__section{
-        background: white;
-        margin: 20px;
+        margin: 0px;
         padding: 10px;
+        padding-top: 0;
 
         &--info{
             margin-left: 0px;
@@ -28,8 +28,10 @@
 
         &__card{
             padding: 15px 0px;
-            margin: 0px; 
-            border-bottom: 1px solid colors(grey);
+            margin-bottom: 20px;
+            margin-top: 0; 
+            //border-bottom: 1px solid colors(grey);
+            background: colors(grey, light);
 
             @media screen and (max-width: 991px) and (min-width: 568px) {
                 padding: 30px 0px;
@@ -59,6 +61,8 @@
 
             &__content{
                padding: 10px;
+               display: flex;
+               flex-direction: column;
 
                @media screen and (max-width: 567px) {
                     padding: 0 0 10px 10px;
@@ -71,17 +75,10 @@
 
             &__title{
                 padding: 0 0 7px 0;
+                max-height: 30px;
 
                 @media screen and (max-width: 567px) {
                     font-size: 14px;
-                }
-            }
-
-            &__desc{
-                padding: 0 0 15px 0;
-
-                @media screen and (max-width: 567px) {
-                    font-size: 12px;
                 }
             }
 
