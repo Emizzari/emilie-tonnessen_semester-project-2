@@ -1039,13 +1039,13 @@ body, button {
 }
 
 .cart {
-  margin-bottom: 50px;
+  margin: 50px auto;
 }
 
 .cart__section {
-  background: white;
-  margin: 20px;
+  margin: 0px;
   padding: 10px;
+  padding-top: 0;
 }
 
 .cart__section--info {
@@ -1068,8 +1068,9 @@ body, button {
 
 .cart__products__card {
   padding: 15px 0px;
-  margin: 0px;
-  border-bottom: 1px solid #d4d4d4;
+  margin-bottom: 20px;
+  margin-top: 0;
+  background: #eeeeee;
 }
 
 @media screen and (max-width: 991px) and (min-width: 568px) {
@@ -1105,6 +1106,13 @@ body, button {
 
 .cart__products__card__content {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (max-width: 567px) {
@@ -1121,21 +1129,12 @@ body, button {
 
 .cart__products__card__title {
   padding: 0 0 7px 0;
+  max-height: 30px;
 }
 
 @media screen and (max-width: 567px) {
   .cart__products__card__title {
     font-size: 14px;
-  }
-}
-
-.cart__products__card__desc {
-  padding: 0 0 15px 0;
-}
-
-@media screen and (max-width: 567px) {
-  .cart__products__card__desc {
-    font-size: 12px;
   }
 }
 
