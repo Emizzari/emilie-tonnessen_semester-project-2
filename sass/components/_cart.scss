@@ -1,4 +1,20 @@
 .cart{
+    //background: colors(grey,light);
+    margin-bottom: 50px;
+
+    &__section{
+        background: white;
+        margin: 20px;
+        padding: 10px;
+
+        &--info{
+            margin-left: 0px;
+            //padding-left: 25px;
+            padding: 20px;
+            background: colors( grey, light);
+        }
+    }
+
     &__products{
         width: 100%;
         margin: 0;
@@ -10,31 +26,10 @@
             }
         }
 
-
-        &__table-titles{
-            border-bottom: 1px solid colors(grey, dark);
-            padding: 50px 0 10px 0;
-            display: flex;
-
-            @media screen and (max-width: 991px) {
-                    display: none
-                }
-
-            &__price{
-                text-align: right;
-
-                @media screen and (min-width: 992px) {
-                    max-width: 130px;
-                }
-            }
-        }
-
         &__card{
             padding: 15px 0px;
             margin: 0px; 
-            border-bottom: 1px solid colors(grey, dark);
-
-
+            border-bottom: 1px solid colors(grey);
 
             @media screen and (max-width: 991px) and (min-width: 568px) {
                 padding: 30px 0px;
@@ -93,45 +88,39 @@
             &__price{
                 font-weight: 700;
 
-                @media screen and (max-width: 567px) {
-                    margin-left: 100px;
-                }
-
                 @media screen and (min-width: 568px) and (max-width: 991px) {
                     font-size: 17px;
                     padding: 10px 10px 0 15px;
-                    margin-left: 200px;
                 }
 
                 @media screen and (min-width: 992px) {
-                    max-width: 130px;
-                    text-align: right;
+                    text-align: left;
                     padding: 10px 15px 0 0;
                     
                 }
 
-                
             }
         }
 
         &__total{
-            border-bottom: 2px solid colors(tertiary);
-            padding: 20px 0;
-            display: flex;
+            padding: 0;
+            margin: 0;
 
             &__text{
-                margin-left: 20px;
-                font-size: clamp(14px, 2vw, 30px);
+                font-size: clamp(14px, 2vw, 25px);
                 font-weight: 700;
                 text-transform: uppercase;
-                align-self: center;
+                margin-bottom: 20px;
+                padding: 0;
             }
 
             &__price{
-                text-align: right;
-                margin-right: 20px;
-                font-size: clamp(18px, 2vw, 30px);
+                padding: 5px 0px;
+                margin-bottom: 25px;
+                font-size: clamp(13px, 2vw, 20px);
                 font-weight: 700;
+                border-top: 1px solid colors(grey);
+                border-bottom: 1px solid colors(grey);
             }
         }
     }
