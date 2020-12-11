@@ -265,6 +265,14 @@ body, button {
   }
 }
 
+@media screen and (min-width: 568px) {
+  .benefits__container .row {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .benefits__content {
   padding: clamp(5px, 1vw, 10px);
 }
@@ -1030,6 +1038,22 @@ body, button {
   color: #e02b4f;
 }
 
+.cart {
+  margin-bottom: 50px;
+}
+
+.cart__section {
+  background: white;
+  margin: 20px;
+  padding: 10px;
+}
+
+.cart__section--info {
+  margin-left: 0px;
+  padding: 20px;
+  background: #eeeeee;
+}
+
 .cart__products {
   width: 100%;
   margin: 0;
@@ -1042,34 +1066,10 @@ body, button {
   }
 }
 
-.cart__products__table-titles {
-  border-bottom: 1px solid #949494;
-  padding: 50px 0 10px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (max-width: 991px) {
-  .cart__products__table-titles {
-    display: none;
-  }
-}
-
-.cart__products__table-titles__price {
-  text-align: right;
-}
-
-@media screen and (min-width: 992px) {
-  .cart__products__table-titles__price {
-    max-width: 130px;
-  }
-}
-
 .cart__products__card {
   padding: 15px 0px;
   margin: 0px;
-  border-bottom: 1px solid #949494;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 @media screen and (max-width: 991px) and (min-width: 568px) {
@@ -1143,51 +1143,40 @@ body, button {
   font-weight: 700;
 }
 
-@media screen and (max-width: 567px) {
-  .cart__products__card__price {
-    margin-left: 100px;
-  }
-}
-
 @media screen and (min-width: 568px) and (max-width: 991px) {
   .cart__products__card__price {
     font-size: 17px;
     padding: 10px 10px 0 15px;
-    margin-left: 200px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .cart__products__card__price {
-    max-width: 130px;
-    text-align: right;
+    text-align: left;
     padding: 10px 15px 0 0;
   }
 }
 
 .cart__products__total {
-  border-bottom: 2px solid #141414;
-  padding: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .cart__products__total__text {
-  margin-left: 20px;
-  font-size: clamp(14px, 2vw, 30px);
+  font-size: clamp(14px, 2vw, 25px);
   font-weight: 700;
   text-transform: uppercase;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .cart__products__total__price {
-  text-align: right;
-  margin-right: 20px;
-  font-size: clamp(18px, 2vw, 30px);
+  padding: 5px 0px;
+  margin-bottom: 25px;
+  font-size: clamp(13px, 2vw, 20px);
   font-weight: 700;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .cart__checkout-btn {
