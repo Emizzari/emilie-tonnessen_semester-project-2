@@ -1,17 +1,43 @@
 .cart{
-    //background: colors(grey,light);
     margin: 50px auto;
+
+    @media screen and (max-width: 567px) {
+        margin: 20px auto;
+    }
+
+    @media screen and (min-width: 568px) and (max-width: 991px) {
+        margin: 30px auto;
+        padding: 0;
+    }
 
     &__section{
         margin: 0px;
         padding: 10px;
         padding-top: 0;
 
+        @media screen and (max-width: 567px) {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        @media screen and (min-width: 568px) and (max-width: 991px) {
+            padding: 0px;
+        }
+
+        @media screen and (min-width: 992px) {
+            padding: 0px 20px 0 0;
+        }
+
         &--info{
             margin-left: 0px;
-            //padding-left: 25px;
             padding: 20px;
             background: colors( grey, light);
+
+            @media screen and (max-width: 567px) {
+                margin: 0px;
+                padding: 10px;
+            }
+
         }
     }
 
@@ -20,116 +46,142 @@
         margin: 0;
         padding: 0;
 
-        &__container{
-            @media screen and (max-width: 567px) {
-                padding: 0;
-            }
+        @media screen and (max-width: 567px) {
+            padding: 0px;
         }
 
-        &__card{
-            padding: 15px 0px;
-            margin-bottom: 20px;
-            margin-top: 0; 
-            //border-bottom: 1px solid colors(grey);
-            background: colors(grey, light);
-
-            @media screen and (max-width: 991px) and (min-width: 568px) {
-                padding: 30px 0px;
-            }
-
-
-            &__image{
-                @media screen and (max-width: 567px) {
-                    max-width: 100px;
-                    max-height: 100px;
-                    padding: 0;
-                }
-
-                @media screen and (min-width: 568px) and (max-width: 991px) {
-                    max-width: 200px;
-                    max-height: 200px;
-                    padding: 0;
-                }
-
-                @media screen and (min-width: 992px) {
-                    max-width: 200px;
-                    height: 200px;
-                    margin: 0 15px;
-                    padding: 0;
-                }
-            }
-
-            &__content{
-               padding: 10px;
-               display: flex;
-               flex-direction: column;
-
-               @media screen and (max-width: 567px) {
-                    padding: 0 0 10px 10px;
-                }
-
-                @media screen and (min-width: 568px) and (max-width: 991px) {
-                    padding: 0 0 15px 15px;
-                }
-            }
-
-            &__title{
-                padding: 0 0 7px 0;
-                max-height: 30px;
-
-                @media screen and (max-width: 567px) {
-                    font-size: 14px;
-                }
-            }
-
-            &__price{
-                font-weight: 700;
-
-                @media screen and (min-width: 568px) and (max-width: 991px) {
-                    font-size: 17px;
-                    padding: 10px 10px 0 15px;
-                }
-
-                @media screen and (min-width: 992px) {
-                    text-align: left;
-                    padding: 10px 15px 0 0;
-                    
-                }
-
-            }
-        }
-
-        &__total{
-            padding: 0;
-            margin: 0;
-
-            &__text{
-                font-size: clamp(14px, 2vw, 25px);
-                font-weight: 700;
-                text-transform: uppercase;
-                margin-bottom: 20px;
-                padding: 0;
-            }
-
-            &__price{
-                padding: 5px 0px;
-                margin-bottom: 25px;
-                font-size: clamp(13px, 2vw, 20px);
-                font-weight: 700;
-                border-top: 1px solid colors(grey);
-                border-bottom: 1px solid colors(grey);
-            }
+        @media screen and (min-width: 568px) and (max-width: 991px) {
+            padding: 0px;
+            margin: 0px;
         }
     }
+        
 
+    &__product-card{
+        padding: 15px 0px;
+        margin-bottom: 20px;
+        margin-top: 0; 
+        background: colors(grey, light);
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 567px) {
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 568px) and (max-width: 991px) {
+            padding: 15px;
+        }
+
+
+        &__image{
+            padding: 0;
+
+            @media screen and (max-width: 567px) {
+                max-width: 100px;
+                max-height: 100px;
+            }
+
+            @media screen and (min-width: 568px) and (max-width: 991px) {
+                max-width: 200px;
+                max-height: 200px;
+            }
+
+            @media screen and (min-width: 992px) {
+                max-width: 200px;
+                height: 200px;
+                margin: 0 15px;
+            }
+        }
+
+        &__content{
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+
+            @media screen and (max-width: 567px) {
+                padding: 0 0 0px 10px;
+            }
+
+            @media screen and (min-width: 568px) and (max-width: 991px) {
+                padding: 15px;
+            }
+        }
+
+        &__title{
+            padding: 0 0 7px 0;
+            max-height: 30px;
+
+            @media screen and (max-width: 567px) {
+                font-size: 14px;
+                padding-bottom: 5px;
+                max-height: 20px;
+            }
+
+            @media screen and (min-width: 568px) and (max-width: 991px) {
+                font-size: 17px;
+                padding-bottom: 5px;
+                max-height: 25px;
+            }
+        }
+
+        &__price{
+            font-weight: 700;
+
+            @media screen and (max-width: 567px) {
+                font-size: 13px;
+                padding: 0;
+            }
+
+            @media screen and (min-width: 568px) and (max-width: 991px) {
+                font-size: 17px;
+                padding: 10px 10px 0 0px;
+                max-height: 30px;
+            }
+
+            @media screen and (min-width: 992px) {
+                text-align: left;
+                padding: 10px 15px 0 0;  
+            }
+        }
+
+        &__link{
+            margin-top: auto;
+            font-size: clamp(13px, 2vw, 16px);
+        }
+    }
     
+    // Total Price:
+    &__total{
+        padding: 0;
+        margin: 0;
+        border-bottom: 1px solid colors(grey);
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+
+        &__text{
+            font-size: clamp(13px, 1.5vw, 20px);
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0;
+        }
+
+        &__price{
+            padding: 0;
+            font-size: clamp(13px, 1.5vw, 20px);
+            font-weight: 700;
+            text-align: right;
+        }
+    }
+    
+    // Checkout Button:
     &__checkout-btn{
         margin: 20px 0;
     }
 
-
-
-// Cart Navigation
+    // Navigation Icon
     &__icon{
         position: relative;
         color: black;
@@ -137,20 +189,21 @@
         & a{
             color: black
         }
-    }
+    
 
-    &__icon-quantity{
-        position: absolute;
-        top: -10px;
-        right: -8px;
-        border-radius: 100%;
-        background: colors(primary);
-        font-size: 13px;
-        text-align: center;
-        padding: 2px;
-        font-weight: 600;
-        color: white;
-        width: 23px;
-        height: 23px;    
+        &-quantity{
+            position: absolute;
+            top: -10px;
+            right: -8px;
+            border-radius: 100%;
+            background: colors(primary);
+            font-size: 13px;
+            text-align: center;
+            padding: 2px;
+            font-weight: 600;
+            color: white;
+            width: 23px;
+            height: 23px;    
+        }
     }
 }

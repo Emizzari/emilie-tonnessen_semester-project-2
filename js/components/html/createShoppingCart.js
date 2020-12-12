@@ -4,7 +4,7 @@ import displayMessage from "../messages/displayMessage.js";
 export function createShoppingCart (){
     const shoppingCart = getShoppingCart();
 
-    const cartContainer = document.querySelector(".cart__products__container");
+    const cartContainer = document.querySelector(".cart__products");
 
     cartContainer.innerHTML = "";
 
@@ -12,24 +12,24 @@ export function createShoppingCart (){
         displayMessage(
             "feedback feedback--warning",
             "The cart is empty", 
-            ".cart__products__container"
+            ".cart__products"
         );
     }
 
     /* Display products from the localStorage() */
     shoppingCart.forEach(function (product) {
         cartContainer.innerHTML += `
-            <div class="cart__products__card col-12 row">
-                <img src="${product.image}" alt="${product.title}" class="col cart__products__card__image">
+            <div class="cart__product-card col-12 row">
+                <img src="${product.image}" alt="${product.title}" class="col cart__product-card__image">
 
-                <div class="cart__products__card__content col ">
-                    <h5 class="cart__products__card__title col">${product.title}</h5>
+                <div class="cart__product-card__content col ">
+                    <h5 class="cart__product-card__title col">${product.title}</h5>
 
-                    <p class="cart__products__card__price col-sm-12 col-md-12 col-lg">
+                    <p class="cart__product-card__price col-sm-12 col-md-12 col-lg">
                         ${product.price} NOK
                     </p>
 
-                    <a href="${product.url}" class="cart__products__card__link link">
+                    <a href="${product.url}" class="cart__product-card__link link">
                         View Product <i class="fal fa-angle-right"></i>
                     </a>
                 </div>
@@ -40,7 +40,7 @@ export function createShoppingCart (){
 
 
     /* Total Price: */
-    const totalPriceContainer = document.querySelector(".cart__products__total__price")
+    const totalPriceContainer = document.querySelector(".cart__total__price")
 
     let totalPrice = 0;
 
