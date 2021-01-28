@@ -1,5 +1,6 @@
 import { baseURL } from "../../../components/settings/url.js";
 import { saveToken, saveUser } from "../../../components/storage/localStorage.js";
+import displayMessage from "../../../components/messages/displayMessage.js"
 
 export async function doLogin(username, password) {
     const url = baseURL + "/auth/local";
