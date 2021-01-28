@@ -1,8 +1,8 @@
 export async function fetchAPI(afunction, url) {
     try {
-        const productResponse = await fetch(url);
-        const productsJSON = await productResponse.json();
-        const result = productsJSON;
+        const response = await fetch(url);
+        const JSON = await response.json();
+        const result = JSON;
 
         afunction(result);
 
