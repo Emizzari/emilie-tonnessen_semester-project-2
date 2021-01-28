@@ -14,9 +14,14 @@ For this project I have been assigned to create an e-commerce website that has b
 * SASS
 * jQuery - mobile menu
 
+## Fixes After Deadline:
+* Launched API in an live enviroment with Heroku
+* Setting up the code for moving from localhost to live
+
 ## Do to list:
 * Responsive banner on widescreen
 * Fix sizing on product images
 * Option to remove item from cart
 * Option to clear cart
 * Create a dropdown searchbar - remove onClick()
+* Fix request token on admin login - happened after API was launched live
